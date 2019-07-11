@@ -1,0 +1,67 @@
+.sylvan .pattern-0 {
+  mask: url("../images/svgs/sylvan-pattern-1.svg") repeat;
+  -webkit-mask: url("../images/svgs/sylvan-pattern-1.svg") repeat;
+  mask-size: 100%;
+}
+.sylvan .pattern-1 {
+  mask: url("../images/svgs/sylvan-pattern-2.svg") repeat;
+  -webkit-mask: url("../images/svgs/sylvan-pattern-2.svg") repeat;
+  mask-size: 100%;
+}
+.sylvan .pattern-2 {
+  mask: url("../images/svgs/sylvan-pattern-3.svg") repeat;
+  -webkit-mask: url("../images/svgs/sylvan-pattern-3.svg") repeat;
+  mask-size: 100%;
+}
+.sylvan .pattern-3 {
+  mask: url("../images/svgs/sylvan-pattern-4.svg") repeat;
+  -webkit-mask: url("../images/svgs/sylvan-pattern-4.svg") repeat;
+  mask-size: 100%;
+}
+.sylvan .pattern-4 {
+  mask: url("../images/svgs/sylvan-pattern-5.svg") repeat;
+  -webkit-mask: url("../images/svgs/sylvan-pattern-5.svg") repeat;
+  mask-size: 100%;
+}
+.sylvan .pattern-5 {
+  mask: url("../images/svgs/sylvan-pattern-6.svg") repeat;
+  -webkit-mask: url("../images/svgs/sylvan-pattern-6.svg") repeat;
+  mask-size: 100%;
+}
+
+.metro .pattern-0 {
+  mask: url("../images/svgs/metro-pattern-1.svg") repeat;
+  -webkit-mask: url("../images/svgs/metro-pattern-1.svg") repeat;
+  mask-size: 150px;
+  -webkit-mask-size: 150px;
+}
+.metro .pattern-1 {
+  mask: url("../images/svgs/metro-pattern-2.svg") repeat;
+  -webkit-mask: url("../images/svgs/metro-pattern-2.svg") repeat;
+  mask-size: 350px;
+  -webkit-mask-size: 350px;
+}
+.metro .pattern-2 {
+  mask: url("../images/svgs/metro-pattern-3.svg") repeat;
+  -webkit-mask: url("../images/svgs/metro-pattern-3.svg") repeat;
+  mask-size: 235px;
+  -webkit-mask-size: 235px;
+}
+.metro .pattern-3 {
+  mask: url("../images/svgs/metro-pattern-4.svg") repeat;
+  -webkit-mask: url("../images/svgs/metro-pattern-4.svg") repeat;
+  mask-size: 135px;
+  -webkit-mask-size: 135px;
+}
+.metro .pattern-4 {
+  mask: url("../images/svgs/metro-pattern-5.svg") repeat;
+  -webkit-mask: url("../images/svgs/metro-pattern-5.svg") repeat;
+  mask-size: 60px;
+  -webkit-mask-size: 60px;
+}
+.metro .pattern-5 {
+  mask: url("../images/svgs/metro-pattern-6.svg") repeat;
+  -webkit-mask: url("../images/svgs/metro-pattern-6.svg") repeat;
+  mask-size: 100px;
+  -webkit-mask-size: 100px;
+}

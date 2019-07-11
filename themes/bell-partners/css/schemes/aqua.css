@@ -1,0 +1,691 @@
+.ease, .aqua #nav-trigger .trigger-wrap span {
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+html {
+  background: #EAEAEA;
+}
+
+.aqua {
+  background: #FFFFFF;
+  background: #FFFFFF;
+}
+.aqua #slideout #slideout-button-container {
+  background: #29C0A5;
+  color: #000000;
+}
+.aqua #slideout #slideout-content {
+  background: #29C0A5;
+  color: #000000;
+}
+.aqua #slideout #slideout-content .phone a {
+  color: #000000;
+}
+.aqua #slideout #slideout-content .phone a:hover {
+  color: #FFFFFF;
+}
+.aqua #slideout #slideout-content .button {
+  background: #000000;
+}
+.aqua #slideout #slideout-content .button a {
+  color: #FFFFFF;
+}
+.aqua #slideout #slideout-content .button:hover {
+  background: #FFFFFF;
+}
+.aqua #slideout #slideout-content .button:hover a {
+  color: #000000;
+}
+.aqua #header {
+  background: #FFFFFF;
+}
+.aqua #header .phone a {
+  color: #506361;
+}
+.aqua #header .phone a:hover {
+  color: #A4B7B5;
+}
+.aqua #header a.logo-scroll {
+  color: #506361;
+}
+.aqua #header a.logo-scroll:hover {
+  color: #A4B7B5;
+}
+.aqua #header .mobile-icon a {
+  color: #29C0A5;
+}
+.aqua #header #secondary-navigation ul#menu-secondary-menu li a {
+  color: #506361;
+}
+.aqua #header #secondary-navigation ul#menu-secondary-menu li a:hover {
+  color: #A4B7B5;
+}
+.aqua.sylvan #header .header-wrapper {
+  border-color: #A4B7B5;
+}
+.aqua #nav-trigger .trigger-wrap span {
+  background: #506361;
+}
+.aqua #nav-trigger .trigger-wrap:hover span {
+  background: #A4B7B5;
+}
+.aqua #nav-trigger.active .trigger-wrap span {
+  background: #506361;
+}
+@media only screen and (min-width: 768px) {
+  .aqua #nav-trigger.active .trigger-wrap span {
+    background: #FFFFFF;
+  }
+}
+.aqua #navigation-container {
+  background: #506361;
+}
+.aqua #navigation-container .inner-container .residents {
+  border-top-color: #FFFFFF;
+}
+.aqua #navigation-container .inner-container .residents a {
+  color: #FFFFFF;
+}
+.aqua #navigation-container .inner-container .residents a:hover {
+  color: #29C0A5;
+}
+.aqua #navigation-container .inner-container .navigation-wrapper {
+  border-color: #FFFFFF;
+}
+.aqua #navigation-container .inner-container .navigation-wrapper #navigation ul li a {
+  color: #FFFFFF;
+}
+.aqua #navigation-container .inner-container .navigation-wrapper #navigation ul li a:hover {
+  color: #29C0A5;
+}
+.aqua #navigation-container .inner-container .navigation-wrapper .social-icons a {
+  color: #FFFFFF;
+}
+.aqua #navigation-container .inner-container .navigation-wrapper .social-icons a:hover {
+  color: #29C0A5;
+}
+.aqua #navigation-container .inner-container .mobile-contact-info {
+  border-color: #FFFFFF;
+}
+.aqua #navigation-container .inner-container .mobile-contact-info .property-name {
+  color: #FFFFFF;
+}
+.aqua #navigation-container .inner-container .mobile-contact-info .social-icons a, .aqua #navigation-container .inner-container .mobile-contact-info .address-container a, .aqua #navigation-container .inner-container .mobile-contact-info .phone a {
+  color: #FFFFFF;
+}
+.aqua #navigation-container .inner-container .mobile-contact-info .social-icons a:hover, .aqua #navigation-container .inner-container .mobile-contact-info .address-container a:hover, .aqua #navigation-container .inner-container .mobile-contact-info .phone a:hover {
+  color: #29C0A5;
+}
+.aqua #cross-links-pattern.pattern-wrapper {
+  background: #506361;
+}
+.aqua #cross-links-pattern.pattern-wrapper .pattern {
+  background: #A4B7B5;
+}
+.aqua .crosslink-block {
+  background: #506361;
+  color: #FFFFFF;
+}
+.aqua .crosslink-block .button-wrapper .button {
+  background: #29C0A5;
+}
+.aqua .crosslink-block .button-wrapper .button a {
+  color: #000000;
+}
+.aqua .crosslink-block .button-wrapper .button:hover {
+  background: #EAEAEA;
+}
+.aqua .contact-form #form_contact-form .frm_error_style, .aqua .contact-form #form_contact-form .frm_error {
+  color: #506361;
+}
+.aqua .contact-form #form_contact-form .frm_fields_container .row .frm_form_field input, .aqua .contact-form #form_contact-form .frm_fields_container .row .frm_form_field textarea {
+  border-color: #A4B7B5;
+}
+.aqua .contact-form #form_contact-form .frm_fields_container .full-row input, .aqua .contact-form #form_contact-form .frm_fields_container .full-row textarea {
+  border-color: #A4B7B5;
+}
+.aqua .contact-form #form_contact-form .frm_fields_container .frm_submit button {
+  background: #000000;
+  color: #FFFFFF;
+}
+.aqua .contact-form #form_contact-form .frm_fields_container .frm_submit button:hover {
+  background: #506361;
+}
+.aqua #footer-pattern.pattern-wrapper {
+  background: #506361;
+}
+.aqua #footer-pattern.pattern-wrapper .pattern {
+  background: #EAEAEA;
+}
+.aqua #footer {
+  background: #EAEAEA;
+  color: #506361;
+}
+.aqua #footer span {
+  color: #506361;
+}
+.aqua #footer a {
+  color: #506361;
+}
+.aqua #footer a:hover {
+  color: #A4B7B5;
+}
+.aqua #footer .social-icons {
+  border-color: #506361;
+}
+.aqua #hero-container #hero-image .caption span.default, .aqua #hero-container #hero-image .caption span.white {
+  color: #FFFFFF;
+}
+.aqua #hero-container #hero-image .caption span.black {
+  color: #000000;
+}
+.aqua #hero-container #hero-image .caption span.accent {
+  color: #29C0A5;
+}
+.aqua #hero-container #hero-image .caption span.light {
+  color: #EAEAEA;
+}
+.aqua #hero-container #hero-image .caption span.medium {
+  color: #A4B7B5;
+}
+.aqua #hero-container #hero-image .caption span.dark {
+  color: #506361;
+}
+.aqua #hero-container #hero-image.style-1 .caption.default, .aqua #hero-container #hero-image.style-1 .caption.accent {
+  background: rgba(41, 192, 165, 0.85);
+}
+.aqua #hero-container #hero-image.style-1 .caption.black {
+  background: rgba(0, 0, 0, 0.85);
+}
+.aqua #hero-container #hero-image.style-1 .caption.white {
+  background: rgba(255, 255, 255, 0.85);
+}
+.aqua #hero-container #hero-image.style-1 .caption.light {
+  background: rgba(234, 234, 234, 0.85);
+}
+.aqua #hero-container #hero-image.style-1 .caption.medium {
+  background: rgba(164, 183, 181, 0.85);
+}
+.aqua #hero-container #hero-image.style-1 .caption.dark {
+  background: rgba(80, 99, 97, 0.85);
+}
+.aqua #hero-container #hero-image.style-2 .caption span.wrapper.default, .aqua #hero-container #hero-image.style-2 .caption span.wrapper.accent {
+  background: #29C0A5;
+  box-shadow: 25px 0 0 #29C0A5, -25px 0 0 #29C0A5;
+}
+.aqua #hero-container #hero-image.style-2 .caption span.wrapper.black {
+  background: #000000;
+  box-shadow: 25px 0 0 #000000, -25px 0 0 #000000;
+}
+.aqua #hero-container #hero-image.style-2 .caption span.wrapper.white {
+  background: #FFFFFF;
+  box-shadow: 25px 0 0 #FFFFFF, -25px 0 0 #FFFFFF;
+}
+.aqua #hero-container #hero-image.style-2 .caption span.wrapper.light {
+  background: #EAEAEA;
+  box-shadow: 25px 0 0 #EAEAEA, -25px 0 0 #EAEAEA;
+}
+.aqua #hero-container #hero-image.style-2 .caption span.wrapper.medium {
+  background: #A4B7B5;
+  box-shadow: 25px 0 0 #A4B7B5, -25px 0 0 #A4B7B5;
+}
+.aqua #hero-container #hero-image.style-2 .caption span.wrapper.dark {
+  background: #506361;
+  box-shadow: 25px 0 0 #506361, -25px 0 0 #506361;
+}
+.aqua #hero-container #hero-image.style-2 .caption span.text.default, .aqua #hero-container #hero-image.style-2 .caption span.text.black {
+  color: #000000;
+}
+.aqua #hero-container #hero-image.style-2 .caption span.text.white {
+  color: #FFFFFF;
+}
+.aqua #hero-container #hero-image.style-2 .caption span.text.accent {
+  color: #29C0A5;
+}
+.aqua #hero-container #hero-image.style-2 .caption span.text.light {
+  color: #EAEAEA;
+}
+.aqua #hero-container #hero-image.style-2 .caption span.text.medium {
+  color: #A4B7B5;
+}
+.aqua #hero-container #hero-image.style-2 .caption span.text.dark {
+  color: #506361;
+}
+.aqua #hero-container .pattern {
+  background: #A4B7B5;
+}
+.aqua #hero-container .sylvan-home-header-background {
+  background: #EAEAEA;
+}
+.aqua #hero-container #hero.no-image {
+  background: #506361;
+}
+.aqua #hero-container #hero.no-image .pattern {
+  background: #A4B7B5;
+}
+.aqua #hero-container #hero.no-image .container .header-content .headline {
+  color: #FFFFFF;
+}
+.aqua #hero-container #hero.no-image .container .header-content .copy {
+  color: #FFFFFF;
+}
+.aqua.sylvan #hero-container #hero-image .secondary-image {
+  border-color: #FFFFFF;
+}
+.aqua.sylvan #hero-container #hero-image .sylvan-home-caption-background {
+  background: #EAEAEA;
+}
+.aqua.sylvan #hero-container #hero-image.style-2 .caption {
+  background: #EAEAEA;
+}
+.aqua.sylvan #hero-container #hero-image.style-2 .caption span.default {
+  color: #29C0A5;
+}
+.aqua.sylvan #hero-container #hero-content .header-content.style-2 {
+  border-color: #A4B7B5;
+}
+.aqua.sylvan #hero-container #hero-content .pattern {
+  background: #A4B7B5;
+}
+.aqua.sylvan.page-features #hero-container, .aqua.sylvan.page-amenities #hero-container, .aqua.sylvan.page-pet-policy #hero-container {
+  background: #EAEAEA;
+}
+@media only screen and (min-width: 1260px) {
+  .aqua.sylvan.page-features #hero-container, .aqua.sylvan.page-amenities #hero-container, .aqua.sylvan.page-pet-policy #hero-container {
+    background: none;
+  }
+}
+.aqua.sylvan.page-features #hero-container .sylvan-header-background, .aqua.sylvan.page-amenities #hero-container .sylvan-header-background, .aqua.sylvan.page-pet-policy #hero-container .sylvan-header-background {
+  background: #EAEAEA;
+}
+.aqua .block .button {
+  background: #000000;
+}
+.aqua .block .button a {
+  color: #FFFFFF;
+}
+.aqua .block .button:hover {
+  background: #506361;
+}
+.aqua .block.simple-content {
+  background: #506361;
+}
+.aqua .block.simple-content .headline, .aqua .block.simple-content .copy {
+  color: #FFFFFF;
+}
+.aqua .block.simple-content .headline a, .aqua .block.simple-content .copy a {
+  color: #FFFFFF;
+}
+.aqua .block.simple-content .headline a:hover, .aqua .block.simple-content .copy a:hover {
+  color: #29C0A5;
+}
+.aqua .block.simple-content .button {
+  background: #29C0A5;
+}
+.aqua .block.simple-content .button a {
+  color: #000000;
+}
+.aqua .block.simple-content .button:hover {
+  background: #EAEAEA;
+}
+.aqua .block.simple-content .button:hover a {
+  color: #000000;
+}
+.aqua .block.simple-content.first, .aqua .block.simple-content.last {
+  background: none;
+}
+.aqua .block.simple-content.first .headline, .aqua .block.simple-content.first .copy, .aqua .block.simple-content.last .headline, .aqua .block.simple-content.last .copy {
+  color: #000000;
+}
+.aqua .block.simple-content.first .headline a, .aqua .block.simple-content.first .copy a, .aqua .block.simple-content.last .headline a, .aqua .block.simple-content.last .copy a {
+  color: #000000;
+}
+.aqua .block.simple-content.first .headline a:hover, .aqua .block.simple-content.first .copy a:hover, .aqua .block.simple-content.last .headline a:hover, .aqua .block.simple-content.last .copy a:hover {
+  color: #29C0A5;
+}
+.aqua .block.simple-content.first .button, .aqua .block.simple-content.last .button {
+  background: #000000;
+}
+.aqua .block.simple-content.first .button a, .aqua .block.simple-content.last .button a {
+  color: #FFFFFF;
+}
+.aqua .block.simple-content.first .button a:hover, .aqua .block.simple-content.last .button a:hover {
+  color: #29C0A5;
+}
+.aqua .block.floor-plans .floor-plan-container {
+  background: #FFFFFF;
+}
+.aqua .block.floor-plans .floor-plan-container .floor-plan-carousel .slick-dots li button {
+  background: #A4B7B5;
+}
+.aqua .block.floor-plans .floor-plan-container .floor-plan-carousel .slick-dots li.slick-active button, .aqua .block.floor-plans .floor-plan-container .floor-plan-carousel .slick-dots li:hover button {
+  background: #29C0A5;
+}
+.aqua .block.floor-plans .floor-plan-container .fp-block-link {
+  background: #29C0A5;
+}
+.aqua .block.floor-plans .floor-plan-container .fp-block-link a {
+  color: #FFFFFF;
+}
+.aqua .block.floor-plans .floor-plan-container .fp-block-link a:hover {
+  color: #000000;
+}
+.aqua .block.variable-content .variable-content-content {
+  background: #FFFFFF;
+}
+.aqua .block.variable-content .variable-content-content .button {
+  background: #29C0A5;
+}
+.aqua .block.variable-content .variable-content-content .button a {
+  color: #000000;
+}
+.aqua .block.variable-content .variable-content-content .button:hover {
+  background: #506361;
+}
+.aqua .block.variable-content .variable-content-content .button:hover a {
+  color: #FFFFFF;
+}
+.aqua .block.variable-content .variable-content-fill {
+  background: #29C0A5;
+}
+.aqua .block.variable-content .variable-content-fill-pattern {
+  background: #FFFFFF;
+}
+.aqua .block.variable-content .variable-content-fill-pattern .pattern {
+  background-color: #EAEAEA;
+}
+.aqua .block.variable-content .accent-pattern {
+  background-color: #FFFFFF;
+}
+.aqua .block.pattern-wrapper {
+  background: #A4B7B5;
+}
+.aqua .block.pattern-wrapper .pattern-bg {
+  background-color: #EAEAEA;
+}
+.aqua .block.instagram .layout-three .social-wrap, .aqua .block.instagram .layout-six .social-wrap {
+  background: #FFFFFF;
+}
+.aqua .block.instagram .layout-three .social-wrap .social-wrap-pattern, .aqua .block.instagram .layout-six .social-wrap .social-wrap-pattern {
+  background: #EAEAEA;
+}
+.aqua .block.instagram .layout-three .social-wrap .social-wrap-inner, .aqua .block.instagram .layout-six .social-wrap .social-wrap-inner {
+  background: #29C0A5;
+}
+.aqua .block.instagram .layout-three .social-wrap .social-wrap-inner .social-icons a, .aqua .block.instagram .layout-six .social-wrap .social-wrap-inner .social-icons a {
+  color: #000000;
+}
+.aqua .block.instagram .layout-three .social-wrap .social-wrap-inner .social-icons a:hover, .aqua .block.instagram .layout-six .social-wrap .social-wrap-inner .social-icons a:hover {
+  color: #FFFFFF;
+}
+.aqua .block.content-and-images {
+  background: #A4B7B5;
+}
+.aqua .block.content-and-images .row-wrapper .inner-wrapper {
+  background: #FFFFFF;
+  border-color: #A4B7B5;
+}
+.aqua .block.content-and-images .row-wrapper .inner-wrapper .block-img .pattern {
+  background: #FFFFFF;
+}
+.aqua .block.list-layout .image-content .bottom-images .sm-img .pattern {
+  background: #FFFFFF;
+}
+.aqua #map-container .category-filter li {
+  color: #506361;
+}
+.aqua #map-container .category-filter li.active, .aqua #map-container .category-filter li:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+.aqua #map-container .map-wrap {
+  border-top: 2px solid #506361;
+  border-bottom: 2px solid #506361;
+  border-left: 2px solid #506361;
+}
+.aqua #map-container .map-wrap ul#categories {
+  background: #506361;
+}
+.aqua #map-container .map-wrap ul#categories span {
+  color: #FFFFFF;
+}
+.aqua #map-container .map-wrap ul#categories ul.children li:hover span, .aqua #map-container .map-wrap ul#categories ul.children li.active span {
+  color: #29C0A5;
+  font-weight: 900;
+}
+.aqua #blog .content .categories ul.categories-list li.cat-item, .aqua #category .content .categories ul.categories-list li.cat-item {
+  color: #506361;
+}
+.aqua #blog .content .categories ul.categories-list li.cat-item a, .aqua #category .content .categories ul.categories-list li.cat-item a {
+  color: #506361;
+}
+.aqua #blog .content .categories ul.categories-list li.cat-item a:hover, .aqua #category .content .categories ul.categories-list li.cat-item a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+.aqua #blog .content .posts-container .post .image a .no-feature-image.pattern, .aqua #category .content .posts-container .post .image a .no-feature-image.pattern {
+  background: #29C0A5;
+}
+.aqua #blog .content .posts-container .post .post-info, .aqua #category .content .posts-container .post .post-info {
+  color: #000000;
+}
+.aqua #blog .content .posts-container .post .post-info a.post-link, .aqua #category .content .posts-container .post .post-info a.post-link {
+  color: #000000;
+}
+.aqua #blog .content .posts-container .post .post-info a.post-link:hover, .aqua #category .content .posts-container .post .post-info a.post-link:hover {
+  color: #A4B7B5;
+}
+.aqua #blog .content .posts-container .post .post-info a.read-more, .aqua #category .content .posts-container .post .post-info a.read-more {
+  font-weight: 900;
+  color: #000000;
+}
+.aqua #blog .content .posts-container .post .post-info a.read-more:hover, .aqua #category .content .posts-container .post .post-info a.read-more:hover {
+  color: #A4B7B5;
+}
+.aqua #single-post .post-wrapper .post-content .left .block.simple-content {
+  background: none;
+}
+.aqua #single-post .post-wrapper .post-content .left .block.simple-content .headline, .aqua #single-post .post-wrapper .post-content .left .block.simple-content .copy {
+  color: #000000;
+}
+.aqua #single-post .post-wrapper .post-content .left .block.content-with-image .copy .in-content-image .img-caption {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+.aqua #single-post .post-wrapper .post-content .right #back-to-blog a {
+  color: #000000;
+}
+.aqua #single-post .post-wrapper .post-content .right #back-to-blog a:hover {
+  color: #A4B7B5;
+}
+.aqua #single-post .post-wrapper .post-content .right .categories h2 {
+  border-color: #000000;
+}
+.aqua #single-post .post-wrapper .post-content .right .categories ul.categories-list li a {
+  color: #000000;
+}
+.aqua #single-post .post-wrapper .post-content .right .categories ul.categories-list li a:hover {
+  color: #A4B7B5;
+}
+.aqua.sylvan.blog #hero-container, .aqua.sylvan.category #hero-container {
+  background: #A4B7B5;
+}
+.aqua.sylvan.blog #hero-container #hero .pattern, .aqua.sylvan.category #hero-container #hero .pattern {
+  background: #EAEAEA;
+}
+.aqua.sylvan.single-post #hero-container .sylvan-header-background {
+  background: #506361;
+}
+.aqua.sylvan.single-post #single-post .post-content .left .block.simple-content .date {
+  border-color: #A4B7B5;
+}
+.aqua #contact .content .contact-info h2.label {
+  color: #000000;
+}
+.aqua #contact .content .contact-info .property-info .address-container a {
+  color: #000000;
+}
+.aqua #contact .content .contact-info .property-info .address-container a:hover {
+  color: #A4B7B5;
+}
+.aqua #contact .content .contact-info .property-info .phone a {
+  color: #000000;
+}
+.aqua #contact .content .contact-info .property-info .phone a:hover {
+  color: #A4B7B5;
+}
+.aqua #contact .content .contact-info .property-info .social-icons a.icon {
+  color: #000000;
+}
+.aqua #contact .content .contact-info .property-info .social-icons a.icon:hover {
+  color: #A4B7B5;
+}
+.aqua #contact .content .contact-info .office-hours {
+  color: #000000;
+}
+.aqua #contact .content #kingsley-content .average-rating .stars > span {
+  color: #506361;
+}
+.aqua #contact .content #kingsley-content .review-wrapper {
+  border-color: #A4B7B5;
+}
+.aqua #contact .content #kingsley-content .review-wrapper .slick-list .review .star-container .stars span {
+  color: #506361;
+}
+.aqua.sylvan.page-contact #hero-container {
+  background: #A4B7B5;
+}
+.aqua.sylvan.page-contact #hero-container #hero .pattern {
+  background: #EAEAEA;
+}
+.aqua #thank-you .pattern, .aqua #error404 .pattern {
+  background: #FFFFFF;
+}
+.aqua .pet-policy.block .right .pet-policy .policy-row {
+  color: #000000;
+}
+.aqua #gallery-header-content {
+  background: #FFFFFF;
+}
+.aqua #gallery {
+  background: #FFFFFF;
+}
+.aqua #gallery ul#categories {
+  color: #A4B7B5;
+}
+.aqua #gallery ul#categories li.active {
+  color: #000000;
+}
+.aqua #gallery #bottom-content {
+  background: #EAEAEA;
+}
+.aqua #videos-wrapper {
+  background: #EAEAEA;
+}
+.aqua #tours-wrapper {
+  background: #FFFFFF;
+}
+.aqua #tours-wrapper .tour-container .tours-pattern {
+  background: #EAEAEA;
+}
+.aqua #slider-gallery .slider-wrapper #image-gallery .slick-list .slick-track .slide .caption {
+  background: rgba(234, 234, 234, 0.98);
+}
+.aqua #lightbox-wrapper #lightbox-container #lightbox #lightbox-caption {
+  color: #FFFFFF;
+}
+.aqua #lightbox-wrapper #lightbox-container #lightbox .fa-times, .aqua #lightbox-wrapper #lightbox-container #lightbox .arrow {
+  color: #FFFFFF;
+}
+.aqua #lightbox-wrapper #lightbox-container #lightbox .fa-times:hover, .aqua #lightbox-wrapper #lightbox-container #lightbox .arrow:hover {
+  color: #29C0A5;
+}
+.aqua #thank-you .content .box, .aqua #error404 .content .box {
+  background-color: #506361;
+}
+.aqua #thank-you .content .box .inner-wrapper .headline, .aqua #thank-you .content .box .inner-wrapper .copy, .aqua #error404 .content .box .inner-wrapper .headline, .aqua #error404 .content .box .inner-wrapper .copy {
+  color: #FFFFFF;
+}
+.aqua #thank-you .content .box .inner-wrapper .button-wrapper .button, .aqua #error404 .content .box .inner-wrapper .button-wrapper .button {
+  background: #29C0A5;
+}
+.aqua #thank-you .content .box .inner-wrapper .button-wrapper .button a, .aqua #error404 .content .box .inner-wrapper .button-wrapper .button a {
+  color: #000000;
+}
+.aqua #thank-you .content .box .inner-wrapper .button-wrapper .button:hover, .aqua #error404 .content .box .inner-wrapper .button-wrapper .button:hover {
+  background: #EAEAEA;
+}
+.aqua #floorplans #floor-plan-categories li {
+  color: #506361;
+}
+.aqua #floorplans #floor-plan-categories li.active, .aqua #floorplans #floor-plan-categories li:hover {
+  color: #000000;
+}
+.aqua #floorplans #floor-plan-results {
+  background: #FFFFFF;
+}
+.aqua #floorplans #floor-plan-results .unit-wrapper {
+  background: #EAEAEA;
+}
+.aqua #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .view-units,
+.aqua #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .contact {
+  background: #000000;
+  color: #FFFFFF;
+}
+.aqua #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .view-units a,
+.aqua #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .contact a {
+  color: #FFFFFF;
+}
+.aqua #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .view-units:hover,
+.aqua #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .contact:hover {
+  background: #506361;
+}
+.aqua.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details {
+  background: #FFFFFF;
+}
+.aqua.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .unit-details {
+  border-color: #506361;
+}
+.aqua.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container .count {
+  border-color: #506361;
+}
+.aqua.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr {
+  background: #EAEAEA;
+}
+.aqua.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr .apply .button {
+  background: #29C0A5;
+}
+.aqua.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr .apply .button a {
+  color: #000000;
+}
+.aqua.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr .apply .button:hover {
+  background: #506361;
+}
+.aqua.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr .apply .button:hover a {
+  color: #FFFFFF;
+}
+.aqua.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr.odd {
+  background: #FFFFFF;
+}
+.aqua.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details #disclaimer {
+  margin: 20px 0 0;
+  text-align: left;
+}
+.aqua #cta-container {
+  background-color: #29C0A5 !important;
+}
+.aqua #text-us {
+  background-color: #000000 !important;
+}
+.aqua.home .content #row-1 {
+  background: #29C0A5;
+}
+@media only screen and (min-width: 768px) {
+  .aqua.home .content #row-1 {
+    background: none;
+  }
+}

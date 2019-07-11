@@ -1,0 +1,596 @@
+.ease, .amber #nav-trigger .trigger-wrap span {
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.amber {
+  background: #E7EEEE;
+}
+.amber #slideout #slideout-button-container {
+  background: #FCA311;
+  color: #000000;
+}
+.amber #slideout #slideout-content {
+  background: #FCA311;
+  color: #000000;
+}
+.amber #slideout #slideout-content .phone a {
+  color: #000000;
+}
+.amber #slideout #slideout-content .phone a:hover {
+  color: #FFFFFF;
+}
+.amber #slideout #slideout-content .button {
+  background: #000000;
+}
+.amber #slideout #slideout-content .button a {
+  color: #FFFFFF;
+}
+.amber #slideout #slideout-content .button:hover {
+  background: #FFFFFF;
+}
+.amber #slideout #slideout-content .button:hover a {
+  color: #000000;
+}
+.amber #header {
+  background: #FFFFFF;
+}
+.amber #header .phone a {
+  color: #36494E;
+}
+.amber #header .phone a:hover {
+  color: #729193;
+}
+.amber #header a.logo-scroll {
+  color: #36494E;
+}
+.amber #header a.logo-scroll:hover {
+  color: #729193;
+}
+.amber #header .mobile-icon a {
+  color: #FCA311;
+}
+.amber #header #secondary-navigation ul#menu-secondary-menu li a {
+  color: #36494E;
+}
+.amber #header #secondary-navigation ul#menu-secondary-menu li a:hover {
+  color: #729193;
+}
+.amber #nav-trigger .trigger-wrap span {
+  background: #36494E;
+}
+.amber #nav-trigger .trigger-wrap:hover span {
+  background: #729193;
+}
+.amber #nav-trigger.active .trigger-wrap span {
+  background: #36494E;
+}
+@media only screen and (min-width: 768px) {
+  .amber #nav-trigger.active .trigger-wrap span {
+    background: #FFFFFF;
+  }
+}
+.amber #navigation-container {
+  background: #36494E;
+}
+.amber #navigation-container .inner-container .residents {
+  border-top-color: #FFFFFF;
+}
+.amber #navigation-container .inner-container .residents a {
+  color: #FFFFFF;
+}
+.amber #navigation-container .inner-container .residents a:hover {
+  color: #FCA311;
+}
+.amber #navigation-container .inner-container .navigation-wrapper {
+  border-color: #FFFFFF;
+}
+.amber #navigation-container .inner-container .navigation-wrapper #navigation ul li a {
+  color: #FFFFFF;
+}
+.amber #navigation-container .inner-container .navigation-wrapper #navigation ul li a:hover {
+  color: #FCA311;
+}
+.amber #navigation-container .inner-container .navigation-wrapper .social-icons a {
+  color: #FFFFFF;
+}
+.amber #navigation-container .inner-container .navigation-wrapper .social-icons a:hover {
+  color: #FCA311;
+}
+.amber #navigation-container .inner-container .mobile-contact-info {
+  border-color: #FFFFFF;
+}
+.amber #navigation-container .inner-container .mobile-contact-info .property-name {
+  color: #FFFFFF;
+}
+.amber #navigation-container .inner-container .mobile-contact-info .social-icons a, .amber #navigation-container .inner-container .mobile-contact-info .address-container a, .amber #navigation-container .inner-container .mobile-contact-info .phone a {
+  color: #FFFFFF;
+}
+.amber #navigation-container .inner-container .mobile-contact-info .social-icons a:hover, .amber #navigation-container .inner-container .mobile-contact-info .address-container a:hover, .amber #navigation-container .inner-container .mobile-contact-info .phone a:hover {
+  color: #FCA311;
+}
+.amber #cross-links-pattern.pattern-wrapper {
+  background: #36494E;
+}
+.amber #cross-links-pattern.pattern-wrapper .pattern {
+  background: #729193;
+}
+.amber .crosslink-block {
+  background: #36494E;
+  color: #FFFFFF;
+}
+.amber .crosslink-block .button-wrapper .button {
+  background: #FCA311;
+}
+.amber .crosslink-block .button-wrapper .button a {
+  color: #000000;
+}
+.amber .crosslink-block .button-wrapper .button:hover {
+  background: #E7EEEE;
+}
+.amber .contact-form #form_contact-form .frm_error_style, .amber .contact-form #form_contact-form .frm_error {
+  color: #36494E;
+}
+.amber .contact-form #form_contact-form .frm_fields_container .row .frm_form_field input, .amber .contact-form #form_contact-form .frm_fields_container .row .frm_form_field textarea {
+  border-color: #729193;
+}
+.amber .contact-form #form_contact-form .frm_fields_container .full-row input, .amber .contact-form #form_contact-form .frm_fields_container .full-row textarea {
+  border-color: #729193;
+}
+.amber .contact-form #form_contact-form .frm_fields_container .frm_submit button {
+  background: #000000;
+  color: #FFFFFF;
+}
+.amber .contact-form #form_contact-form .frm_fields_container .frm_submit button:hover {
+  background: #36494E;
+}
+.amber #footer-pattern.pattern-wrapper {
+  background: #36494E;
+}
+.amber #footer-pattern.pattern-wrapper .pattern {
+  background: #E7EEEE;
+}
+.amber #footer {
+  background: #FFFFFF;
+  color: #36494E;
+}
+.amber #footer span {
+  color: #36494E;
+}
+.amber #footer a {
+  color: #36494E;
+}
+.amber #footer a:hover {
+  color: #729193;
+}
+.amber #footer .social-icons {
+  border-color: #36494E;
+}
+.amber #hero-image .caption span.default, .amber #hero-image .caption span.black {
+  color: #000000;
+}
+.amber #hero-image .caption span.white {
+  color: #FFFFFF;
+}
+.amber #hero-image .caption span.accent {
+  color: #FCA311;
+}
+.amber #hero-image .caption span.light {
+  color: #E7EEEE;
+}
+.amber #hero-image .caption span.medium {
+  color: #729193;
+}
+.amber #hero-image .caption span.dark {
+  color: #36494E;
+}
+.amber #hero-image .pattern {
+  background: #FFFFFF;
+}
+.amber #hero-image.style-1 .caption.default, .amber #hero-image.style-1 .caption.accent {
+  background: #FCA311;
+}
+.amber #hero-image.style-1 .caption.black {
+  background: #000000;
+}
+.amber #hero-image.style-1 .caption.white {
+  background: #FFFFFF;
+}
+.amber #hero-image.style-1 .caption.light {
+  background: #E7EEEE;
+}
+.amber #hero-image.style-1 .caption.medium {
+  background: #729193;
+}
+.amber #hero-image.style-1 .caption.dark {
+  background: #36494E;
+}
+.amber #hero-image.style-2 .caption span.wrapper.default, .amber #hero-image.style-2 .caption span.wrapper.accent {
+  background: #FCA311;
+  box-shadow: 25px 0 0 #FCA311, -25px 0 0 #FCA311;
+}
+.amber #hero-image.style-2 .caption span.wrapper.black {
+  background: #000000;
+  box-shadow: 25px 0 0 #000000, -25px 0 0 #000000;
+}
+.amber #hero-image.style-2 .caption span.wrapper.white {
+  background: #FFFFFF;
+  box-shadow: 25px 0 0 #FFFFFF, -25px 0 0 #FFFFFF;
+}
+.amber #hero-image.style-2 .caption span.wrapper.light {
+  background: #E7EEEE;
+  box-shadow: 25px 0 0 #E7EEEE, -25px 0 0 #E7EEEE;
+}
+.amber #hero-image.style-2 .caption span.wrapper.medium {
+  background: #729193;
+  box-shadow: 25px 0 0 #729193, -25px 0 0 #729193;
+}
+.amber #hero-image.style-2 .caption span.wrapper.dark {
+  background: #36494E;
+  box-shadow: 25px 0 0 #36494E, -25px 0 0 #36494E;
+}
+.amber #hero-image.style-2 .caption span.text.default, .amber #hero-image.style-2 .caption span.text.black {
+  color: #000000;
+}
+.amber #hero-image.style-2 .caption span.text.white {
+  color: #FFFFFF;
+}
+.amber #hero-image.style-2 .caption span.text.accent {
+  color: #FCA311;
+}
+.amber #hero-image.style-2 .caption span.text.light {
+  color: #E7EEEE;
+}
+.amber #hero-image.style-2 .caption span.text.medium {
+  color: #729193;
+}
+.amber #hero-image.style-2 .caption span.text.dark {
+  color: #36494E;
+}
+.amber #hero.no-image {
+  background: #36494E;
+}
+.amber #hero.no-image .pattern {
+  background: #729193;
+}
+.amber #hero.no-image .container .header-content .headline {
+  color: #FFFFFF;
+}
+.amber #hero.no-image .container .header-content .copy {
+  color: #FFFFFF;
+}
+.amber .block .button {
+  background: #000000;
+}
+.amber .block .button a {
+  color: #FFFFFF;
+}
+.amber .block .button:hover {
+  background: #36494E;
+}
+.amber .block.simple-content {
+  background: #36494E;
+}
+.amber .block.simple-content .headline, .amber .block.simple-content .copy {
+  color: #FFFFFF;
+}
+.amber .block.simple-content .button {
+  background: #FCA311;
+}
+.amber .block.simple-content .button a {
+  color: #000000;
+}
+.amber .block.simple-content .button:hover {
+  background: #E7EEEE;
+}
+.amber .block.simple-content .button:hover a {
+  color: #000000;
+}
+.amber .block.simple-content.first, .amber .block.simple-content.last {
+  background: none;
+}
+.amber .block.simple-content.first .headline, .amber .block.simple-content.first .copy, .amber .block.simple-content.last .headline, .amber .block.simple-content.last .copy {
+  color: #000000;
+}
+.amber .block.simple-content.first .button, .amber .block.simple-content.last .button {
+  background: #000000;
+}
+.amber .block.simple-content.first .button a, .amber .block.simple-content.last .button a {
+  color: #FFFFFF;
+}
+.amber .block.simple-content.first .button a:hover, .amber .block.simple-content.last .button a:hover {
+  color: #FCA311;
+}
+.amber .block.floor-plans .floor-plan-container {
+  background: #FFFFFF;
+}
+.amber .block.floor-plans .floor-plan-container .floor-plan-carousel .slick-dots li button {
+  background: #729193;
+}
+.amber .block.floor-plans .floor-plan-container .floor-plan-carousel .slick-dots li.slick-active button, .amber .block.floor-plans .floor-plan-container .floor-plan-carousel .slick-dots li:hover button {
+  background: #FCA311;
+}
+.amber .block.variable-content .variable-content-content {
+  background: #FFFFFF;
+}
+.amber .block.variable-content .variable-content-content .button {
+  background: #FCA311;
+}
+.amber .block.variable-content .variable-content-content .button a {
+  color: #000000;
+}
+.amber .block.variable-content .variable-content-content .button:hover {
+  background: #36494E;
+}
+.amber .block.variable-content .variable-content-content .button:hover a {
+  color: #FFFFFF;
+}
+.amber .block.variable-content .variable-content-fill {
+  background: #FCA311;
+}
+.amber .block.variable-content .variable-content-fill-pattern {
+  background: #FFFFFF;
+}
+.amber .block.variable-content .variable-content-fill-pattern .pattern {
+  background-color: #E7EEEE;
+}
+.amber .block.variable-content .accent-pattern {
+  background-color: #FFFFFF;
+}
+.amber .block.pattern-wrapper {
+  background: #729193;
+}
+.amber .block.pattern-wrapper .pattern-bg {
+  background-color: #E7EEEE;
+}
+.amber .block.instagram .layout-three .social-wrap, .amber .block.instagram .layout-six .social-wrap {
+  background: #FFFFFF;
+}
+.amber .block.instagram .layout-three .social-wrap .social-wrap-pattern, .amber .block.instagram .layout-six .social-wrap .social-wrap-pattern {
+  background: #E7EEEE;
+}
+.amber .block.instagram .layout-three .social-wrap .social-wrap-inner, .amber .block.instagram .layout-six .social-wrap .social-wrap-inner {
+  background: #FCA311;
+}
+.amber .block.instagram .layout-three .social-wrap .social-wrap-inner .social-icons a, .amber .block.instagram .layout-six .social-wrap .social-wrap-inner .social-icons a {
+  color: #000000;
+}
+.amber .block.instagram .layout-three .social-wrap .social-wrap-inner .social-icons a:hover, .amber .block.instagram .layout-six .social-wrap .social-wrap-inner .social-icons a:hover {
+  color: #FFFFFF;
+}
+.amber #map-container .category-filter li {
+  color: #36494E;
+}
+.amber #map-container .category-filter li.active, .amber #map-container .category-filter li:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+.amber #map-container .map-wrap {
+  border-top: 2px solid #36494E;
+  border-bottom: 2px solid #36494E;
+  border-left: 2px solid #36494E;
+}
+.amber #map-container .map-wrap ul#categories {
+  background: #36494E;
+}
+.amber #map-container .map-wrap ul#categories span {
+  color: #FFFFFF;
+}
+.amber #map-container .map-wrap ul#categories ul.children li:hover span, .amber #map-container .map-wrap ul#categories ul.children li.active span {
+  color: #FCA311;
+  font-weight: 900;
+}
+.amber #blog .content .categories ul.categories-list li.cat-item, .amber #category .content .categories ul.categories-list li.cat-item {
+  color: #36494E;
+}
+.amber #blog .content .categories ul.categories-list li.cat-item a, .amber #category .content .categories ul.categories-list li.cat-item a {
+  color: #36494E;
+}
+.amber #blog .content .categories ul.categories-list li.cat-item a:hover, .amber #category .content .categories ul.categories-list li.cat-item a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+.amber #blog .content .posts-container .post .post-info, .amber #category .content .posts-container .post .post-info {
+  color: #000000;
+}
+.amber #blog .content .posts-container .post .post-info a.post-link, .amber #category .content .posts-container .post .post-info a.post-link {
+  color: #000000;
+}
+.amber #blog .content .posts-container .post .post-info a.post-link:hover, .amber #category .content .posts-container .post .post-info a.post-link:hover {
+  color: #729193;
+}
+.amber #blog .content .posts-container .post .post-info a.read-more, .amber #category .content .posts-container .post .post-info a.read-more {
+  font-weight: 900;
+  color: #000000;
+}
+.amber #blog .content .posts-container .post .post-info a.read-more:hover, .amber #category .content .posts-container .post .post-info a.read-more:hover {
+  color: #729193;
+}
+.amber #single-post .post-wrapper .post-content .left .block.simple-content {
+  background: none;
+}
+.amber #single-post .post-wrapper .post-content .left .block.simple-content .headline, .amber #single-post .post-wrapper .post-content .left .block.simple-content .copy {
+  color: #000000;
+}
+.amber #single-post .post-wrapper .post-content .left .block.content-with-image .copy .in-content-image .img-caption {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+.amber #single-post .post-wrapper .post-content .right #back-to-blog a {
+  color: #000000;
+}
+.amber #single-post .post-wrapper .post-content .right #back-to-blog a:hover {
+  color: #729193;
+}
+.amber #single-post .post-wrapper .post-content .right .categories h2 {
+  border-color: #000000;
+}
+.amber #single-post .post-wrapper .post-content .right .categories ul.categories-list li a {
+  color: #000000;
+}
+.amber #single-post .post-wrapper .post-content .right .categories ul.categories-list li a:hover {
+  color: #729193;
+}
+.amber #contact .content .contact-info h2.label {
+  color: #000000;
+}
+.amber #contact .content .contact-info .property-info .address-container a {
+  color: #000000;
+}
+.amber #contact .content .contact-info .property-info .address-container a:hover {
+  color: #729193;
+}
+.amber #contact .content .contact-info .property-info .phone a {
+  color: #000000;
+}
+.amber #contact .content .contact-info .property-info .phone a:hover {
+  color: #729193;
+}
+.amber #contact .content .contact-info .property-info .social-icons a.icon {
+  color: #000000;
+}
+.amber #contact .content .contact-info .property-info .social-icons a.icon:hover {
+  color: #729193;
+}
+.amber #contact .content .contact-info .office-hours {
+  color: #000000;
+}
+.amber #contact .content #kingsley-content .average-rating .stars > span {
+  color: #36494E;
+}
+.amber #contact .content #kingsley-content .review-wrapper {
+  border-color: #729193;
+}
+.amber #contact .content #kingsley-content .review-wrapper .slick-list .review .star-container .stars span {
+  color: #36494E;
+}
+.amber #thank-you .pattern, .amber #error404 .pattern {
+  background: #FFFFFF;
+}
+.amber .pet-policy.block .right .pet-policy .policy-row {
+  color: #000000;
+}
+.amber #gallery-header-content {
+  background: #FFFFFF;
+}
+.amber #gallery {
+  background: #FFFFFF;
+}
+.amber #gallery ul#categories {
+  color: #729193;
+}
+.amber #gallery ul#categories li.active {
+  color: #000000;
+}
+.amber #gallery #bottom-content {
+  background: #E7EEEE;
+}
+.amber #videos-wrapper {
+  background: #E7EEEE;
+}
+.amber #tours-wrapper {
+  background: #FFFFFF;
+}
+.amber #tours-wrapper .tour-container .tours-pattern {
+  background: #E7EEEE;
+}
+.amber #slider-gallery .slider-wrapper #image-gallery .slick-list .slick-track .slide .caption {
+  background: rgba(231, 238, 238, 0.98);
+}
+.amber #lightbox-wrapper #lightbox-container #lightbox #lightbox-caption {
+  color: #FFFFFF;
+}
+.amber #lightbox-wrapper #lightbox-container #lightbox .fa-times, .amber #lightbox-wrapper #lightbox-container #lightbox .arrow {
+  color: #FFFFFF;
+}
+.amber #lightbox-wrapper #lightbox-container #lightbox .fa-times:hover, .amber #lightbox-wrapper #lightbox-container #lightbox .arrow:hover {
+  color: #FCA311;
+}
+.amber #thank-you .content .box, .amber #error404 .content .box {
+  background-color: #36494E;
+}
+.amber #thank-you .content .box .inner-wrapper .headline, .amber #thank-you .content .box .inner-wrapper .copy, .amber #error404 .content .box .inner-wrapper .headline, .amber #error404 .content .box .inner-wrapper .copy {
+  color: #FFFFFF;
+}
+.amber #thank-you .content .box .inner-wrapper .button-wrapper .button, .amber #error404 .content .box .inner-wrapper .button-wrapper .button {
+  background: #FCA311;
+}
+.amber #thank-you .content .box .inner-wrapper .button-wrapper .button a, .amber #error404 .content .box .inner-wrapper .button-wrapper .button a {
+  color: #000000;
+}
+.amber #thank-you .content .box .inner-wrapper .button-wrapper .button:hover, .amber #error404 .content .box .inner-wrapper .button-wrapper .button:hover {
+  background: #E7EEEE;
+}
+.amber #floorplans #floor-plan-categories li {
+  color: #36494E;
+}
+.amber #floorplans #floor-plan-categories li.active, .amber #floorplans #floor-plan-categories li:hover {
+  color: #000000;
+}
+.amber #floorplans #floor-plan-results {
+  background: #FFFFFF;
+}
+.amber #floorplans #floor-plan-results .unit-wrapper {
+  background: #E7EEEE;
+}
+.amber #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .view-units,
+.amber #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .contact {
+  background: #000000;
+  color: #FFFFFF;
+}
+.amber #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .view-units a,
+.amber #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .contact a {
+  color: #FFFFFF;
+}
+.amber #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .view-units:hover,
+.amber #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .contact:hover {
+  background: #36494E;
+}
+.amber.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details {
+  background: #FFFFFF;
+}
+.amber.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .unit-details {
+  border-color: #36494E;
+}
+.amber.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container .count {
+  border-color: #36494E;
+}
+.amber.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr {
+  background: #E7EEEE;
+}
+.amber.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr .apply .button {
+  background: #FCA311;
+}
+.amber.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr .apply .button a {
+  color: #000000;
+}
+.amber.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr .apply .button:hover {
+  background: #36494E;
+}
+.amber.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr .apply .button:hover a {
+  color: #FFFFFF;
+}
+.amber.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr.odd {
+  background: #FFFFFF;
+}
+.amber.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details #disclaimer {
+  margin: 20px 0 0;
+  text-align: left;
+}
+.amber #cta-container {
+  background-color: #FCA311 !important;
+}
+.amber #text-us {
+  background-color: #000000 !important;
+}
+.amber.home .content #row-1 {
+  background: #FCA311;
+}
+@media only screen and (min-width: 768px) {
+  .amber.home .content #row-1 {
+    background: none;
+  }
+}

@@ -1,0 +1,34 @@
+ul.acf-radio-list li label {
+  display: flex;
+  align-items: center;
+}
+ul.acf-radio-list li label input {
+  margin: 0 10px 0 0;
+}
+
+.acf-flexible-content .layout .acf-fc-layout-handle {
+  background: #008ec2;
+  color: #fff;
+  border-radius: 3px;
+}
+.acf-flexible-content .layout .acf-fields .acf-flexible-content .layout .acf-fc-layout-handle {
+  background: #00e4bc;
+}
+
+.acf-field-5c62fe07f5407 img, .acf-field-5c62fe07f5408 img {
+  max-width: 100%;
+}
+
+.acf-field-5c8169cb6ec65,
+.acf-field-5c86a40429f90 {
+  display: none;
+}
+
+.compat-item tr.acf-field-5c8169cb6ec65, .compat-item tr.acf-field-5c86a40429f90 {
+  display: none;
+}
+
+.acf-field-5c6d65be555ad .acf-field-5c8169cb6ec65,
+.acf-field-5c6d65be555ad .acf-field-5c86a40429f90 {
+  display: table-row !important;
+}

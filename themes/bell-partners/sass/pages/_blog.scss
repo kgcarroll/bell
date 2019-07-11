@@ -1,0 +1,345 @@
+// Blog
+#blog, #category {
+	.content {
+		.categories {
+		  @include display-flex;
+			@include flex-direction(column);
+			@include justify-content(center);
+			padding: 40px 0;
+			@include breakpoint(tablet){
+				@include flex-direction(row);
+		    padding: 0 0 30px 0;
+			}
+			h2 {
+				display:none;
+			  @include breakpoint(tablet){
+			  	display:inline-block;
+			  }
+			}
+			ul.categories-list{
+				display: inline-block;
+		    margin: 0 20px;
+		    display:none;
+			  @include breakpoint(tablet){
+			  	display:block;
+			  }		    
+				li{
+			    margin: 0 20px 0 0;
+					display: inline-block;
+					&:last-of-type {
+						margin:0;
+					}
+				}
+			}
+			.mobile-categories{
+				display:block;
+			  margin: 15px auto;
+			  text-align: center;
+			  @include breakpoint(tablet){
+			  	display:none;
+			  }
+			  h2{
+			  	font-weight:$semibold;
+			  	text-transform:uppercase;
+					display:block;
+				  @include breakpoint(tablet){
+				  	display:none;
+				  }
+				}
+	 			select{
+				  @extend %dropdown-list;
+				}
+			}
+		}
+		.posts-container {
+			max-width: 1260px;
+    	margin: 0 auto;
+    	padding: 0 2%;
+			@include display-flex;
+			@include flex-wrap(wrap);
+			@include justify-content(center);
+			@include breakpoint(five){
+				@include justify-content(space-between);
+			}
+			@include breakpoint(tablet){ padding: 0 50px; }	
+			@include breakpoint(ten){ padding: 0 75px; }	
+			@include breakpoint(fourteen){ padding: 0 150px; }		
+			.post {
+				width: 90%;
+				margin: 0 0 40px;
+				@include breakpoint(five){
+					width: 45%;
+				}
+				@include breakpoint(ten){
+					width: 30%;
+				}
+				.image {
+			    margin: 0 0 15px;    
+					a {
+						display: block;
+						img {
+							width: 100%;
+							height: auto;
+						}
+						.no-feature-image {
+							width: 100%;
+							height: 264px;
+						}
+					}
+				}
+				.post-info {
+					.date { font-weight: 900; }
+				}
+			}
+		}
+	}
+}
+
+// Blog post
+#hero-image.blog-post {
+ 	@extend %max-width;
+ 	padding: 20px; 
+ 	@include breakpoint(tablet) { padding: 45px 80px 0; }
+ 	.img-container {
+		@include breakpoint(tablet) { width: 70%; }
+		img {
+			display: block;
+			height: auto;
+			width: 100%;
+		}
+	}
+}
+
+#single-post {
+	.post-wrapper{
+    max-width: 1260px;
+    margin: 0 auto;
+		padding: 20px 10px;
+		@include breakpoint(tablet){
+			padding: 20px 80px;
+		}
+		.post-image {
+			margin: 0 0 20px;
+			@include breakpoint(tablet){ width:70%; }
+			img {
+				width:100%;
+				height: auto;
+			}
+		}
+		.post-title,
+		.post-date {
+			@include breakpoint(tablet){
+				width:70%;
+		  }
+		}
+
+		.post-content {
+			@include display-flex;
+			@include flex-direction(column);
+			@include breakpoint(tablet){
+				@include flex-direction(row);
+			}
+			// Post Content
+			.left{
+				@include breakpoint(tablet) { width: 70%; }
+				.block {
+					text-align: left;
+					&.simple-content {
+						padding: 0 0 20px;
+						.headline { margin: 50px 0 0; }
+						.date {
+							padding: 0 0 20px;
+						}
+						&.first {
+							.headline {
+								margin: 0 0 20px;
+							}
+						}
+					}
+					&.full-image {
+						padding: 0 0 45px;						
+				    @include breakpoint(tablet) {
+							padding: 50px 0 75px;
+						}
+						img { display: block; width: 100%; }
+						.img-caption { text-align: center; margin: 10px 0 0; }
+					}
+					&.content-with-image {
+						padding: 0 0 20px;
+						.copy {
+							.in-content-image {
+								width: 50%;
+								@include breakpoint(tablet) {
+									width: auto;
+								}
+								img { width: 100%; display: block; }
+								&.img-right { float: right; padding: 0 0 0 25px; }
+								&.img-left { float: left; padding: 0 25px 0 0; }
+							}
+						}
+					}
+				}
+			}
+
+			.right {
+				@include breakpoint(tablet){
+			  	width: 30%;
+			  }				
+				#back-to-blog {
+					text-transform: uppercase;
+					@include breakpoint(tablet){
+						padding: 0 0 0 80px;
+					}
+					a {
+						// @extend %copy;
+					}
+				}
+				.categories{
+					@include breakpoint(tablet){
+						padding: 40px 0 40px 80px;
+					}
+					h2 {
+						display:none;
+					  @include breakpoint(tablet){
+					  	text-transform: uppercase;
+					  	border-bottom: 1px solid;
+					  	padding: 0 0 5px;
+					  	margin: 0 0 20px;
+					  	display: inline-block;
+					  }
+					}
+					ul.categories-list{
+						display:none;
+						@include breakpoint(tablet){
+							display:block;
+						}
+						li{
+							padding: 10px 0;
+							a {
+
+							}
+						}
+					}
+					.mobile-categories{
+						display:block;
+						@include breakpoint(tablet){
+							display:none;
+						}
+						select{
+						  @extend %dropdown-list;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.sylvan {
+	&.blog, &.category {
+		#hero-container {
+			max-width: 100%;
+			#hero {
+				&.no-image {
+					max-width: 1050px;
+					margin: 0 auto 65px;
+					position: relative;
+					background: none;
+					@include breakpoint(tablet) { margin: 0 auto 125px; }
+				}
+				.pattern {
+					height: 115%;
+					width: 100px;
+					right: 0;
+					@include breakpoint(tablet) { width: 200px; }
+					@include breakpoint(ten) { width: 300px; }
+					@include breakpoint(twelve) { right: -100px; }
+				}
+			}
+			#hero-content {
+				max-width: 1050px;
+				margin: 0;
+				.header-content {
+					margin: 0;
+					text-align: left;
+					padding: 45px 120px 45px 20px;
+					@include breakpoint(tablet) {
+						padding: 75px 50px;
+						max-width: 568px;
+					}
+					@include breakpoint(ten) { max-width: 750px; }					
+					@include breakpoint(twelve) {
+						padding: 75px 50px 75px 0;						
+						max-width: 850px;
+					}
+				}
+			}
+		}
+	}
+	&.single-post {
+		#hero-container {
+			.sylvan-header-background {
+				position: absolute;
+				top: 0;
+				width: 200%;
+				margin-left: -50%;
+			}
+			#hero-image {
+				padding: 0;
+				.img-wrapper {
+					padding: 50px 0 0;
+					position: relative;			
+					@include breakpoint(tablet) {
+						padding: 50px 20px 0;
+					}				
+					@include breakpoint(fourteen) {
+						padding: 50px 0 0;
+					}	
+					.img-container {
+				    max-width: calc(100% - 50px);
+				    @include breakpoint(tablet) {
+							max-width: 662px;
+						}
+						img {
+							position: relative;
+							z-index: 4;
+						}
+						.pattern {
+							height: calc(100% + 50px);
+					    width: calc(100% + 50px);
+					    top: -50px;						
+						}
+					}
+				}
+			}
+		}
+		#single-post {
+			.post-wrapper {
+				padding: 50px 20px;
+		    @include breakpoint(fourteen) {
+					padding: 50px 0;
+				}
+				.left {
+					.block {
+						&.simple-content {
+							.date {
+								border-bottom: 1px solid;
+								margin: 0 0 20px;
+							}
+							.copy {
+								margin: 0;
+								max-width: 100%;
+							}
+						}
+						&.full-image {
+							.img-caption { text-align: left; }
+						}
+						&.content-with-image {
+
+						}
+					}
+				}
+			}
+		}
+	}
+}

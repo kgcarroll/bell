@@ -1,0 +1,265 @@
+// @import "compass/utilities";
+// @import "compass/css3";
+// @import "compass/css3/columns";
+// @import "modules/variables";
+// @import "modules/mixins";
+// @import "modules/extends";
+
+// .ease { @include transition(all .25s ease-in-out); }
+
+#floorplans {
+	max-width: 1266px;
+	margin: 0 auto;
+	.ddl-label {
+		text-align: center;
+		margin: 0 0 15px;
+		@include breakpoint(tablet){
+			display: none;
+		}
+	}
+	#floor-plan-categories {
+		display: none;
+		@include breakpoint(tablet) {
+			display: block;
+		}
+		text-align: center;
+		margin: 0 auto 50px;
+		li {
+			padding: 0 15px;
+			display: inline;
+			@extend .ease;
+			&.active, &:hover {
+				cursor: pointer;
+				text-decoration: underline;
+			}
+		}
+	}
+	.mobile-select {
+		width: 100%;
+		max-width: 300px;
+		margin: 0 auto 30px;
+		display: block;
+		border: 1px solid;
+		padding: 10px;
+		background: url('../images/down.png') no-repeat right 13px #fff;
+		@include appearance(none);
+		@include breakpoint(tablet) {
+			display: none;	
+		}
+	}
+	#floor-plan-results {
+		@include flex;
+		@include flex-direction(row);
+		@include flex-wrap(wrap);
+		@include box-sizing(border-box);
+		@include breakpoint(ten){
+			padding: 25px;
+		}
+		#loader { margin: auto; }
+		.unit-wrapper {
+			@include box-sizing(border-box);
+			padding: 20px;
+			margin: 20px;
+			width: 100%;
+			@include breakpoint(tablet){
+				width: calc(50% - 40px);
+			}
+			@include breakpoint(ten){
+				width: calc((100% / 3) - 40px);
+			}
+			.image-container {
+				position: relative;
+				.floorplan-image { width: 100%; display: block; }
+				.magnify {
+					display: none;
+					@include breakpoint(tablet) {
+						position: absolute;
+						z-index: 3;
+						right: 5px;
+						bottom: 3px;
+					}
+				}
+				&:hover {
+					cursor: pointer;
+				}
+			}
+			.unit-details {
+				margin: 15px 0 0;
+				height: 110px;
+				.name {
+					margin: 0 0 20px;
+				}
+				.beds-baths,
+				.sqft,
+				.price {
+					margin: 0 0 5px;
+				}
+			}
+			.bottom-container {
+				margin-top: auto;
+				@include display-flex;
+				@include flex-direction(column);
+				.availability {
+					margin: 15px 0 auto;
+					text-align: center;
+					padding: 0 0 15px;
+				}
+				.links-container {
+					@include breakpoint(ten) {
+	 					@include display-flex;
+						@include justify-content(space-evenly);
+					}
+					.view-units {
+						margin: 0 0 15px;
+						@include breakpoint(ten) { margin: 0; }
+					}
+					.view-units, .contact {
+						padding: 10px 15px;
+						text-align: center;
+						@extend .ease;
+						&:hover {
+							cursor: pointer;
+						}
+					}
+				
+					.contact a {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+
+.page-template-floor-plans {
+	#lightbox-wrapper {
+		#lightbox-container {
+			#lightbox {
+				width: 100%;
+				@include breakpoint(ten){ min-width: 1024px; }
+				.element-container {
+					overflow: scroll;
+					//@include breakpoint(sixteen){ overflow: visible; }
+					.unit-type-details {
+						padding: 20px;
+						@include breakpoint(tablet){ padding: 30px 35px; }
+						@include breakpoint(ten){ padding: 60px 75px; }
+						.unit-details {
+							text-align: left;
+							border-bottom: 1px solid;
+							margin: 0 0 20px;
+							@include display-flex;
+							@include flex-direction(column);
+							@include breakpoint(tablet) {
+								margin: 0 0 65px;
+							}
+							.name {
+								margin: 0 0 10px;
+								@include breakpoint(tablet) {
+									margin: 0 0 40px;
+								}
+							}
+							.unit-details-bottom {
+								margin: 0 0 10px;						
+								@include display-flex;
+								@include breakpoint(tablet) {
+									margin: 0 0 20px;
+								}
+								.sqft { margin-left: auto; }
+							}
+						}
+						.fp-image-wrapper {
+							@include breakpoint(tablet) {
+								margin: 0 0 75px;
+							}
+							img {
+								height: auto;
+								width: 100%;				
+							}
+						}
+						.available-units-container {
+							margin: 20px 0 0;
+							.count {
+								text-align: left;
+								border-bottom: 1px solid;
+								padding: 0 0 10px;
+								margin: 0 0 15px;
+								@include breakpoint(tablet) {
+									padding: 0 0 25px;
+									margin: 0 0 35px;
+								}
+							}
+							#results {
+								width: 100%;
+								thead#results-head {
+									tr{
+										display: none;
+										@include breakpoint(tablet) { display: table-row; }
+										th {
+											padding: 10px 15px;
+											font-weight: 900;
+										}
+									}
+								}
+								#results-table {
+									.unit-type-tr {
+										td {
+											display: none;
+											@include breakpoint(tablet){
+												display: table-cell;
+												padding: 10px 15px;
+											}
+											&.mobile {
+												display: block;
+												padding: 10px;
+												>div {
+													padding: 0 0 5px;
+												}
+												@include breakpoint(tablet){
+													display: none;
+												}
+											}
+										}
+										.apply {
+											.button {
+												@extend .ease;
+												text-align: center;
+												padding: 10px 15px;
+												a {
+													@extend .ease;
+												}
+											}
+										}
+										&.odd {
+											background: none;
+										}
+									}
+								}
+							}
+						}
+						#disclaimer {
+							margin: 20px 0 0;
+							text-align: left;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.sylvan {
+	&.page-template-floor-plans {
+		#hero-container {
+			max-width: 100%;
+			#hero-content {
+		    margin: 0 auto 60px;
+		  }
+		}
+		#floorplans {
+			&.container {
+				max-width: 1366px;
+			}
+		}
+	}
+}

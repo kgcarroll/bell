@@ -1,0 +1,596 @@
+.ease, .cobalt #nav-trigger .trigger-wrap span {
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.cobalt {
+  background: #DEE1E7;
+}
+.cobalt #slideout #slideout-button-container {
+  background: #729DD2;
+  color: #000000;
+}
+.cobalt #slideout #slideout-content {
+  background: #729DD2;
+  color: #000000;
+}
+.cobalt #slideout #slideout-content .phone a {
+  color: #000000;
+}
+.cobalt #slideout #slideout-content .phone a:hover {
+  color: #FFFFFF;
+}
+.cobalt #slideout #slideout-content .button {
+  background: #000000;
+}
+.cobalt #slideout #slideout-content .button a {
+  color: #FFFFFF;
+}
+.cobalt #slideout #slideout-content .button:hover {
+  background: #FFFFFF;
+}
+.cobalt #slideout #slideout-content .button:hover a {
+  color: #000000;
+}
+.cobalt #header {
+  background: #FFFFFF;
+}
+.cobalt #header .phone a {
+  color: #182640;
+}
+.cobalt #header .phone a:hover {
+  color: #B8BCC3;
+}
+.cobalt #header a.logo-scroll {
+  color: #182640;
+}
+.cobalt #header a.logo-scroll:hover {
+  color: #B8BCC3;
+}
+.cobalt #header .mobile-icon a {
+  color: #729DD2;
+}
+.cobalt #header #secondary-navigation ul#menu-secondary-menu li a {
+  color: #182640;
+}
+.cobalt #header #secondary-navigation ul#menu-secondary-menu li a:hover {
+  color: #B8BCC3;
+}
+.cobalt #nav-trigger .trigger-wrap span {
+  background: #182640;
+}
+.cobalt #nav-trigger .trigger-wrap:hover span {
+  background: #B8BCC3;
+}
+.cobalt #nav-trigger.active .trigger-wrap span {
+  background: #182640;
+}
+@media only screen and (min-width: 768px) {
+  .cobalt #nav-trigger.active .trigger-wrap span {
+    background: #FFFFFF;
+  }
+}
+.cobalt #navigation-container {
+  background: #182640;
+}
+.cobalt #navigation-container .inner-container .residents {
+  border-top-color: #FFFFFF;
+}
+.cobalt #navigation-container .inner-container .residents a {
+  color: #FFFFFF;
+}
+.cobalt #navigation-container .inner-container .residents a:hover {
+  color: #729DD2;
+}
+.cobalt #navigation-container .inner-container .navigation-wrapper {
+  border-color: #FFFFFF;
+}
+.cobalt #navigation-container .inner-container .navigation-wrapper #navigation ul li a {
+  color: #FFFFFF;
+}
+.cobalt #navigation-container .inner-container .navigation-wrapper #navigation ul li a:hover {
+  color: #729DD2;
+}
+.cobalt #navigation-container .inner-container .navigation-wrapper .social-icons a {
+  color: #FFFFFF;
+}
+.cobalt #navigation-container .inner-container .navigation-wrapper .social-icons a:hover {
+  color: #729DD2;
+}
+.cobalt #navigation-container .inner-container .mobile-contact-info {
+  border-color: #FFFFFF;
+}
+.cobalt #navigation-container .inner-container .mobile-contact-info .property-name {
+  color: #FFFFFF;
+}
+.cobalt #navigation-container .inner-container .mobile-contact-info .social-icons a, .cobalt #navigation-container .inner-container .mobile-contact-info .address-container a, .cobalt #navigation-container .inner-container .mobile-contact-info .phone a {
+  color: #FFFFFF;
+}
+.cobalt #navigation-container .inner-container .mobile-contact-info .social-icons a:hover, .cobalt #navigation-container .inner-container .mobile-contact-info .address-container a:hover, .cobalt #navigation-container .inner-container .mobile-contact-info .phone a:hover {
+  color: #729DD2;
+}
+.cobalt #cross-links-pattern.pattern-wrapper {
+  background: #182640;
+}
+.cobalt #cross-links-pattern.pattern-wrapper .pattern {
+  background: #B8BCC3;
+}
+.cobalt .crosslink-block {
+  background: #182640;
+  color: #FFFFFF;
+}
+.cobalt .crosslink-block .button-wrapper .button {
+  background: #729DD2;
+}
+.cobalt .crosslink-block .button-wrapper .button a {
+  color: #000000;
+}
+.cobalt .crosslink-block .button-wrapper .button:hover {
+  background: #DEE1E7;
+}
+.cobalt .contact-form #form_contact-form .frm_error_style, .cobalt .contact-form #form_contact-form .frm_error {
+  color: #182640;
+}
+.cobalt .contact-form #form_contact-form .frm_fields_container .row .frm_form_field input, .cobalt .contact-form #form_contact-form .frm_fields_container .row .frm_form_field textarea {
+  border-color: #B8BCC3;
+}
+.cobalt .contact-form #form_contact-form .frm_fields_container .full-row input, .cobalt .contact-form #form_contact-form .frm_fields_container .full-row textarea {
+  border-color: #B8BCC3;
+}
+.cobalt .contact-form #form_contact-form .frm_fields_container .frm_submit button {
+  background: #000000;
+  color: #FFFFFF;
+}
+.cobalt .contact-form #form_contact-form .frm_fields_container .frm_submit button:hover {
+  background: #182640;
+}
+.cobalt #footer-pattern.pattern-wrapper {
+  background: #182640;
+}
+.cobalt #footer-pattern.pattern-wrapper .pattern {
+  background: #DEE1E7;
+}
+.cobalt #footer {
+  background: #FFFFFF;
+  color: #182640;
+}
+.cobalt #footer span {
+  color: #182640;
+}
+.cobalt #footer a {
+  color: #182640;
+}
+.cobalt #footer a:hover {
+  color: #B8BCC3;
+}
+.cobalt #footer .social-icons {
+  border-color: #182640;
+}
+.cobalt #hero-image .caption span.default, .cobalt #hero-image .caption span.black {
+  color: #000000;
+}
+.cobalt #hero-image .caption span.white {
+  color: #FFFFFF;
+}
+.cobalt #hero-image .caption span.accent {
+  color: #729DD2;
+}
+.cobalt #hero-image .caption span.light {
+  color: #DEE1E7;
+}
+.cobalt #hero-image .caption span.medium {
+  color: #B8BCC3;
+}
+.cobalt #hero-image .caption span.dark {
+  color: #182640;
+}
+.cobalt #hero-image .pattern {
+  background: #FFFFFF;
+}
+.cobalt #hero-image.style-1 .caption.default, .cobalt #hero-image.style-1 .caption.accent {
+  background: #729DD2;
+}
+.cobalt #hero-image.style-1 .caption.black {
+  background: #000000;
+}
+.cobalt #hero-image.style-1 .caption.white {
+  background: #FFFFFF;
+}
+.cobalt #hero-image.style-1 .caption.light {
+  background: #DEE1E7;
+}
+.cobalt #hero-image.style-1 .caption.medium {
+  background: #B8BCC3;
+}
+.cobalt #hero-image.style-1 .caption.dark {
+  background: #182640;
+}
+.cobalt #hero-image.style-2 .caption span.wrapper.default, .cobalt #hero-image.style-2 .caption span.wrapper.accent {
+  background: #729DD2;
+  box-shadow: 25px 0 0 #729DD2, -25px 0 0 #729DD2;
+}
+.cobalt #hero-image.style-2 .caption span.wrapper.black {
+  background: #000000;
+  box-shadow: 25px 0 0 #000000, -25px 0 0 #000000;
+}
+.cobalt #hero-image.style-2 .caption span.wrapper.white {
+  background: #FFFFFF;
+  box-shadow: 25px 0 0 #FFFFFF, -25px 0 0 #FFFFFF;
+}
+.cobalt #hero-image.style-2 .caption span.wrapper.light {
+  background: #DEE1E7;
+  box-shadow: 25px 0 0 #DEE1E7, -25px 0 0 #DEE1E7;
+}
+.cobalt #hero-image.style-2 .caption span.wrapper.medium {
+  background: #B8BCC3;
+  box-shadow: 25px 0 0 #B8BCC3, -25px 0 0 #B8BCC3;
+}
+.cobalt #hero-image.style-2 .caption span.wrapper.dark {
+  background: #182640;
+  box-shadow: 25px 0 0 #182640, -25px 0 0 #182640;
+}
+.cobalt #hero-image.style-2 .caption span.text.default, .cobalt #hero-image.style-2 .caption span.text.black {
+  color: #000000;
+}
+.cobalt #hero-image.style-2 .caption span.text.white {
+  color: #FFFFFF;
+}
+.cobalt #hero-image.style-2 .caption span.text.accent {
+  color: #729DD2;
+}
+.cobalt #hero-image.style-2 .caption span.text.light {
+  color: #DEE1E7;
+}
+.cobalt #hero-image.style-2 .caption span.text.medium {
+  color: #B8BCC3;
+}
+.cobalt #hero-image.style-2 .caption span.text.dark {
+  color: #182640;
+}
+.cobalt #hero.no-image {
+  background: #182640;
+}
+.cobalt #hero.no-image .pattern {
+  background: #B8BCC3;
+}
+.cobalt #hero.no-image .container .header-content .headline {
+  color: #FFFFFF;
+}
+.cobalt #hero.no-image .container .header-content .copy {
+  color: #FFFFFF;
+}
+.cobalt .block .button {
+  background: #000000;
+}
+.cobalt .block .button a {
+  color: #FFFFFF;
+}
+.cobalt .block .button:hover {
+  background: #182640;
+}
+.cobalt .block.simple-content {
+  background: #182640;
+}
+.cobalt .block.simple-content .headline, .cobalt .block.simple-content .copy {
+  color: #FFFFFF;
+}
+.cobalt .block.simple-content .button {
+  background: #729DD2;
+}
+.cobalt .block.simple-content .button a {
+  color: #000000;
+}
+.cobalt .block.simple-content .button:hover {
+  background: #DEE1E7;
+}
+.cobalt .block.simple-content .button:hover a {
+  color: #000000;
+}
+.cobalt .block.simple-content.first, .cobalt .block.simple-content.last {
+  background: none;
+}
+.cobalt .block.simple-content.first .headline, .cobalt .block.simple-content.first .copy, .cobalt .block.simple-content.last .headline, .cobalt .block.simple-content.last .copy {
+  color: #000000;
+}
+.cobalt .block.simple-content.first .button, .cobalt .block.simple-content.last .button {
+  background: #000000;
+}
+.cobalt .block.simple-content.first .button a, .cobalt .block.simple-content.last .button a {
+  color: #FFFFFF;
+}
+.cobalt .block.simple-content.first .button a:hover, .cobalt .block.simple-content.last .button a:hover {
+  color: #729DD2;
+}
+.cobalt .block.floor-plans .floor-plan-container {
+  background: #FFFFFF;
+}
+.cobalt .block.floor-plans .floor-plan-container .floor-plan-carousel .slick-dots li button {
+  background: #B8BCC3;
+}
+.cobalt .block.floor-plans .floor-plan-container .floor-plan-carousel .slick-dots li.slick-active button, .cobalt .block.floor-plans .floor-plan-container .floor-plan-carousel .slick-dots li:hover button {
+  background: #729DD2;
+}
+.cobalt .block.variable-content .variable-content-content {
+  background: #FFFFFF;
+}
+.cobalt .block.variable-content .variable-content-content .button {
+  background: #729DD2;
+}
+.cobalt .block.variable-content .variable-content-content .button a {
+  color: #000000;
+}
+.cobalt .block.variable-content .variable-content-content .button:hover {
+  background: #182640;
+}
+.cobalt .block.variable-content .variable-content-content .button:hover a {
+  color: #FFFFFF;
+}
+.cobalt .block.variable-content .variable-content-fill {
+  background: #729DD2;
+}
+.cobalt .block.variable-content .variable-content-fill-pattern {
+  background: #FFFFFF;
+}
+.cobalt .block.variable-content .variable-content-fill-pattern .pattern {
+  background-color: #DEE1E7;
+}
+.cobalt .block.variable-content .accent-pattern {
+  background-color: #FFFFFF;
+}
+.cobalt .block.pattern-wrapper {
+  background: #B8BCC3;
+}
+.cobalt .block.pattern-wrapper .pattern-bg {
+  background-color: #DEE1E7;
+}
+.cobalt .block.instagram .layout-three .social-wrap, .cobalt .block.instagram .layout-six .social-wrap {
+  background: #FFFFFF;
+}
+.cobalt .block.instagram .layout-three .social-wrap .social-wrap-pattern, .cobalt .block.instagram .layout-six .social-wrap .social-wrap-pattern {
+  background: #DEE1E7;
+}
+.cobalt .block.instagram .layout-three .social-wrap .social-wrap-inner, .cobalt .block.instagram .layout-six .social-wrap .social-wrap-inner {
+  background: #729DD2;
+}
+.cobalt .block.instagram .layout-three .social-wrap .social-wrap-inner .social-icons a, .cobalt .block.instagram .layout-six .social-wrap .social-wrap-inner .social-icons a {
+  color: #000000;
+}
+.cobalt .block.instagram .layout-three .social-wrap .social-wrap-inner .social-icons a:hover, .cobalt .block.instagram .layout-six .social-wrap .social-wrap-inner .social-icons a:hover {
+  color: #FFFFFF;
+}
+.cobalt #map-container .category-filter li {
+  color: #182640;
+}
+.cobalt #map-container .category-filter li.active, .cobalt #map-container .category-filter li:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+.cobalt #map-container .map-wrap {
+  border-top: 2px solid #182640;
+  border-bottom: 2px solid #182640;
+  border-left: 2px solid #182640;
+}
+.cobalt #map-container .map-wrap ul#categories {
+  background: #182640;
+}
+.cobalt #map-container .map-wrap ul#categories span {
+  color: #FFFFFF;
+}
+.cobalt #map-container .map-wrap ul#categories ul.children li:hover span, .cobalt #map-container .map-wrap ul#categories ul.children li.active span {
+  color: #729DD2;
+  font-weight: 900;
+}
+.cobalt #blog .content .categories ul.categories-list li.cat-item, .cobalt #category .content .categories ul.categories-list li.cat-item {
+  color: #182640;
+}
+.cobalt #blog .content .categories ul.categories-list li.cat-item a, .cobalt #category .content .categories ul.categories-list li.cat-item a {
+  color: #182640;
+}
+.cobalt #blog .content .categories ul.categories-list li.cat-item a:hover, .cobalt #category .content .categories ul.categories-list li.cat-item a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+.cobalt #blog .content .posts-container .post .post-info, .cobalt #category .content .posts-container .post .post-info {
+  color: #000000;
+}
+.cobalt #blog .content .posts-container .post .post-info a.post-link, .cobalt #category .content .posts-container .post .post-info a.post-link {
+  color: #000000;
+}
+.cobalt #blog .content .posts-container .post .post-info a.post-link:hover, .cobalt #category .content .posts-container .post .post-info a.post-link:hover {
+  color: #B8BCC3;
+}
+.cobalt #blog .content .posts-container .post .post-info a.read-more, .cobalt #category .content .posts-container .post .post-info a.read-more {
+  font-weight: 900;
+  color: #000000;
+}
+.cobalt #blog .content .posts-container .post .post-info a.read-more:hover, .cobalt #category .content .posts-container .post .post-info a.read-more:hover {
+  color: #B8BCC3;
+}
+.cobalt #single-post .post-wrapper .post-content .left .block.simple-content {
+  background: none;
+}
+.cobalt #single-post .post-wrapper .post-content .left .block.simple-content .headline, .cobalt #single-post .post-wrapper .post-content .left .block.simple-content .copy {
+  color: #000000;
+}
+.cobalt #single-post .post-wrapper .post-content .left .block.content-with-image .copy .in-content-image .img-caption {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+.cobalt #single-post .post-wrapper .post-content .right #back-to-blog a {
+  color: #000000;
+}
+.cobalt #single-post .post-wrapper .post-content .right #back-to-blog a:hover {
+  color: #B8BCC3;
+}
+.cobalt #single-post .post-wrapper .post-content .right .categories h2 {
+  border-color: #000000;
+}
+.cobalt #single-post .post-wrapper .post-content .right .categories ul.categories-list li a {
+  color: #000000;
+}
+.cobalt #single-post .post-wrapper .post-content .right .categories ul.categories-list li a:hover {
+  color: #B8BCC3;
+}
+.cobalt #contact .content .contact-info h2.label {
+  color: #000000;
+}
+.cobalt #contact .content .contact-info .property-info .address-container a {
+  color: #000000;
+}
+.cobalt #contact .content .contact-info .property-info .address-container a:hover {
+  color: #B8BCC3;
+}
+.cobalt #contact .content .contact-info .property-info .phone a {
+  color: #000000;
+}
+.cobalt #contact .content .contact-info .property-info .phone a:hover {
+  color: #B8BCC3;
+}
+.cobalt #contact .content .contact-info .property-info .social-icons a.icon {
+  color: #000000;
+}
+.cobalt #contact .content .contact-info .property-info .social-icons a.icon:hover {
+  color: #B8BCC3;
+}
+.cobalt #contact .content .contact-info .office-hours {
+  color: #000000;
+}
+.cobalt #contact .content #kingsley-content .average-rating .stars > span {
+  color: #182640;
+}
+.cobalt #contact .content #kingsley-content .review-wrapper {
+  border-color: #B8BCC3;
+}
+.cobalt #contact .content #kingsley-content .review-wrapper .slick-list .review .star-container .stars span {
+  color: #182640;
+}
+.cobalt #thank-you .pattern, .cobalt #error404 .pattern {
+  background: #FFFFFF;
+}
+.cobalt .pet-policy.block .right .pet-policy .policy-row {
+  color: #000000;
+}
+.cobalt #gallery-header-content {
+  background: #FFFFFF;
+}
+.cobalt #gallery {
+  background: #FFFFFF;
+}
+.cobalt #gallery ul#categories {
+  color: #B8BCC3;
+}
+.cobalt #gallery ul#categories li.active {
+  color: #000000;
+}
+.cobalt #gallery #bottom-content {
+  background: #DEE1E7;
+}
+.cobalt #videos-wrapper {
+  background: #DEE1E7;
+}
+.cobalt #tours-wrapper {
+  background: #FFFFFF;
+}
+.cobalt #tours-wrapper .tour-container .tours-pattern {
+  background: #DEE1E7;
+}
+.cobalt #slider-gallery .slider-wrapper #image-gallery .slick-list .slick-track .slide .caption {
+  background: rgba(222, 225, 231, 0.98);
+}
+.cobalt #lightbox-wrapper #lightbox-container #lightbox #lightbox-caption {
+  color: #FFFFFF;
+}
+.cobalt #lightbox-wrapper #lightbox-container #lightbox .fa-times, .cobalt #lightbox-wrapper #lightbox-container #lightbox .arrow {
+  color: #FFFFFF;
+}
+.cobalt #lightbox-wrapper #lightbox-container #lightbox .fa-times:hover, .cobalt #lightbox-wrapper #lightbox-container #lightbox .arrow:hover {
+  color: #729DD2;
+}
+.cobalt #thank-you .content .box, .cobalt #error404 .content .box {
+  background-color: #182640;
+}
+.cobalt #thank-you .content .box .inner-wrapper .headline, .cobalt #thank-you .content .box .inner-wrapper .copy, .cobalt #error404 .content .box .inner-wrapper .headline, .cobalt #error404 .content .box .inner-wrapper .copy {
+  color: #FFFFFF;
+}
+.cobalt #thank-you .content .box .inner-wrapper .button-wrapper .button, .cobalt #error404 .content .box .inner-wrapper .button-wrapper .button {
+  background: #729DD2;
+}
+.cobalt #thank-you .content .box .inner-wrapper .button-wrapper .button a, .cobalt #error404 .content .box .inner-wrapper .button-wrapper .button a {
+  color: #000000;
+}
+.cobalt #thank-you .content .box .inner-wrapper .button-wrapper .button:hover, .cobalt #error404 .content .box .inner-wrapper .button-wrapper .button:hover {
+  background: #DEE1E7;
+}
+.cobalt #floorplans #floor-plan-categories li {
+  color: #182640;
+}
+.cobalt #floorplans #floor-plan-categories li.active, .cobalt #floorplans #floor-plan-categories li:hover {
+  color: #000000;
+}
+.cobalt #floorplans #floor-plan-results {
+  background: #FFFFFF;
+}
+.cobalt #floorplans #floor-plan-results .unit-wrapper {
+  background: #DEE1E7;
+}
+.cobalt #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .view-units,
+.cobalt #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .contact {
+  background: #000000;
+  color: #FFFFFF;
+}
+.cobalt #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .view-units a,
+.cobalt #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .contact a {
+  color: #FFFFFF;
+}
+.cobalt #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .view-units:hover,
+.cobalt #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .contact:hover {
+  background: #182640;
+}
+.cobalt.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details {
+  background: #FFFFFF;
+}
+.cobalt.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .unit-details {
+  border-color: #182640;
+}
+.cobalt.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container .count {
+  border-color: #182640;
+}
+.cobalt.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr {
+  background: #DEE1E7;
+}
+.cobalt.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr .apply .button {
+  background: #729DD2;
+}
+.cobalt.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr .apply .button a {
+  color: #000000;
+}
+.cobalt.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr .apply .button:hover {
+  background: #182640;
+}
+.cobalt.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr .apply .button:hover a {
+  color: #FFFFFF;
+}
+.cobalt.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr.odd {
+  background: #FFFFFF;
+}
+.cobalt.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details #disclaimer {
+  margin: 20px 0 0;
+  text-align: left;
+}
+.cobalt #cta-container {
+  background-color: #729DD2 !important;
+}
+.cobalt #text-us {
+  background-color: #000000 !important;
+}
+.cobalt.home .content #row-1 {
+  background: #729DD2;
+}
+@media only screen and (min-width: 768px) {
+  .cobalt.home .content #row-1 {
+    background: none;
+  }
+}

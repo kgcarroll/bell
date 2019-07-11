@@ -1,0 +1,62 @@
+{
+    "key": "group_5c8169a95af81",
+    "title": "Gallery Image Options",
+    "fields": [
+        {
+            "key": "field_5c8169cb6ec65",
+            "label": "Featured Image",
+            "name": "featured_image",
+            "type": "true_false",
+            "instructions": "This will cause the image to take up two columns.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5c86a40429f90",
+            "label": "Resize Image",
+            "name": "resize_image",
+            "type": "true_false",
+            "instructions": "This will preserve the original aspect ratio of the image.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "attachment",
+                "operator": "==",
+                "value": "image"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1552327836
+}

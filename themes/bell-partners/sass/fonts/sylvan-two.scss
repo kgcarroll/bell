@@ -1,0 +1,597 @@
+@import "compass/utilities";
+@import "compass/css3";
+@import "compass/css3/columns";
+@import "modules/variables";
+@import "modules/mixins";
+@import "modules/extends";
+
+.ease { @include transition(all .25s ease-in-out); }
+
+$heading: 'Chivo', serif;
+$body: 'IBM Plex Serif', sans-serif;
+
+// SLIDE OUT
+#slideout {
+
+	#slideout-button-container {
+		.button-wrap {
+			font-family: $body;
+			@include font-size(2.2);
+		}
+	}
+	
+	#slideout-content {
+		.title {
+			font-family: $heading;
+			@include font-size(1.8);
+			@include breakpoint(tablet){
+				@include font-size(2.6);
+			}
+		}
+		.copy, .disclaimer, .phone {
+			font-family: $body;
+		}
+		.button {
+			font-family: $body;
+			@include font-size(1.4);
+		}
+	}
+}
+
+// HEADER
+#header {
+	.phone, #secondary-navigation {
+		font-family: $body;
+		@include font-size(1.4);
+	}
+	.mobile-icon{
+		a{
+			@include font-size(2.2);			
+		}
+	}
+	&.scroll .phone, .logo-scroll {
+		font-family: $body;
+		@include font-size(1.8);
+	}
+}
+
+// NAVIGATION CONTAINER
+#navigation-container {
+	.inner-container {
+		// Mobile
+		.mobile-contact-info {
+			.social-icons a {
+				@include font-size(2.2);
+			}
+			.property-name,
+			.address-container a,
+			.phone a {
+				font-family: $body;
+				@include font-size(1.4);
+			}
+		}
+		.residents, #navigation  {
+			font-family: $body;
+			@include font-size(2.2);
+		}
+		.navigation-wrapper {
+			#navigation {
+				ul#menu-main-menu {
+					li {
+						a {
+							@include font-size(2.2);
+							@include breakpoint(tablet) {
+								@include font-size(3.2);
+							}
+						}
+					}
+				}
+			}
+			.social-icons a {
+				@include font-size(2.2);
+			}
+		}
+	}
+}
+
+// FOOTER
+#footer {	
+	font-family: $body;
+	.contact-info {
+		.property-name {
+			@include font-size(1.8);
+		}
+		.address-container, .phone {
+			@include font-size(1.6);
+		}
+	}
+	.sub-footer {
+		@include font-size(1.4);
+		.eho-handicap {
+			@include font-size(2);
+		}
+	}
+}
+
+// HERO IMAGE
+#hero-image {
+	.caption {
+		span {
+			font-family: $heading;
+			@include font-size(2.8);
+			@include breakpoint(tablet){
+				@include font-size(6.4);
+				line-height: 1.25;
+			}
+		}
+	}
+	&.style-2 {
+		.caption {
+			span {
+				line-height: 2.25;
+				@include breakpoint(tablet){
+					line-height: 1.25;
+				}
+			}
+		}
+	}
+}
+
+// PAGE BLOCKS
+.block {
+	.headline {
+	 	font-family: $heading;
+	}
+
+	h1 { @include font-size(3.4); }
+	h2, h3 { @include font-size(2.7); }
+
+	.copy {
+		font-family: $body;
+		@include font-size(1.7);
+		line-height: 1.75;
+	}
+	.disclaimer {
+		font-family: $body;
+		font-style: italic;
+		line-height: 1.25;
+		@include font-size(1.6);
+	}
+	.button {
+		font-family: $body;
+		font-weight: $bold;
+		@include font-size(1.4);
+	}
+
+	// Floor plan Block
+	&.floor-plans {
+		.floor-plan-container {
+			.floor-plan-carousel {
+				.floor-plan-wrapper {
+					.label {
+						font-family: $body;
+						@include font-size(1.7);
+					}
+				}
+			}
+		}
+	}
+
+	// Instagram Label
+	.social-wrap-inner {
+		.label {
+			font-family: $body;
+			font-weight: $bold;
+			@include font-size(1);
+			@include breakpoint(tablet) {
+				@include font-size(1.6);
+			}
+		}
+	}
+
+	// Feature/Amenties List
+	.lists-container {
+		ul {
+			font-family: $body;
+			@include font-size(1.8);
+		}
+		.disclaimer {
+			font-style: italic;
+			font-family: $body;
+			@include font-size(1.6);
+		}
+	}
+}
+
+// MAP
+#map-container {
+	.ddl-label {
+		font-family: $body;
+		@include font-size(1.7);
+	}
+	.category-filter {
+		ul#map-categories{
+			display:none;
+			@include breakpoint(tablet){
+				display: block;
+			}
+			li {
+				font-family: $body;
+				@include font-size(1.7);
+			}
+		}
+	}
+	.map-wrap {
+		#categories {
+			font-family: $body;
+			li.parent {
+				span {
+					@include font-size(1.4);
+				}
+				ul.children {
+					li.poi {
+						span {
+							@include font-size(1.4);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#blog, #category {
+	.categories {
+		font-family: $body;
+		@include font-size(1.7);
+	}
+	.posts-container {
+		.post {
+			.post-info {
+				font-family: $body;
+				@include font-size(1.7);
+				line-height: 1.75;
+				a.post-link {
+					h2.title {
+						font-family: $heading;
+						@include font-size(3.3);
+						line-height: 1;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+.single-post {
+	.post-wrapper {
+		.post-content {
+			.left {
+				.block {
+					&.simple-content {
+						.date {
+							font-family: $body;
+							font-weight: $bold;
+							@include font-size(1.6);
+						}
+					}
+					&.full-image {
+						.img-caption {
+							font-family: $body;
+							@include font-size(1.4);
+							font-style: italic;
+						}
+					}
+					&.content-with-image {
+						.copy {
+							.in-content-image {
+								.img-caption {
+									@include font-size(1.4);
+									font-style: italic;
+								}
+							}
+						}
+					}
+				}
+			}
+			.right {
+				font-family: $body;
+				@include font-size(1.4);
+				#back-to-blog {
+					font-weight: $bold;
+				}
+				.categories {
+					h2 {
+						font-weight: $bold;
+					}
+
+				}
+			}
+		}
+	}
+}
+
+//CONTACT FORM
+#contact {
+	.content {
+		.contact-info {
+			h2.label {
+				font-family: $body;
+				font-weight: $bold;
+				@include font-size(1.8);
+			}
+			.property-info {
+				.address-container {
+					a {
+						font-family: $body;
+						@include font-size(1.8);
+					}
+				}
+				.phone {
+					a {
+						font-family: $body;
+						@include font-size(1.8);
+					}
+				}
+			}
+			.office-hours {
+				font-family: $body;
+				@include font-size(1.8);
+			}
+		}
+		.contact-form {
+			#form_contact-form {
+				.frm_error_style, .frm_error{
+					font-family: $body;
+					@include font-size(1.7);
+				}
+				.frm_fields_container {
+					.row {
+						.form-field {
+							label { 
+								font-family: $body;
+								@include font-size(1.7);
+							}
+							input[type="text"],
+							input[type="email"],
+							input[type="tel"] {
+								font-family: $body;
+								@include font-size(1.7);
+							}
+						}
+					}
+					.full-row {
+						label { 
+							font-family: $body;
+							@include font-size(1.7);
+						}
+						textarea {
+							font-family: $body;
+							@include font-size(1.7);
+						}
+					}
+					.frm_submit {
+						button {
+							font-family: $body;
+							@include font-size(1.8);
+						}
+					}
+				}
+			}
+		}
+		#kingsley-content {
+			.average-rating {
+				.review-info {
+					.average {
+						font-family: $body;
+						@include font-size(2.4);
+					}
+					.total-reviews {
+						font-family: $body;
+						@include font-size(1.8);
+					}
+				}
+			}
+			.review-wrapper {
+				.slick-arrow {
+					.label {
+						text-transform: uppercase;
+						font-family: $body;
+						@include font-size(1.4);
+						font-weight: $bold;
+					}
+				}
+				.slick-list {
+					.review {
+						font-family: $body;
+						@include font-size(1.7);
+						.review-details {
+							.user { font-weight: $bold; }
+						}
+						.review-text {
+							line-height: 1.25;
+						}
+					}
+				}
+			}
+			.confing-error {
+				font-family: $body;
+				@include font-size(1.7);
+			}
+		}
+	}
+}
+
+// Pet Policy
+.pet-policy {
+	&.block {
+		.left {
+			.headline {}
+			.copy {}
+		}
+		.right {
+	    .pet-policy {
+	    	.policy-row {
+	    		font-family: $body;
+	    		@include font-size(2);
+	    		font-weight: 900;
+	    	}
+	    }
+		}
+	}
+}
+
+// Gallery
+#gallery {
+	.ddl-label {
+		font-family: $body;
+		@include font-size(1.7);
+	}
+	ul#categories {
+		font-family: $body;
+		font-weight: $bold;
+		@include font-size(1.8);
+	}
+}
+
+#lightbox-wrapper {
+	#lightbox-container {
+		#lightbox {
+			#lightbox-caption {
+				font-family: $body;
+				font-weight: $bold;
+				line-height: 1.5;
+				@include font-size(1.8);
+			}
+			#lightbox-close {}
+		}
+	}
+}
+
+#slider-gallery {
+	.slider-wrapper {
+		#image-gallery {
+			.slick-arrow {
+				&:hover {
+				}
+			}
+			// Counter
+			.slick-dots {
+				li {
+					font-family: $body;
+					font-weight: $bold;
+					@include font-size(1.8);
+				}
+			}
+			// Slides
+			.slick-list {
+				.slick-track {
+					.slide {
+						.caption {
+							font-family: $body;
+							font-weight: $bold;
+							@include font-size(1.8);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Floor Plans Page 
+
+#floorplans {
+	.ddl-label {
+		font-family: $body;
+		@include font-size(1.7);
+	}
+	#floor-plan-categories {
+		li {
+			font-family: $body;
+			@include font-size(1.7);
+		}
+	}
+	#floor-plan-results {
+		.unit-wrapper {
+			.unit-details {
+				.name {
+					font-family: $body;
+					font-weight: $bold;
+					@include font-size(2);
+				}
+				.beds-baths,
+				.sqft,
+				.price {
+					font-family: $body;
+					@include font-size(1.8);
+				}
+			}
+			.bottom-container {
+				.availability {
+					font-family: $body;
+					font-weight: $bold;
+					@include font-size(1.8);
+				}
+				.view-units,
+				.contact a {
+					font-family: $body;
+					@include font-size(1.8);
+				}
+			}
+		}
+	}
+}
+
+
+.page-template-floor-plans {
+	#lightbox-wrapper {
+		#lightbox-container {
+			#lightbox {
+				.element-container {
+					.unit-type-details {
+						.unit-details {
+							.name {
+								font-family: $heading;
+								@include font-size(2.2);
+							}
+							.unit-details-bottom {
+								font-family: $body;
+								@include font-size(1.7);
+							}
+						}
+						.available-units-container {
+							.count, #no-results {
+								font-family: $body;
+								@include font-size(1.7);
+							}
+							#results {
+								thead#results-head {
+									tr {
+										th {
+											font-family: $body;
+											@include font-size(1.7);
+										}
+									}
+								}
+								#results-table {
+									.unit-type-tr {
+										td {
+											font-family: $body;
+											@include font-size(1.7);										
+										}
+									}
+								}
+							}
+						}
+						#disclaimer {
+							font-family: $body;
+							@include font-size(1.7);
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,547 @@
+#contact {
+	.content {
+		.contact-info {
+			max-width: 775px;
+			margin: 0 auto 60px;
+			padding: 0 20px;
+			@include box-sizing(border-box);
+			@include breakpoint(tablet) {
+				padding: 0 20px;
+				@include display-flex;
+				@include justify-content(space-around);
+			} 
+			h2.label {
+				margin: 0 0 10px;
+			}
+			.property-info {
+				padding: 0 0 20px;
+				@include breakpoint(tablet) {
+					padding: 0;
+				}
+				.address-container {
+					a {
+						.line-1, .break { display: inline-block; }
+						>div {
+							margin: 0 0 10px;
+						}
+					}
+				}
+				.phone {
+					margin: 0 0 25px;
+					a {}
+				}
+				.social-icons {
+					a.icon {
+						@include font-size(2.8);
+						&:nth-child(2) {
+							padding: 0 10px;
+						}
+					}
+				}
+			}
+			.office-hours {
+				.day {
+					margin: 0 0 10px;
+				}
+			}
+		}
+		.contact-form {
+			@include breakpoint(tablet) {
+				margin: 30px 0;
+			}
+			#form_contact-form {
+				max-width: 775px;
+				margin: 0 auto;
+				.frm_error_style{
+					margin: 0 0 10px;
+				}
+				.frm_error{
+					margin: 5px 0 0;
+				}
+				.frm_fields_container {
+					padding: 0 20px;
+					@include display-flex;
+					@include flex-direction(column);
+					.row {
+						@include breakpoint(tablet) {
+							@include display-flex;
+						}
+						.form-field {
+							margin: 0 0 15px;
+							@include breakpoint(tablet) {
+								margin: 0;
+								width: 50%;
+							}
+							label { display: block; margin: 0 0 5px; }
+							input[type="text"],
+							input[type="email"],
+							input[type="tel"],
+							textarea {
+								padding: 5px 10px;
+								width: 100%;
+								@include box-sizing(border-box);
+								box-shadow: inset 0px 0px 0px 0px;
+								border-width: 1px;
+								border-style: solid;
+							}
+							@include breakpoint(tablet) {
+								&:first-of-type { padding: 0 45px 30px 0; }
+								&:last-of-type { padding: 0 0 30px 45px; }
+							}
+						}
+					}
+					.full-row {
+						width: 100%;
+						.form-field {
+							label { display: block; margin: 0 0 5px; }
+							textarea {
+								width: 100%;
+								@include box-sizing(border-box);
+									border-width: 1px;
+									border-style: solid;				
+							}
+						}
+					}
+					.frm_submit {
+						text-align: center;
+						button {
+							cursor: pointer;
+							@extend .ease;
+							@include appearance(none);
+							border: none;
+							padding: 5px 15px;
+							min-width: 80px;
+					   	text-align: center;
+					   	margin: 20px 0;
+						}
+					}
+				}
+			}
+		}
+		#kingsley-content {
+			max-width: 1050px;
+			margin: 0 auto;
+			.badge-container {
+				max-width: 850px;
+				margin: 50px auto 30px;
+				@include breakpoint(tablet){
+					margin: 100px auto;
+					@include display-flex;
+					@include justify-content(center);
+				}
+				.badge {
+					margin: 0 0 20px;
+					text-align: center;
+					@include breakpoint(tablet) {
+						margin: 0;
+						padding: 0 20px 0 0;
+						&:last-child{
+							padding:0;
+						}
+						a { display: block; }
+						img { display: block; }
+					}
+				}
+			}
+			.average-rating {
+				text-align: center;
+				margin: 0 0 45px;
+				&.no-badges { margin: 50px 0 45px; }
+				.stars {
+					>span {
+						@include font-size(3);
+						padding: 0 5px;
+						@include breakpoint(tablet) {
+							@include font-size(5);
+						}
+					}
+				}
+				.review-info {
+					.average {
+						margin: 22px 0 10px;
+					}
+				}
+			}
+			.review-wrapper {
+				border-top: 1px solid;
+				padding: 25px 0;
+				display: none;
+				&.slick-initialized { @include display-flex; }
+				&.solo, &.no-reviews {
+					margin: 50px 0 0;
+					border: none;
+				}
+				&.no-reviews-has-badges {
+					border-top: 1px solid;
+				}
+				@include breakpoint(tablet) {
+					padding: 50px 0;
+				}
+				.slick-arrow {
+					@include display-flex;
+					@include flex-direction(column);
+					margin: 55px 10px 0;
+					cursor: pointer;
+					@include breakpoint(tablet) {
+						margin: 55px 0 0;
+					}
+					.label {
+						display: none;
+						@include breakpoint(tablet){
+							display: block;
+						}
+					}
+					.icon-nav-arrow {
+						text-align: right;
+						margin: 0 0 30px;
+					}
+					&.next {
+						.icon-nav-arrow {
+							@include transform(rotate(180deg));
+						}
+					}
+				}
+				.slick-list {
+					max-width: 515px;
+					margin: 0 auto;
+					.review {
+						padding: 0 25px;
+						.star-container {
+							height: 25px;
+							margin: 0 0 30px;
+							.stars span {
+								@include font-size(2.5); 
+							}
+						}
+						.review-details {
+							margin: 0 0 15px;
+							>span {
+								display: block;
+								@include breakpoint(tablet) {
+									display: inline-block;
+								}
+							}
+							.date {
+								font-style: italic;
+								margin: 10px 0 0;
+								@include breakpoint(tablet) {
+									margin: 0 0 0 25px;
+								}
+							}
+						}
+					}
+				}
+			}
+			.confing-error {
+				text-align: center;
+				margin: 50px 0 0;
+			}
+		}
+	}
+}
+
+// Pet Policy
+.page-template-pet-policy {
+	#hero.no-image {
+		.container {
+			#hero-content {
+				.header-content {
+					margin: 0 auto 50px;
+					@include breakpoint(tablet) {
+						margin: 0 auto 75px;
+					}
+				}
+			}
+		}
+	}
+
+	.pet-policy {
+		&.block {
+			@include display-flex;
+			@include flex-direction(column);
+			padding: 20px;
+			@include breakpoint(tablet){ padding: 50px; }
+			@include breakpoint(ten){
+				margin: 0 auto 60px;		
+				@include flex-direction(row);
+			}
+			@include breakpoint(twelve){ padding: 0; }
+			.left {
+				@include breakpoint(ten){ width: 60%; }
+			}
+			.right {
+				@include breakpoint(ten){ margin-left: auto; }
+		    .pet-policy {
+		    	margin: 0 0 50px;
+		    	@include breakpoint(tablet){  margin: 52px 0 0; }
+		    	.policy-row {
+						@include display-flex;
+    				margin: 0 auto 20px auto;
+						@include breakpoint(tablet){
+							width: auto;
+							margin: 0 0 20px;
+						}
+						>span { 
+							width: 50%;
+							white-space: nowrap;
+						}
+		    		.value {
+		    			padding:0 0 0 10px;
+		    			margin-left: auto;
+		    		}
+		    	}
+		    }
+				@include breakpoint(tablet){ width: 50%; }
+				@include breakpoint(ten){ width: 30%; }
+			}
+		}
+	}
+}
+
+.metro {
+	&.page-template-thank-you,
+	&.error404 {
+		#wrapper{
+	    height: 100%;
+	    overflow: hidden;
+			#thank-you, #error404 {
+				background-size:cover;
+				background-repeat: no-repeat;
+			  .pattern {
+			    position: absolute;
+			    width: 100%;
+			    height: 170px;
+			  }
+			  .content {
+			    position: relative;
+			    padding: 120px 20%;
+			    .pattern {
+
+			    }
+			    .box {
+			      text-align: center;
+			      padding: 140px 10% 80px 10%;
+			      @extend .ease;
+			      .inner-wrapper {
+			        .headline, .copy {
+			          color: $white;
+			        }
+			        .button-wrapper {
+			        	.button {
+			        		@extend .ease;
+			        	}
+			        }
+			      }
+			    }
+			  }
+			}
+		}
+	}
+}
+
+.sylvan {
+	&.page-contact {
+		#hero-container {
+			max-width: 100%;
+			#hero {
+				&.no-image {
+					max-width: 1050px;
+					margin: 0 auto 65px;
+					position: relative;
+					background: none;
+					@include breakpoint(tablet) { margin: 0 auto 125px; }
+				}
+				.pattern {
+					height: 115%;
+					width: 100px;
+					right: 0;
+					@include breakpoint(tablet) { width: 200px; }
+					@include breakpoint(ten) { width: 300px; }
+					@include breakpoint(twelve) { right: -100px; }
+				}
+			}
+			#hero-content {
+				max-width: 1050px;
+				margin: 0;
+				.header-content {
+					margin: 0;
+					text-align: left;
+					padding: 45px 120px 45px 20px;
+					@include breakpoint(tablet) {
+						padding: 75px 50px;
+						max-width: 568px;
+					}
+					@include breakpoint(ten) { max-width: 750px; }					
+					@include breakpoint(twelve) {
+						padding: 75px 50px 75px 0;						
+						max-width: 850px;
+					}
+				}
+			}
+		}
+		#contact {
+			.content {
+				.contact-info {
+					border-bottom: 1px solid;
+					padding: 0 0 25px;
+					max-width: 1050px;
+					margin: 0 20px;
+					@include justify-content(flex-start);
+					@include breakpoint(tablet) {
+						margin: 0 50px;
+						padding: 0 0 50px;
+					}
+					@include breakpoint(ten) { max-width: 775px; }
+					@include breakpoint(twelve) {
+						margin: 0 auto;
+						max-width: 1050px;
+					}
+					>div {
+						@include breakpoint(tablet) { width: 50%; }
+						@include breakpoint(twelve) { width: calc(50% - 100px); }
+					}
+					.office-hours {
+						@include breakpoint(ten) { padding: 0 0 0 90px; }
+						@include breakpoint(twelve) { padding: 0; }
+					}
+				}
+				.contact-form {
+					margin: 30px 20px;
+					max-width: 1050px;
+					@include breakpoint(tablet) { margin: 50px; }
+					@include breakpoint(twelve) { margin: 90px auto 30px; }
+					.contact-form-header {
+						@include font-size(2.6);
+						font-weight: bold;
+						margin: 0 0 15px;	
+					}
+					#form_contact-form {
+						margin: 0;
+						.frm_fields_container {
+							padding: 0;
+							.row {
+								.form-field { 
+									@include display-flex;
+									label {
+										border-bottom: 1px solid;
+										width: 145px;
+										margin: 12px 0 0;
+										padding: 0 0 5px;
+									}
+									input {
+										border-style: none;
+										border-bottom: 1px solid;
+										padding: 5px 10px 0px;
+									}
+								}
+							}
+							.full-row {
+								margin: 10px 0 0;
+								@include breakpoint(tablet) {
+									margin: 0;
+								}
+							}
+							.frm_submit {
+						    text-align: right;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.page-template-thank-you,
+	&.error404 {
+		#thank-you {
+			background: #454D4B;
+			.thank-you-content {
+				max-width: 1680px;
+				margin: 0 auto;
+				position: relative;
+				.pattern {
+					position: absolute;
+					width: 300px;
+					height: 100%;
+					right: 0;
+				}
+				.content {
+					padding: 100px 0 105px;
+					.box {
+						padding: 0;
+						.inner-wrapper {
+							margin: 0;
+							max-width: calc(100% - 300px);
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	&.page-pet-policy {
+		#hero-container {
+			@include display-flex;
+			@include flex-direction(column);
+			@include justify-content(center);	
+			@include breakpoint(twelve) {
+				@include flex-direction(row-reverse);
+				padding: 0 25px;
+			}
+			.sylvan-header-background {
+				display: none;
+				@include breakpoint(twelve) {
+					display: block;
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 200%;
+					margin-left: -50%;
+				}
+			}
+			#hero-image {				
+				@include breakpoint(ten){ padding: 0 50px; }
+				@include breakpoint(twelve) { padding: 0; }
+				.img-container {
+					.pattern {
+						width: 50px;
+						height: 100%;
+						background: red;
+						left: 0;
+						@include breakpoint(twelve){ left: -50px; }
+					}
+			 		img {
+			 			margin-left: auto;
+						display: block;
+						width: calc(100% - 50px);
+						@include breakpoint(twelve){
+							margin: 0;
+							width: auto;
+						}
+					}
+				}
+			}
+			#hero-content {
+				@include breakpoint(tablet){ margin: 50px; }
+				@include breakpoint(twelve){ margin: 0 100px; }
+				.header-content {
+					margin: 50px auto;
+					@include breakpoint(tablet){
+						padding: 0;
+						margin: 0;
+					}
+					@include breakpoint(twelve){
+						padding: 0 20px;
+						margin: 100px auto;
+					}
+				}
+			}
+		}
+		.pet-policy {
+			&.block {
+				margin: 60px auto;
+			}
+		}
+	}
+}

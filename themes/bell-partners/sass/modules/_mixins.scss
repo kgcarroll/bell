@@ -1,0 +1,124 @@
+@mixin breakpoint($media) {
+  $mobile:  "only screen and (min-width: 320px)"; 
+  $mobileL: "only screen and (min-width: 480px)";
+  $five: "only screen and (min-width: 580px)";
+  $six: "only screen and (min-width: 680px)";
+  $tablet: "only screen and (min-width: 768px)";
+  $ten: "only screen and (min-width: 1024px)";
+  $twelve: "only screen and (min-width: 1260px)";
+  $fourteen: "only screen and (min-width: 1440px)";
+  $sixteen: "only screen and (min-width: 1680px)";
+  $nineteen: "only screen and (min-width: 1920px)";
+  $handheld-size: "only screen and (max-width: 480px)";
+  $wide-handheld-size: "only screen and (min-width: 481px) and (max-width: 767px)";
+  $tablet-small-size: "only screen and (min-width: 768px) and (max-width: 800px)";
+  $tablet-small-size-landscape: "only screen and (min-width: 768px) and (max-width: 800px) and (orientation: landscape)";
+  $tablet-size: "only screen and (min-width: 801px) and (max-width: 1024px)";
+  $tablet-size-landscape: "only screen and (min-width: 801px) and (max-width: 1024px) and (orientation: landscape)";
+  $desktop-small-size: "only screen and (min-width: 1025px) and (max-width: 1430px)";
+  $all-mobile-sizes: "only screen and (max-width: 1024px)";
+
+  @if $media == mobile { @media #{$mobile}{ @content; } }
+  @else if $media == mobileL { @media #{$mobileL}{ @content; } }
+  @else if $media == five { @media #{$five}{ @content; } }
+  @else if $media == six { @media #{$six}{ @content; } }
+  @else if $media == tablet { @media #{$tablet}{ @content; } }
+  @else if $media == ten { @media #{$ten}{ @content; } }
+  @else if $media == twelve { @media #{$twelve}{ @content; } }
+  @else if $media == fourteen { @media #{$fourteen}{ @content; } }
+  @else if $media == sixteen { @media #{$sixteen}{ @content; } }
+  @else if $media == nineteen { @media #{$nineteen}{ @content; } }
+  @else if $media == handhelds { @media #{$handheld-size}{ @content; } }
+  @else if $media == handhelds-landscape { @media  #{$handheld-landscape-size} { @content; } }
+  @else if $media == wide-handhelds {  @media  #{$wide-handheld-size} { @content; } }
+  @else if $media == wide-handhelds-landscape { @media  #{$wide-handheld-landscape-size} { @content; } }
+  @else if $media == tablets { @media #{$tablet-size} { @content; } }
+  @else if $media == tablets-landscape { @media #{$tablet-size-landscape} { @content; } }
+  @else if $media == tablets-small { @media #{$tablet-small-size} { @content; } }
+  @else if $media == tablets-small-landscape { @media #{$tablet-small-size-landscape} { @content; } }
+  @else if $media == all-mobile-devices { @media #{$all-mobile-sizes} { @content;} }
+  @else if $media == desktops-small { @media #{$desktop-small-size} { @content; } }
+}
+
+// Font-size Mixin
+@mixin responsive-font-size($color, $sizeValue: 2.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+  color: $color;
+  line-height: 1;
+
+  @include breakpoint(tablet) {
+    font-size: (($sizeValue * 1.2) * 10) + px;
+    font-size: ($sizeValue * 1.2) + rem;
+  }
+
+  @include breakpoint(ten) {
+    font-size: (($sizeValue * 1.4) * 10) + px;
+    font-size: ($sizeValue * 1.4) + rem;
+  }
+
+  @include breakpoint(twelve) {
+    font-size: (($sizeValue * 1.6) * 10) + px;
+    font-size: ($sizeValue * 1.6) + rem;
+  }
+
+  @include breakpoint(sixteen) {
+    font-size: (($sizeValue * 1.8) * 10) + px;
+    font-size: ($sizeValue * 1.8) + rem;
+  }
+
+  @include breakpoint(nineteen) {
+    font-size: (($sizeValue * 2) * 10) + px;
+    font-size: ($sizeValue * 2) + rem;
+  }
+
+}
+
+@mixin static-font-size($sizeValue: 2.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@mixin font-size($sizeValue: 2.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+// Font Mixin
+@mixin font($sizeValue,$color) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+  color: $color;
+}
+
+// Font Family Mixin
+@mixin font-family($family) {
+  font: {
+    family: $family;
+  }
+}
+
+// Flex for compatibility with IE and others
+@mixin flex(){
+  display: -webkit-box;      // OLD - iOS 6-, Safari 3.1-6
+  display: -moz-box;         // OLD - Firefox 19- (buggy but mostly works)
+  display: -ms-flexbox;      // TWEENER - IE 10
+  display: -webkit-flex;     // NEW - Chrome
+  display: flex;             // NEW, Spec - Opera 12.1, Firefox 20+
+}
+
+// Flex direction for compatibility with IE and others
+@mixin flex-direction($direction: row){
+  -ms-flex-direction: $direction;
+  -webkit-flex-direction: $direction;
+  flex-direction: $direction;
+}
+
+// Add this to each flex item for compatibility with IE and others
+@mixin flex-item(){
+  -webkit-box-flex: 1;      // OLD - iOS 6-, Safari 3.1-6
+  -moz-box-flex: 1;         // OLD - Firefox 19-
+  -webkit-flex: 1;          // Chrome
+  -ms-flex: 1;              // IE 10
+  flex: 1;                  // NEW, Spec - Opera 12.1, Firefox 20+
+}

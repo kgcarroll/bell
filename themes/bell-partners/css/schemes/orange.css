@@ -1,0 +1,596 @@
+.ease, .orange #nav-trigger .trigger-wrap span {
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.orange {
+  background: #ebe9e9;
+}
+.orange #slideout #slideout-button-container {
+  background: #d96143;
+  color: #000000;
+}
+.orange #slideout #slideout-content {
+  background: #d96143;
+  color: #000000;
+}
+.orange #slideout #slideout-content .phone a {
+  color: #000000;
+}
+.orange #slideout #slideout-content .phone a:hover {
+  color: #FFFFFF;
+}
+.orange #slideout #slideout-content .button {
+  background: #000000;
+}
+.orange #slideout #slideout-content .button a {
+  color: #FFFFFF;
+}
+.orange #slideout #slideout-content .button:hover {
+  background: #FFFFFF;
+}
+.orange #slideout #slideout-content .button:hover a {
+  color: #000000;
+}
+.orange #header {
+  background: #FFFFFF;
+}
+.orange #header .phone a {
+  color: #385e6a;
+}
+.orange #header .phone a:hover {
+  color: #869195;
+}
+.orange #header a.logo-scroll {
+  color: #385e6a;
+}
+.orange #header a.logo-scroll:hover {
+  color: #869195;
+}
+.orange #header .mobile-icon a {
+  color: #d96143;
+}
+.orange #header #secondary-navigation ul#menu-secondary-menu li a {
+  color: #385e6a;
+}
+.orange #header #secondary-navigation ul#menu-secondary-menu li a:hover {
+  color: #869195;
+}
+.orange #nav-trigger .trigger-wrap span {
+  background: #385e6a;
+}
+.orange #nav-trigger .trigger-wrap:hover span {
+  background: #869195;
+}
+.orange #nav-trigger.active .trigger-wrap span {
+  background: #385e6a;
+}
+@media only screen and (min-width: 768px) {
+  .orange #nav-trigger.active .trigger-wrap span {
+    background: #FFFFFF;
+  }
+}
+.orange #navigation-container {
+  background: #385e6a;
+}
+.orange #navigation-container .inner-container .residents {
+  border-top-color: #FFFFFF;
+}
+.orange #navigation-container .inner-container .residents a {
+  color: #FFFFFF;
+}
+.orange #navigation-container .inner-container .residents a:hover {
+  color: #d96143;
+}
+.orange #navigation-container .inner-container .navigation-wrapper {
+  border-color: #FFFFFF;
+}
+.orange #navigation-container .inner-container .navigation-wrapper #navigation ul li a {
+  color: #FFFFFF;
+}
+.orange #navigation-container .inner-container .navigation-wrapper #navigation ul li a:hover {
+  color: #d96143;
+}
+.orange #navigation-container .inner-container .navigation-wrapper .social-icons a {
+  color: #FFFFFF;
+}
+.orange #navigation-container .inner-container .navigation-wrapper .social-icons a:hover {
+  color: #d96143;
+}
+.orange #navigation-container .inner-container .mobile-contact-info {
+  border-color: #FFFFFF;
+}
+.orange #navigation-container .inner-container .mobile-contact-info .property-name {
+  color: #FFFFFF;
+}
+.orange #navigation-container .inner-container .mobile-contact-info .social-icons a, .orange #navigation-container .inner-container .mobile-contact-info .address-container a, .orange #navigation-container .inner-container .mobile-contact-info .phone a {
+  color: #FFFFFF;
+}
+.orange #navigation-container .inner-container .mobile-contact-info .social-icons a:hover, .orange #navigation-container .inner-container .mobile-contact-info .address-container a:hover, .orange #navigation-container .inner-container .mobile-contact-info .phone a:hover {
+  color: #d96143;
+}
+.orange #cross-links-pattern.pattern-wrapper {
+  background: #385e6a;
+}
+.orange #cross-links-pattern.pattern-wrapper .pattern {
+  background: #869195;
+}
+.orange .crosslink-block {
+  background: #385e6a;
+  color: #FFFFFF;
+}
+.orange .crosslink-block .button-wrapper .button {
+  background: #d96143;
+}
+.orange .crosslink-block .button-wrapper .button a {
+  color: #000000;
+}
+.orange .crosslink-block .button-wrapper .button:hover {
+  background: #ebe9e9;
+}
+.orange .contact-form #form_contact-form .frm_error_style, .orange .contact-form #form_contact-form .frm_error {
+  color: #385e6a;
+}
+.orange .contact-form #form_contact-form .frm_fields_container .row .frm_form_field input, .orange .contact-form #form_contact-form .frm_fields_container .row .frm_form_field textarea {
+  border-color: #869195;
+}
+.orange .contact-form #form_contact-form .frm_fields_container .full-row input, .orange .contact-form #form_contact-form .frm_fields_container .full-row textarea {
+  border-color: #869195;
+}
+.orange .contact-form #form_contact-form .frm_fields_container .frm_submit button {
+  background: #000000;
+  color: #FFFFFF;
+}
+.orange .contact-form #form_contact-form .frm_fields_container .frm_submit button:hover {
+  background: #385e6a;
+}
+.orange #footer-pattern.pattern-wrapper {
+  background: #385e6a;
+}
+.orange #footer-pattern.pattern-wrapper .pattern {
+  background: #ebe9e9;
+}
+.orange #footer {
+  background: #FFFFFF;
+  color: #385e6a;
+}
+.orange #footer span {
+  color: #385e6a;
+}
+.orange #footer a {
+  color: #385e6a;
+}
+.orange #footer a:hover {
+  color: #869195;
+}
+.orange #footer .social-icons {
+  border-color: #385e6a;
+}
+.orange #hero-image .caption span.default, .orange #hero-image .caption span.black {
+  color: #000000;
+}
+.orange #hero-image .caption span.white {
+  color: #FFFFFF;
+}
+.orange #hero-image .caption span.accent {
+  color: #d96143;
+}
+.orange #hero-image .caption span.light {
+  color: #ebe9e9;
+}
+.orange #hero-image .caption span.medium {
+  color: #869195;
+}
+.orange #hero-image .caption span.dark {
+  color: #385e6a;
+}
+.orange #hero-image .pattern {
+  background: #FFFFFF;
+}
+.orange #hero-image.style-1 .caption.default, .orange #hero-image.style-1 .caption.accent {
+  background: #d96143;
+}
+.orange #hero-image.style-1 .caption.black {
+  background: #000000;
+}
+.orange #hero-image.style-1 .caption.white {
+  background: #FFFFFF;
+}
+.orange #hero-image.style-1 .caption.light {
+  background: #ebe9e9;
+}
+.orange #hero-image.style-1 .caption.medium {
+  background: #869195;
+}
+.orange #hero-image.style-1 .caption.dark {
+  background: #385e6a;
+}
+.orange #hero-image.style-2 .caption span.wrapper.default, .orange #hero-image.style-2 .caption span.wrapper.accent {
+  background: #d96143;
+  box-shadow: 25px 0 0 #d96143, -25px 0 0 #d96143;
+}
+.orange #hero-image.style-2 .caption span.wrapper.black {
+  background: #000000;
+  box-shadow: 25px 0 0 #000000, -25px 0 0 #000000;
+}
+.orange #hero-image.style-2 .caption span.wrapper.white {
+  background: #FFFFFF;
+  box-shadow: 25px 0 0 #FFFFFF, -25px 0 0 #FFFFFF;
+}
+.orange #hero-image.style-2 .caption span.wrapper.light {
+  background: #ebe9e9;
+  box-shadow: 25px 0 0 #ebe9e9, -25px 0 0 #ebe9e9;
+}
+.orange #hero-image.style-2 .caption span.wrapper.medium {
+  background: #869195;
+  box-shadow: 25px 0 0 #869195, -25px 0 0 #869195;
+}
+.orange #hero-image.style-2 .caption span.wrapper.dark {
+  background: #385e6a;
+  box-shadow: 25px 0 0 #385e6a, -25px 0 0 #385e6a;
+}
+.orange #hero-image.style-2 .caption span.text.default, .orange #hero-image.style-2 .caption span.text.black {
+  color: #000000;
+}
+.orange #hero-image.style-2 .caption span.text.white {
+  color: #FFFFFF;
+}
+.orange #hero-image.style-2 .caption span.text.accent {
+  color: #d96143;
+}
+.orange #hero-image.style-2 .caption span.text.light {
+  color: #ebe9e9;
+}
+.orange #hero-image.style-2 .caption span.text.medium {
+  color: #869195;
+}
+.orange #hero-image.style-2 .caption span.text.dark {
+  color: #385e6a;
+}
+.orange #hero.no-image {
+  background: #385e6a;
+}
+.orange #hero.no-image .pattern {
+  background: #869195;
+}
+.orange #hero.no-image .container .header-content .headline {
+  color: #FFFFFF;
+}
+.orange #hero.no-image .container .header-content .copy {
+  color: #FFFFFF;
+}
+.orange .block .button {
+  background: #000000;
+}
+.orange .block .button a {
+  color: #FFFFFF;
+}
+.orange .block .button:hover {
+  background: #385e6a;
+}
+.orange .block.simple-content {
+  background: #385e6a;
+}
+.orange .block.simple-content .headline, .orange .block.simple-content .copy {
+  color: #FFFFFF;
+}
+.orange .block.simple-content .button {
+  background: #d96143;
+}
+.orange .block.simple-content .button a {
+  color: #000000;
+}
+.orange .block.simple-content .button:hover {
+  background: #ebe9e9;
+}
+.orange .block.simple-content .button:hover a {
+  color: #000000;
+}
+.orange .block.simple-content.first, .orange .block.simple-content.last {
+  background: none;
+}
+.orange .block.simple-content.first .headline, .orange .block.simple-content.first .copy, .orange .block.simple-content.last .headline, .orange .block.simple-content.last .copy {
+  color: #000000;
+}
+.orange .block.simple-content.first .button, .orange .block.simple-content.last .button {
+  background: #000000;
+}
+.orange .block.simple-content.first .button a, .orange .block.simple-content.last .button a {
+  color: #FFFFFF;
+}
+.orange .block.simple-content.first .button a:hover, .orange .block.simple-content.last .button a:hover {
+  color: #d96143;
+}
+.orange .block.floor-plans .floor-plan-container {
+  background: #FFFFFF;
+}
+.orange .block.floor-plans .floor-plan-container .floor-plan-carousel .slick-dots li button {
+  background: #869195;
+}
+.orange .block.floor-plans .floor-plan-container .floor-plan-carousel .slick-dots li.slick-active button, .orange .block.floor-plans .floor-plan-container .floor-plan-carousel .slick-dots li:hover button {
+  background: #d96143;
+}
+.orange .block.variable-content .variable-content-content {
+  background: #FFFFFF;
+}
+.orange .block.variable-content .variable-content-content .button {
+  background: #d96143;
+}
+.orange .block.variable-content .variable-content-content .button a {
+  color: #000000;
+}
+.orange .block.variable-content .variable-content-content .button:hover {
+  background: #385e6a;
+}
+.orange .block.variable-content .variable-content-content .button:hover a {
+  color: #FFFFFF;
+}
+.orange .block.variable-content .variable-content-fill {
+  background: #d96143;
+}
+.orange .block.variable-content .variable-content-fill-pattern {
+  background: #FFFFFF;
+}
+.orange .block.variable-content .variable-content-fill-pattern .pattern {
+  background-color: #ebe9e9;
+}
+.orange .block.variable-content .accent-pattern {
+  background-color: #FFFFFF;
+}
+.orange .block.pattern-wrapper {
+  background: #869195;
+}
+.orange .block.pattern-wrapper .pattern-bg {
+  background-color: #ebe9e9;
+}
+.orange .block.instagram .layout-three .social-wrap, .orange .block.instagram .layout-six .social-wrap {
+  background: #FFFFFF;
+}
+.orange .block.instagram .layout-three .social-wrap .social-wrap-pattern, .orange .block.instagram .layout-six .social-wrap .social-wrap-pattern {
+  background: #ebe9e9;
+}
+.orange .block.instagram .layout-three .social-wrap .social-wrap-inner, .orange .block.instagram .layout-six .social-wrap .social-wrap-inner {
+  background: #d96143;
+}
+.orange .block.instagram .layout-three .social-wrap .social-wrap-inner .social-icons a, .orange .block.instagram .layout-six .social-wrap .social-wrap-inner .social-icons a {
+  color: #000000;
+}
+.orange .block.instagram .layout-three .social-wrap .social-wrap-inner .social-icons a:hover, .orange .block.instagram .layout-six .social-wrap .social-wrap-inner .social-icons a:hover {
+  color: #FFFFFF;
+}
+.orange #map-container .category-filter li {
+  color: #385e6a;
+}
+.orange #map-container .category-filter li.active, .orange #map-container .category-filter li:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+.orange #map-container .map-wrap {
+  border-top: 2px solid #385e6a;
+  border-bottom: 2px solid #385e6a;
+  border-left: 2px solid #385e6a;
+}
+.orange #map-container .map-wrap ul#categories {
+  background: #385e6a;
+}
+.orange #map-container .map-wrap ul#categories span {
+  color: #FFFFFF;
+}
+.orange #map-container .map-wrap ul#categories ul.children li:hover span, .orange #map-container .map-wrap ul#categories ul.children li.active span {
+  color: #d96143;
+  font-weight: 900;
+}
+.orange #blog .content .categories ul.categories-list li.cat-item, .orange #category .content .categories ul.categories-list li.cat-item {
+  color: #385e6a;
+}
+.orange #blog .content .categories ul.categories-list li.cat-item a, .orange #category .content .categories ul.categories-list li.cat-item a {
+  color: #385e6a;
+}
+.orange #blog .content .categories ul.categories-list li.cat-item a:hover, .orange #category .content .categories ul.categories-list li.cat-item a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+.orange #blog .content .posts-container .post .post-info, .orange #category .content .posts-container .post .post-info {
+  color: #000000;
+}
+.orange #blog .content .posts-container .post .post-info a.post-link, .orange #category .content .posts-container .post .post-info a.post-link {
+  color: #000000;
+}
+.orange #blog .content .posts-container .post .post-info a.post-link:hover, .orange #category .content .posts-container .post .post-info a.post-link:hover {
+  color: #869195;
+}
+.orange #blog .content .posts-container .post .post-info a.read-more, .orange #category .content .posts-container .post .post-info a.read-more {
+  font-weight: 900;
+  color: #000000;
+}
+.orange #blog .content .posts-container .post .post-info a.read-more:hover, .orange #category .content .posts-container .post .post-info a.read-more:hover {
+  color: #869195;
+}
+.orange #single-post .post-wrapper .post-content .left .block.simple-content {
+  background: none;
+}
+.orange #single-post .post-wrapper .post-content .left .block.simple-content .headline, .orange #single-post .post-wrapper .post-content .left .block.simple-content .copy {
+  color: #000000;
+}
+.orange #single-post .post-wrapper .post-content .left .block.content-with-image .copy .in-content-image .img-caption {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+.orange #single-post .post-wrapper .post-content .right #back-to-blog a {
+  color: #000000;
+}
+.orange #single-post .post-wrapper .post-content .right #back-to-blog a:hover {
+  color: #869195;
+}
+.orange #single-post .post-wrapper .post-content .right .categories h2 {
+  border-color: #000000;
+}
+.orange #single-post .post-wrapper .post-content .right .categories ul.categories-list li a {
+  color: #000000;
+}
+.orange #single-post .post-wrapper .post-content .right .categories ul.categories-list li a:hover {
+  color: #869195;
+}
+.orange #contact .content .contact-info h2.label {
+  color: #000000;
+}
+.orange #contact .content .contact-info .property-info .address-container a {
+  color: #000000;
+}
+.orange #contact .content .contact-info .property-info .address-container a:hover {
+  color: #869195;
+}
+.orange #contact .content .contact-info .property-info .phone a {
+  color: #000000;
+}
+.orange #contact .content .contact-info .property-info .phone a:hover {
+  color: #869195;
+}
+.orange #contact .content .contact-info .property-info .social-icons a.icon {
+  color: #000000;
+}
+.orange #contact .content .contact-info .property-info .social-icons a.icon:hover {
+  color: #869195;
+}
+.orange #contact .content .contact-info .office-hours {
+  color: #000000;
+}
+.orange #contact .content #kingsley-content .average-rating .stars > span {
+  color: #385e6a;
+}
+.orange #contact .content #kingsley-content .review-wrapper {
+  border-color: #869195;
+}
+.orange #contact .content #kingsley-content .review-wrapper .slick-list .review .star-container .stars span {
+  color: #385e6a;
+}
+.orange #thank-you .pattern, .orange #error404 .pattern {
+  background: #FFFFFF;
+}
+.orange .pet-policy.block .right .pet-policy .policy-row {
+  color: #000000;
+}
+.orange #gallery-header-content {
+  background: #FFFFFF;
+}
+.orange #gallery {
+  background: #FFFFFF;
+}
+.orange #gallery ul#categories {
+  color: #869195;
+}
+.orange #gallery ul#categories li.active {
+  color: #000000;
+}
+.orange #gallery #bottom-content {
+  background: #ebe9e9;
+}
+.orange #videos-wrapper {
+  background: #ebe9e9;
+}
+.orange #tours-wrapper {
+  background: #FFFFFF;
+}
+.orange #tours-wrapper .tour-container .tours-pattern {
+  background: #ebe9e9;
+}
+.orange #slider-gallery .slider-wrapper #image-gallery .slick-list .slick-track .slide .caption {
+  background: rgba(235, 233, 233, 0.98);
+}
+.orange #lightbox-wrapper #lightbox-container #lightbox #lightbox-caption {
+  color: #FFFFFF;
+}
+.orange #lightbox-wrapper #lightbox-container #lightbox .fa-times, .orange #lightbox-wrapper #lightbox-container #lightbox .arrow {
+  color: #FFFFFF;
+}
+.orange #lightbox-wrapper #lightbox-container #lightbox .fa-times:hover, .orange #lightbox-wrapper #lightbox-container #lightbox .arrow:hover {
+  color: #d96143;
+}
+.orange #thank-you .content .box, .orange #error404 .content .box {
+  background-color: #385e6a;
+}
+.orange #thank-you .content .box .inner-wrapper .headline, .orange #thank-you .content .box .inner-wrapper .copy, .orange #error404 .content .box .inner-wrapper .headline, .orange #error404 .content .box .inner-wrapper .copy {
+  color: #FFFFFF;
+}
+.orange #thank-you .content .box .inner-wrapper .button-wrapper .button, .orange #error404 .content .box .inner-wrapper .button-wrapper .button {
+  background: #d96143;
+}
+.orange #thank-you .content .box .inner-wrapper .button-wrapper .button a, .orange #error404 .content .box .inner-wrapper .button-wrapper .button a {
+  color: #000000;
+}
+.orange #thank-you .content .box .inner-wrapper .button-wrapper .button:hover, .orange #error404 .content .box .inner-wrapper .button-wrapper .button:hover {
+  background: #ebe9e9;
+}
+.orange #floorplans #floor-plan-categories li {
+  color: #385e6a;
+}
+.orange #floorplans #floor-plan-categories li.active, .orange #floorplans #floor-plan-categories li:hover {
+  color: #000000;
+}
+.orange #floorplans #floor-plan-results {
+  background: #FFFFFF;
+}
+.orange #floorplans #floor-plan-results .unit-wrapper {
+  background: #ebe9e9;
+}
+.orange #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .view-units,
+.orange #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .contact {
+  background: #000000;
+  color: #FFFFFF;
+}
+.orange #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .view-units a,
+.orange #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .contact a {
+  color: #FFFFFF;
+}
+.orange #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .view-units:hover,
+.orange #floorplans #floor-plan-results .unit-wrapper .bottom-container .links-container .contact:hover {
+  background: #385e6a;
+}
+.orange.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details {
+  background: #FFFFFF;
+}
+.orange.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .unit-details {
+  border-color: #385e6a;
+}
+.orange.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container .count {
+  border-color: #385e6a;
+}
+.orange.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr {
+  background: #ebe9e9;
+}
+.orange.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr .apply .button {
+  background: #d96143;
+}
+.orange.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr .apply .button a {
+  color: #000000;
+}
+.orange.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr .apply .button:hover {
+  background: #385e6a;
+}
+.orange.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr .apply .button:hover a {
+  color: #FFFFFF;
+}
+.orange.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details .available-units-container #results #results-table .unit-type-tr.odd {
+  background: #FFFFFF;
+}
+.orange.page-template-floor-plans #lightbox-wrapper #lightbox-container #lightbox .element-container .unit-type-details #disclaimer {
+  margin: 20px 0 0;
+  text-align: left;
+}
+.orange #cta-container {
+  background-color: #d96143 !important;
+}
+.orange #text-us {
+  background-color: #000000 !important;
+}
+.orange.home .content #row-1 {
+  background: #d96143;
+}
+@media only screen and (min-width: 768px) {
+  .orange.home .content #row-1 {
+    background: none;
+  }
+}

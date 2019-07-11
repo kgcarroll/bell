@@ -1,0 +1,57 @@
+.page-template-gallery {
+	.ddl-label {
+		text-align: center;
+		margin: 15px 0;
+		@include breakpoint(tablet){
+			display: none;
+		}
+	}
+	ul#categories {
+		max-width: 960px;
+		margin: 0 auto;
+		padding: 20px 0;
+		text-align: center;
+		li {
+			display: inline-block;
+			margin: 0 20px;
+			// Active Class
+			&.on {
+				color: $red; // Remove
+			}
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+#bottom-content { padding: 50px 0 0; }
+
+#lightbox-wrapper {
+	#lightbox-container {
+		#lightbox {
+			width: 100%;
+			@include breakpoint(tablet){ max-width: 600px; }
+			@include breakpoint(ten){ max-width: 838px; }
+			#lightbox-caption {
+				padding: 10px 0 0;
+				max-width: 85%;
+				margin: 0 auto;
+			}
+			.fa-times {
+				@extend .ease;
+				position: absolute;
+				top: -25px;
+				right: -25px;
+				&:hover { cursor: pointer; }
+			}
+			.arrow {
+				position: absolute;
+				@extend .ease;
+				@include font-size(4);
+				&.fa-angle-right { right: 0; }
+				&.fa-angle-left { left: 0; }
+			}
+		}
+	}
+}

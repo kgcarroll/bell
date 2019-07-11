@@ -1,0 +1,89 @@
+#masonry-gallery {
+  #gallery-header-content {
+    .header-content {
+      text-align: center;
+      margin: 0 auto;
+      max-width: 850px;
+      padding: 40px 20px;
+      @include breakpoint(tablet) {
+        padding: 80px 20px;
+      }
+    }
+  }
+  #image-gallery {
+    max-width: 1266px;
+    &.masonry {
+      padding: 0 0 50px;
+      margin: 0 auto;
+      img {
+        display: block;
+        width: 100%;
+        @include opacity(1);
+        @extend .ease;
+        &:hover {
+          @include opacity(.65);
+          cursor: pointer;
+        }
+      }
+      .grid-item {
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        @include breakpoint(tablet){ max-width: 384px; }
+        @include breakpoint(ten){ max-width: 408px; }
+
+      }
+      .grid-item-2x {
+        width: 100%;
+        @include breakpoint(tablet){ max-width: 600px; }
+        @include breakpoint(ten){ max-width: 838px; }
+      }
+
+      // Images
+      li {
+        .hover {
+          @include display-flex;
+          @include align-items(center);
+          @include justify-content(center);
+          position: relative;
+          background: rgba($black, 1);
+          .icon-play {
+            position: absolute;
+            z-index: 2;
+            color: $white;
+            @include static-font-size(4);
+          }
+        }
+      }
+    }
+  }
+}
+
+#lightbox-wrapper {
+	@extend %fix;
+	z-index: 4000;
+	text-align: center;
+	#lightbox-background {
+		@extend %fill;
+    background-color: rgba($black, .75);
+    z-index: 1;
+  }
+  #lightbox-container {
+  	margin: 0 auto;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    max-width: 80%;
+    #lightbox {
+    	position: relative;
+    	.element-container {
+    		max-width: 100%;
+    		max-height: 100%;
+    		width: auto;
+    		height: auto;
+    	}
+    }
+	}
+}

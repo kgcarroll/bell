@@ -1,0 +1,173 @@
+.nav-trigger {
+	@include transition(all .4s ease-in-out);
+	position:absolute;
+  z-index: 5;
+  cursor: pointer;
+  width: 33px;
+  height: 20px;
+  top: 87px; //it's changed with JS
+  right: 50px;
+  @include breakpoint(tablet) { 
+    top: 113px; //it's changed with JS
+  } 
+
+  // 508
+  &:focus{
+    // outline: auto 5px Highlight; // Firefox (508 compliance)
+    // outline:-webkit-focus-ring-color auto 5px; // Chrome (508 compliance)
+  }
+
+  &.scroll{
+  	position:fixed;
+  	@include breakpoint(tablet) { 
+      right: 50px;
+    }
+  }
+  
+  .trigger-wrap {
+    position: relative;
+    height: 33px;
+    span {
+      margin: 0 auto;
+      display: block;
+      top: 9px;
+      height: 2px;
+      position: absolute;
+      opacity: 1;
+      width: 33px;
+      @include border-radius(3px);
+      @include transition(all .25s ease-in-out);
+      &:first-child {  top: 0px; }
+      &:last-child { top: 18px; }
+    }
+  }
+
+  // Active Menu
+  &.active {
+  	// position: fixed;
+    z-index: 10;  
+  	// @include breakpoint(ten) { top: 62px; }
+    .trigger-wrap {
+      span {
+        @include transform-origin(center);
+        &:first-child, &:last-child {
+          @include transform(rotate(45deg));
+          top: 12px;
+          right: 0px;
+        }
+        &:nth-child(2) {
+          opacity: 0;
+          top: 12px;
+        }
+        &:last-child {
+          @include transform(rotate(-45deg));
+        }
+      }
+    }
+  }
+}
+
+
+#navigation-container {
+	position: fixed;
+	width: 100%;
+	right: -100%;
+	opacity: 0.96;
+	height: calc(100vh - 154px);
+	top: 154px;
+	z-index: 7;
+	overflow: scroll;
+	align-items: center;
+	justify-content: center;
+  @include flex; 
+	@include transition(all .25s ease-in-out);
+	@include breakpoint(tablet){
+		height: 100vh;
+		top:0;
+	}
+	&.active { 
+		right: 0;
+		top: 154px;
+		@include breakpoint(tablet){
+			top:0;
+		}
+	}
+	.inner-container {
+		position: relative;
+		margin: 0 0 125px;
+		@include flex;
+		@include flex-direction(column-reverse);
+		width: 90%;
+		@include breakpoint(tablet){
+			margin: 0;
+			display:block;
+			width: 60%;
+		}
+		.residents {
+			border-top: 1px solid;
+    	padding: 20px 0 0;
+    	margin: 20px 0 0;
+			@include breakpoint(tablet){
+    		margin: 20px 0 0;
+				border-top: 0;
+				text-align:right;
+				padding: 0 0 20px;
+				margin:0;
+			}
+		}
+		.navigation-wrapper {
+			width: 100%;
+			@include flex;
+			margin: 0 0 auto;
+			@include breakpoint(tablet) {
+				margin: 0;
+				padding: 50px 0 0;
+				border-top: 1px solid;
+			}
+			#navigation {
+				@include breakpoint(tablet){
+					@include column-count(2);
+					width: 75%;
+				}
+				ul#menu-main-menu {
+					li {
+						margin: 0 0 15px;
+						@include breakpoint(tablet){
+							margin: 0 0 20px;
+						}
+						&:last-of-type { margin: 0; }
+						&:first-child{
+							@include breakpoint(tablet){
+								display:none;
+							}
+						}
+					}
+				}
+			}
+			.social-icons {
+				position:absolute;
+				bottom: -50px;
+				@include breakpoint(tablet) {
+					position: relative;
+					margin-left: auto;
+					bottom: 0;
+				}
+				a{
+					padding: 0 30px;
+					&:first-child{
+						padding: 0 30px 0 0;
+					}
+					@include breakpoint(tablet) {
+						padding: 0 20px;
+						&:first-child{
+							padding: 0 0 0 20px;
+						}
+						&:last-of-type {
+							padding: 0 0 0 20px;
+						}
+					}
+				}	
+			}
+		}
+	}
+}

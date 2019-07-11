@@ -1,0 +1,370 @@
+#hero-container {
+	position: relative;
+	#hero-image {
+		position: relative;
+		.img-container {
+			position: relative;
+			z-index: 2;
+			img { display: block; width: 100%;  }
+		}
+		.caption {
+			position: absolute;
+			z-index: 3;	
+		}
+	}
+	#hero-content {
+		.header-content {
+			@include box-sizing(border-box);
+			text-align: left;
+			margin: 100px auto;
+			padding: 0 20px;
+			max-width: 850px;
+			&.style-1 {	
+				text-align: left;
+				margin: 0;
+				padding: 60px 15px 45px;
+				// @include breakpoint(tablet) {
+				// 	max-width: 50%;
+				// }
+			}
+			&.style-2 {
+				text-align: left;
+				margin: 0;
+				padding: 60px 15px 45px;
+				@include breakpoint(tablet) {
+					padding: 0 0 100px 0;
+					margin: 0 auto;
+					max-width: 850px;
+				}
+			}
+		} 
+	}
+}
+
+.metro {
+	#hero-container {
+		#hero-image {
+			max-width: 1680px;
+			margin: 0 auto;
+			.pattern {
+				position: absolute;
+				top: 0;
+				height: 100%;
+			}
+			&.style-1 {
+				padding: 0 0 100px;
+				.img-container {
+					max-width: 1480px;
+					@include breakpoint(tablet) {
+						padding-right: 10%;
+					}
+				}
+				.caption {
+					padding: 50px 25px 25px;
+					right: 0;
+					bottom: 15%;
+					width: 75%;
+					@include box-sizing(border-box);
+					@include breakpoint(tablet) {
+						padding: 100px 50px 50px;
+						width: auto;
+						right: 50px;
+						bottom: 30%;
+					}
+				}
+				.pattern {
+					z-index: 1;
+					bottom: 0;
+					width: 100%;
+					@include breakpoint(tablet) {
+						right: 0;
+						width: 40%;
+					}
+				}
+			}
+			&.style-2 {
+				@include breakpoint(ten) {
+					margin: 0 auto;
+					padding: 0 0 100px;
+				}
+				.img-container {
+					img { width: 100%; }
+				}
+				.caption {
+					left: 55px;
+					bottom: 30px;
+					@include breakpoint(tablet) {
+						left: 100px;
+						bottom: 30%;
+					}
+					span {
+						display: inline;
+						box-decoration-break: clone;
+						-webkit-box-decoration-break: clone;
+						padding: 10px 0;
+						@include breakpoint(tablet) {
+							padding: 10px 0 0;
+						}
+					}
+				}
+				.pattern {
+					left: 0;
+					width: 20%;
+					z-index: 2;
+				}
+			}
+		}
+		#hero-content {
+			@extend %max-width;
+			.header-content {
+				&.style-1 {
+					@include breakpoint(tablet) {
+						padding: 0 0 100px 155px;
+						max-width: 50%;
+					}
+				}
+				&.style-2 {
+					@include breakpoint(tablet) {
+						text-align: center;
+					}
+				}
+			} 
+		}
+	}
+}
+
+.sylvan {
+	#hero-container {
+		margin: 0 auto;
+		max-width: 1680px;
+		#hero-image {
+			&.style-1 {
+				@include box-sizing(border-box);
+				@include breakpoint(ten) { padding: 0 350px 0 0; }
+				.caption {
+					padding: 50px 25px 25px;
+					bottom: 0;
+					width: 100%;
+					@include box-sizing(border-box);
+					@include breakpoint(ten) { width: calc(100% - 350px); }
+					span {
+						width: 75%;
+						display: block;
+						@include breakpoint(ten) { width: 100%; }
+					}
+				}
+			}
+			&.style-2 {
+				.img-container {					
+					img { width: 100%; }
+					@include breakpoint(tablet){
+						padding: 0 100px 0 0;
+						@include box-sizing(border-box);
+					}
+					@include breakpoint(ten){
+						padding: 0 350px 0 0;
+					}
+				}
+				.secondary-image {
+					display: none;
+					@include breakpoint(ten) {
+						display: block;
+						position: absolute;
+						z-index: 4;
+						right: 0;
+						bottom: 50px;
+						border: 8px solid;
+					}
+					img {
+						display: block;
+					}
+				}
+				.caption {
+					position: relative;
+					padding: 50px 20px 20px;
+					width: 75%;
+					@include box-sizing(border-box);
+					@include breakpoint(tablet) {
+						width: calc(100% - 200px);
+						padding: 60px 50px 50px;
+					}
+					@include breakpoint(ten) {
+						padding: 60px 0 50px 100px;				
+						max-width: 50%;
+					}
+					span {
+						display: inline;
+						box-decoration-break: clone;
+						-webkit-box-decoration-break: clone;
+						padding: 10px 0;
+						@include breakpoint(tablet) {
+							padding: 10px 0 0;
+						}
+					}
+				}
+				.sylvan-home-caption-background {
+					width: 200%;
+					margin-left: -50%;
+					height: 315px;
+					position: absolute;
+					bottom: 0;
+				}
+			}
+		}
+		#hero-content {
+			max-width: 1680px;
+			margin: 0 auto;
+			z-index: 4;
+			position: relative;
+			@include breakpoint(tablet) {
+				margin: 60px auto;	
+			}
+			@include breakpoint(ten) {
+				margin: 60px 100px;	
+			}
+			.content {
+				@include display-flex;
+				padding: 0 0 30px;
+				.header-content {
+					&.style-1 {
+						padding: 60px 30px 45px;
+						@include breakpoint(tablet) { padding: 60px 50px 100px; }
+						@include breakpoint(ten) { padding: 60px 55px 100px 55px; }
+					}
+					&.style-2 {
+						width: 100%;
+						@include breakpoint(tablet) {
+							@include box-sizing(border-box);
+							margin: 0 50px;
+							width: calc(75% - 100px);
+							border-bottom: 1px solid;
+							padding: 0 30px 50px 70px;
+						}
+						@include breakpoint(ten) {
+							width: 75%;
+							padding: 0 50px 50px 100px;
+						}
+					}
+				}
+				.secondary-images {
+					display: none;
+					@include breakpoint(tablet){
+						display: block;
+						margin-left: auto;
+						padding: 0 50px 0 0;
+					}
+					@include breakpoint(ten) { padding: 0 250px 0 0; }
+					.secondary-image {
+						width: 300px;
+						img { display: block; width: 100%; }
+						&:last-of-type { margin: 5px 0 0; }
+						@include breakpoint(ten) { width: 100%; }
+					}
+				}
+			}
+		}
+		.pattern {
+			position: absolute;
+			top: 0;
+			height: 100%;
+			z-index: 3;
+			&.style-1 {
+				right: 0;
+				width: 25%;
+				display: none;
+				@include breakpoint(tablet) {
+					width: 200px;
+					display: block;
+				}
+				@include breakpoint(ten) { width: 35%; }
+				&.mobile {
+					display: block;
+					height: 110%;
+					z-index: 4;
+					@include breakpoint(tablet) {
+						display: block;
+					}
+				}
+			}
+			&.style-2 {
+				right: 0;
+				width: 25%;
+				display: none;
+				@include breakpoint(tablet) {
+					width: 200px;
+					right: 0;
+					display: block;
+				}
+				@include breakpoint(ten) {
+					width: 250px;
+					right: 70px;
+				}
+				&.mobile {
+					display: block;
+					height: 110%;
+					z-index: 4;
+					@include breakpoint(tablet) {
+						display: block;
+					}
+				}
+			}
+		}
+		.sylvan-home-header-background {
+			position: absolute;
+			width: 200%;
+			margin-left: -50%;
+			bottom: 45px;
+			@include breakpoint(ten) { bottom: 115px; }
+		}
+	}
+}
+
+
+.home	{
+	.content {
+		#row-1 {
+			margin: 0 0 50px;
+			@include breakpoint(tablet) {
+				margin: 0 auto;
+				padding: 0 0 50px;
+			}
+			&.variable-content {
+				.variable-content-img {
+					width: 80%;
+					img { width: 100%; }
+					@include breakpoint(tablet) {
+						width: 100%;
+						img { width: auto; }
+					}
+				}
+			}
+		}
+	}  
+}
+
+#hero {
+	&.no-image {
+		.pattern {
+			height: 100px;
+		}
+		.container {
+			#hero-content {
+				.header-content {
+					text-align: center;
+					max-width: 850px;
+					margin: 0 auto 75px;
+					padding: 75px 20px;
+				}
+			}
+		}
+		&.no-pattern {
+			.container {
+				.header-content {
+					text-align: center;
+					max-width: 850px;
+					padding: 100px 0 75px;
+				}
+			}
+		}
+	}
+}

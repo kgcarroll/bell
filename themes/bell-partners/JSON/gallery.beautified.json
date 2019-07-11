@@ -1,0 +1,114 @@
+{
+    "gallery_type": "1",
+    "slider_thumbnails": false,
+    "image_gallery": [ {
+        "category_name": "Category 1",
+        "content": [ {
+            "type": "image",
+            "full": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-2.jpg",
+            "full_width": 552,
+            "featured": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-2-552x564.jpg",
+            "thumbnail_soft": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-2-222x272.jpg",
+            "thumbnail_hard": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-2-408x272.jpg",
+            "featured_width": 552,
+            "thumbnail_soft_width": 222,
+            "thumbnail_hard_width": 408,
+            "columns": null,
+            "uncropped": null,
+            "caption": "This is a portrait.",
+            "alt": ""
+        }, {
+            "type": "image",
+            "full": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-1.jpg",
+            "full_width": 1074,
+            "featured": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-1-838x564.jpg",
+            "thumbnail_soft": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-1-408x257.jpg",
+            "thumbnail_hard": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-1-408x272.jpg",
+            "featured_width": 838,
+            "thumbnail_soft_width": 408,
+            "thumbnail_hard_width": 408,
+            "columns": true,
+            "uncropped": null,
+            "caption": "This is a landscape",
+            "alt": ""
+        }, {
+            "type": "image",
+            "full": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-3.jpg",
+            "full_width": 724,
+            "featured": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-3-724x564.jpg",
+            "thumbnail_soft": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-3-292x272.jpg",
+            "thumbnail_hard": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-3-408x272.jpg",
+            "featured_width": 724,
+            "thumbnail_soft_width": 292,
+            "thumbnail_hard_width": 408,
+            "columns": false,
+            "uncropped": true,
+            "caption": "This is a square.",
+            "alt": ""
+        } ]
+    }, {
+        "category_name": "Category 2",
+        "content": [ {
+            "type": "image",
+            "full": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-cat-2-3.jpg",
+            "full_width": 724,
+            "featured": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-cat-2-3-724x564.jpg",
+            "thumbnail_soft": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-cat-2-3-292x272.jpg",
+            "thumbnail_hard": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-cat-2-3-408x272.jpg",
+            "featured_width": 724,
+            "thumbnail_soft_width": 292,
+            "thumbnail_hard_width": 408,
+            "columns": null,
+            "uncropped": null,
+            "caption": "",
+            "alt": ""
+        }, {
+            "type": "image",
+            "full": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-cat-2-1.jpg",
+            "full_width": 1074,
+            "featured": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-cat-2-1-838x564.jpg",
+            "thumbnail_soft": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-cat-2-1-408x257.jpg",
+            "thumbnail_hard": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-cat-2-1-408x272.jpg",
+            "featured_width": 838,
+            "thumbnail_soft_width": 408,
+            "thumbnail_hard_width": 408,
+            "columns": false,
+            "uncropped": true,
+            "caption": "",
+            "alt": ""
+        } ]
+    }, {
+        "category_name": "Category 3",
+        "content": [ {
+            "type": "image",
+            "full": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-cat-3-1.jpg",
+            "full_width": 1074,
+            "featured": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-cat-3-1-838x564.jpg",
+            "thumbnail_soft": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-cat-3-1-408x257.jpg",
+            "thumbnail_hard": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/02/gallery-cat-3-1-408x272.jpg",
+            "featured_width": 838,
+            "thumbnail_soft_width": 408,
+            "thumbnail_hard_width": 408,
+            "columns": null,
+            "uncropped": null,
+            "caption": "",
+            "alt": ""
+        } ]
+    } ],
+    "videos": [ {
+        "content": "https://www.youtube.com/watch?v=Ae-x5EYkaEA",
+        "caption": "<p>Take a look at the gorgeous short previews of the magnificent 4K documentary from the Italian Dolomites, from the Alps.</p>\n",
+        "thumbnail_hard": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/03/alps-408x272.jpg",
+        "thumbnail_hard_width": 408,
+        "featured": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/03/alps-838x564.jpg",
+        "featured_width": 838
+    }, {
+        "content": "https://www.youtube.com/watch?v=BveTaDTNKfQ",
+        "caption": "<p>Explore the underwater world of the Pacific Northwest and a Pacific Coral Reef together with a new 4K Ultra HD video.  The Seattle Aquarium is a wonderful and kid-friendly place that offers exciting possibilities to discover the Puget Sound&#8217;s underwater world!</p>\n",
+        "thumbnail_hard": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/03/underwater-408x272.jpg",
+        "thumbnail_hard_width": 408,
+        "featured": "http://staging.bellpartnersmaster.mtclinux.com/wp-content/uploads/2019/03/underwater-838x564.jpg",
+        "featured_width": 838
+    } ],
+    "tours": []
+}

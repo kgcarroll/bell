@@ -1,0 +1,147 @@
+#footer-pattern {
+	
+}
+#footer {
+	padding: 45px 25px;
+	@include breakpoint(tablet) {
+		padding: 75px 55px;
+	}
+	@include box-sizing(border-box);
+	.content {
+		@include display-flex;
+		@include flex-direction(column);
+		@include breakpoint(tablet) {
+			@include flex-direction(row);
+		}
+		.contact-info {
+			@include display-flex;
+			flex-direction: column;
+			text-align: center;
+			@include breakpoint(tablet) {
+				text-align: left;
+			}
+			.property-name {
+				font-weight: 900;
+				text-transform: uppercase;
+				margin: 0 0 45px;
+				@include breakpoint(tablet) { margin: 0 0 15px; }
+			}
+			.address-container, .phone {
+				margin: 0 0 45px;
+				@include breakpoint(tablet) { margin: 0 0 15px; }
+			}
+			.address-container {
+				.address {
+					display: inline-block;
+				}
+			}
+			.social-icons {
+				margin: 0 0 45px;
+				padding: 0 0 45px;
+				border-bottom: 1px solid;
+				@include breakpoint(tablet) {
+					padding: 0;
+					margin: auto 0 0;
+					border-bottom: none;
+				}
+				a {
+					@include font-size(2.2);
+					padding: 0 15px;
+					&:first-of-type {
+						padding: 0 15px 0 0;
+					}
+				}
+			}
+		}
+		.management-info {
+			@include font-size(4.3);
+			@include breakpoint(tablet) { margin-left: auto; }
+			.bal {
+				display: none;
+				@include breakpoint(tablet) { display: block; }
+				max-width: 255px;
+				margin-left: auto;
+				margin-bottom: 30px;
+				a {
+					img { width: 100%; display: block; }
+				}
+			}
+			.management-logos {
+				display: none;
+				@include breakpoint(tablet) { display: block; }
+				text-align: right;
+				margin: 0 0 40px;
+				.manager {
+					margin: 0 5px;
+					display: inline-block;
+					&:first-of-type { margin: 0 5px 0 0 ; }
+					&:last-of-type { margin: 0 0 0 5px; }
+				}
+			}
+			.sub-footer {
+				@include breakpoint(tablet) {
+					@include display-flex;
+					justify-content: flex-end;
+				}
+				#footer-navigation {
+					ul#menu-footer-menu {
+						margin: 5px 0 0;
+						@include display-flex;
+						@include justify-content(space-around);
+						@include breakpoint(tablet) {
+							@include justify-content(flex-end);
+						}
+						li {
+							margin: 0 10px;
+							a {
+								text-decoration: underline;
+								&:hover {
+									text-decoration: none;
+								}
+							}
+							&:first-of-type { margin: 0 5px 0 0; }
+							&:last-of-type { margin: 0 0 0 5px; }
+						}
+					}
+				}
+				.eho-handicap {
+					margin: 25px 0;
+					text-align: center;
+					@include breakpoint(tablet) {
+						margin: 0 0 0 35px;
+						@include display-flex;
+						
+					}
+					span { margin: 0 5px; }
+				}
+			}
+		}
+	}
+}
+
+#text-us {
+	top: auto !important;
+	right: 50px !important;
+	bottom: -15px;
+	-webkit-transform: rotate(0deg) !important;
+	-moz-transform: rotate(0deg) !important;
+	-ms-transform: rotate(0deg) !important;
+	-o-transform: rotate(0deg) !important;
+	transform: rotate(0deg) !important;
+	box-shadow: none !important;
+	&:hover {
+		bottom: 0;
+		right: 50px !important;
+	}
+	@include breakpoint(ten){
+		display: none !important;
+	}
+}
+
+#cta-container {
+	display: none;
+	@include breakpoint(ten){
+		display: block;
+		margin: 0 0 -2px;
+	}
+}

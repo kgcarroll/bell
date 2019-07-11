@@ -1,0 +1,40 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+.header .top-bar {
+  top: 0px;
+  left: 330px;
+}
+.header .logo {
+  top: 0;
+  left: 100px;
+  margin-left: 0;
+}
+.header .navigation {
+  margin-top: 81px;
+}
+.header .navigation ul li {
+  display: block;
+  float: left;
+}
+
+.home .tagline {
+  background-image: url("../images/bg-blue-transparent.png");
+  background-repeat: repeat;
+}
+.home .content .announcement {
+  background-image: url("../images/bg-peach-transparent.png");
+}
+
+.downtown .poi-categories .category {
+  background-image: url("../images/bg-blue-transparent.png");
+  background-repeat: repeat;
+}
+.downtown .controls {
+  float: left;
+}
+.downtown .controls .previous, .downtown .controls .next {
+  background-image: url("../images/bg-blue-transparent.png");
+}

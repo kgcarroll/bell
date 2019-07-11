@@ -1,0 +1,169 @@
+#map-container {
+	.ddl-label {
+		text-align: center;
+		margin: 15px 0;
+		@include breakpoint(tablet){
+			display: none;
+		}
+	}
+	.category-filter {
+		list-style-type: none;
+		margin: 15px 0;
+		text-align: center;
+		li {
+			display: inline-block;
+			margin: 0 15px;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		.mobile-select {
+			width: 100%;
+			max-width: 300px;
+			margin: 0 auto 30px;
+			display: block;
+			border: 1px solid;
+			padding: 10px;
+			background: url('../images/down.png') no-repeat right 13px #fff;
+			@include appearance(none);
+			@include breakpoint(tablet) {
+				display: none;	
+			}
+		}
+	}
+	.map-wrap {
+		@include display-flex;
+		position: relative;
+		flex-direction: row-reverse;
+		#loader {
+			position: absolute;
+			right: 0;
+			left: -235px;
+			margin: 0 auto;
+			top: calc(50% - 10px) ;
+			text-align: center;
+		}
+		ul#categories {
+			display: none;
+			@include breakpoint(tablet){
+				display: block;
+				@include box-sizing(border-box);
+				padding: 50px 30px;
+				width: 265px;
+				text-align: left;
+				height: 675px;
+				overflow: scroll;
+			}
+			li.parent {
+				padding: 0 0 40px;
+				display: none;
+				>span {
+					font-weight: 900; // Remove
+					text-transform: uppercase;
+					display: block;
+					padding: 0 0 20px;
+				}
+
+				ul.children {
+					li {
+						&:hover {
+							cursor: pointer;
+						}
+					}
+				}
+				&.active {
+					display: block;
+				}
+			}
+		}
+
+		#map {
+			height: 415px;
+			width: 100%;
+			@include breakpoint(tablet){
+				height: 675px;
+				width: calc(100% - 265px);
+			}
+		}
+	}
+}
+
+.header-copy {
+	.copy {
+		max-width: 850px;
+		margin: 0 auto;
+	}
+}
+
+.metro {
+	.header-content {
+		@include box-sizing(border-box);
+		text-align: center;
+		margin: 100px auto;
+		padding: 0 20px;
+		max-width: 850px;
+	}
+}
+
+.sylvan {
+	.neighborhood-page-content {
+		max-width: 1050px;
+		margin: 100px auto;
+		@include display-flex;
+		#hero-content {
+			max-width: 410px;
+		}
+		.image-content {
+			@include display-flex;
+			@include flex-wrap(wrap);
+			max-width: 526px;
+			height: 0%;
+			.image-single {
+				position: relative;
+				.pattern {
+					position: absolute;
+					width: 90px;
+					height: 100%;
+					top: 0;
+					left: 0;
+				}
+			}
+			.image-large {
+				margin-bottom: 22px;
+				img {
+					display: block;
+				}
+			}
+			.bottom-images {
+				@include display-flex;
+				@include justify-content(space-between);
+				width: 100%;
+				.sm-img {
+					position: relative;
+					.pattern {
+						width: 50px;
+						position: absolute;
+						height: 100%;
+						top: 0;
+						left: 0;
+					}
+					img {
+						display: block;
+					}
+				}
+			}
+		}
+		&.left {
+			@include flex-direction(row);
+			.image-content {
+				margin-left: auto;
+			}
+		}
+		&.right {
+			@include flex-direction(row-reverse);
+			.image-content {
+				margin-right: auto;
+			}
+		}
+	}
+}

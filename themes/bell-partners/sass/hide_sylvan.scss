@@ -1,0 +1,34 @@
+// Homepage Header
+.acf-field-5d092a6b6ad62, // Secondary Header Images (option 1)
+.acf-field-5d092c3d548d7, // Single Secondary Header Image (Option 2)
+.acf-field-5d092e50f5b74 { // Override default colors (metro)
+ 	display: none;
+}
+
+// Page Blocks (hide certain blocks from being available)
+.acf-tooltip [data-layout="copy_and_images"] { display: none; }
+
+// List Layout Fields
+.acf-field-5d0cec9858fac, // List Alignment
+.acf-field-5d0cee9358fad, // Image Layout
+.acf-field-5d0cef82ac011, // Single Image
+.acf-field-5d0cefacac012, // Large List Image
+.acf-field-5d0cefe5ac013, // Left List Image
+.acf-field-5d0cf01cac014 { // Right List Image
+	display: none;
+}
+
+// Neighborhood Images
+.acf-field-5d0d1b1bd56fb, // Content Alignment
+.acf-field-5d0d1b6ed56fc, // Image Layout
+.acf-field-5d0d1bb8d56fd, // Single Image
+.acf-field-5d0d1c2cd56fe, // Large Image
+.acf-field-5d0d1c4ed56ff, // Left Image
+.acf-field-5d0d1c86d5701 { // Right Image
+	display: none;
+}
+
+// Pet Policy
+.acf-field-5d1b8c6954784 {
+	display: none;
+}

@@ -1,0 +1,784 @@
+// Global Block Styles. These apply to any of the page builder blocks.
+.block {
+	@extend %max-width;
+	@include box-sizing(border-box);
+	h2 {
+		font-size: 20px;
+	}
+	.headline {
+		font-weight: 700;
+		margin: 0 0 20px;
+	}
+	.copy {
+		p {
+			margin: 0 0 20px;
+			&:last-of-type {
+				margin: 0;
+			}
+		}
+	}
+	.disclaimer {
+		margin: 20px 0 0;
+	}
+	.buttons-wrapper {
+		display: block;
+		@include breakpoint(tablet) {
+			display: inline-block;
+			margin: 0 20px 0 0;
+		}
+	}
+	.button {
+		display: inline-block;
+		padding: 10px 15px;
+		min-width: 80px;
+   	text-align: center;
+   	margin: 20px 0;
+   	@extend .ease;
+   	a { text-transform: uppercase; }
+    &:last-of-type { margin: 20px 0 0 0; }
+    &:hover { cursor: pointer; }	
+    @include breakpoint(tablet){
+      margin: 0 20px 0 0;
+    }	
+	}
+
+
+	&.simple-content {
+		margin: 25px auto;
+		padding: 45px 25px;
+		text-align: center;
+		@include box-sizing(border-box);
+		@include breakpoint(tablet) {
+			margin: 0 auto;
+			padding: 80px 0 90px;
+		}
+		.copy {
+			max-width: 850px;
+			margin: 0 auto;
+		}
+	}
+
+	&.floor-plans {
+		.floor-plan-container {
+			padding: 25px 20px;
+			margin: 0 auto;
+			text-align: center;
+			@include breakpoint(tablet) {
+				padding: 90px 0;
+			}
+			.floor-plan-outer-wrap {
+				.floor-plan-carousel {
+					padding: 70px 0 50px;
+					position: relative;
+					@include display-flex;
+					@include flex-direction(column);
+					@include justify-content(center);
+					@include breakpoint(ten){
+						@include flex-direction(row);
+					}
+					.slick-arrow {
+						position: absolute;
+						top: 50%;
+						margin-top: -13px;
+						@include appearance(none);
+						@include box-shadow(none);
+						border: 0;
+						background: none;
+						z-index: 3;
+						@include font-size(2);
+						&.next {
+							right: 0;
+							@include transform(rotate(180deg));
+							@include breakpoint(tablet) { right: -60px; }
+						}
+						&.prev {
+							left: 0;
+							@include breakpoint(tablet) { left: -60px; }
+						}
+						&:hover {
+							cursor: pointer;
+						}
+					}
+					.slick-dots {
+						li {
+							display: inline-block;
+							cursor: pointer;
+							button {
+								@include appearance(none);
+								text-indent: 9999px;
+								padding: 0;
+								margin: 0 5px;
+								width: 12px;
+								height: 12px;
+								border-radius: 50%;
+								border: none;
+							}
+						}
+					}
+					.floor-plan-wrapper {
+						padding: 0 10px;
+						.floor-plan-image {
+							img {
+								width:100%;
+								@include breakpoint(five){
+									width:auto;
+								}
+								@include breakpoint(ten){
+									max-width: 260px;
+								}
+							}
+						}
+						.label {
+							margin: 10px 0 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.variable-content {
+		position: relative;
+		@include breakpoint(tablet) {
+			display: flex;
+			flex-direction: row;
+		}
+		img {
+			display: block;
+			width: 100%;
+			@include breakpoint(tablet) {
+				width: auto;
+			}
+		}
+		.variable-content-fill {
+			width: 100%;
+		}
+		.variable-content-sm-img {
+			display: none;
+			@include breakpoint(tablet) { display: block; }
+		}
+		.variable-content-content {
+			text-align: center;
+			padding: 45px 25px;
+			@include box-sizing(border-box);
+			@include breakpoint(tablet) {
+				width: 100%;
+				min-width: 525px;
+				text-align: left;
+				padding: 75px;
+			}
+		}
+		.variable-content-img-w-option {
+			position: relative;
+			.action-links {
+				@extend %fill;
+				@include display-flex;
+				justify-content: center;
+				align-items: center;
+				.button {
+					margin: 0 10px;
+				}
+			}
+		}
+		.variable-content-fill-pattern {
+			width: 100%;
+			.pattern {
+				height: 100%;
+			}
+		}
+		.accent-pattern {
+			position: absolute;
+			top: -10%;
+			right: 0;
+			width: 45%;
+			height: 30%;
+			@include breakpoint(tablet) {
+				top: -25%;
+				height: 50%;
+				width: calc(100% / 3);
+				right: -50px;
+			}
+		}
+		div:nth-child(2) {
+			@include breakpoint(tablet) {
+				margin: 0 2px;
+			}
+		}
+		&.second {
+			margin: 0 0 45px;
+		}
+	}
+
+	&.instagram {
+		margin: 45px 25px;
+		@include breakpoint(tablet) {
+			margin: 100px auto 50px;
+			max-width: 850px;
+		}
+		.headline {
+			text-align: center;
+		}
+		#insta-feed {
+			@include display-flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			.block {
+				img { width: 100%; }
+			}
+			.social-wrap {
+				@include box-sizing(border-box);
+				@include display-flex;
+				position: relative;
+				justify-content: center;
+				align-items: center;
+				.social-wrap-pattern {
+					width: 100%;
+					height: 100%;
+					position: absolute;
+				}
+				.social-wrap-inner {
+					z-index: 2;
+					height: calc(100% - 30px);
+					width: calc(100% - 30px);
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					@include breakpoint(tablet){
+						height: calc(100% - 50px);
+						width: calc(100% - 50px);
+					}
+					.label {
+						margin: 0 0 10px;
+						text-transform: uppercase;
+					}
+					.social-icons {
+						.icon {
+							display: inline;
+							padding: 0 5px;
+						}
+					}
+				}
+			}
+			&.layout-three {
+				a {
+					width: 50%;
+					@include breakpoint(tablet) {
+						width: 24.75%;
+					}
+					div {
+						background-size: cover;
+						background-position: center;
+						width: 100%;
+						&:after {
+						  content: "";
+						  display: block;
+						  padding: 50% 0;
+						}
+					}
+				}
+				div.social-wrap {
+					width: 50%;
+					@include breakpoint(tablet) {
+						width: 24.75%;
+					}
+				}
+			}
+			&.layout-six {
+				a {
+					width: 33%;
+					display: block;
+					margin-bottom: 2px;
+					@include breakpoint(tablet) {
+						margin-bottom: 4px;
+					}
+					>div {
+						background-size: cover;
+						background-position: center;
+						width: 100%;
+						&:after {
+						  content: "";
+						  display: block;
+						  padding: 50% 0;
+						}
+					}
+				}
+				div.social-wrap {
+					width: 33%;
+					margin-bottom: 2px;
+					@include breakpoint(tablet) {
+						margin-bottom: 4px;
+					}
+				}
+			}
+		}
+	}
+
+	&.list-layout {
+		margin: 35px auto;
+		padding: 0 20px;
+		@include box-sizing(border-box);
+		@include breakpoint(ten) {
+			max-width: 925px;
+			margin: 70px auto;
+		}
+		.headline {
+			margin: 0 0 25px;
+			@include breakpoint(tablet){
+				margin: 0 0 50px;
+				padding-left: 15px;
+			}
+		}
+		.lists-container {
+			.list-wrapper {
+				ul {
+					@include breakpoint(tablet) {
+						@include display-flex;
+						@include flex-direction(row);
+						@include flex-wrap(wrap);
+					}
+					li {
+						padding: 0 0 20px;
+						@include breakpoint(tablet) {
+							width: calc(50% - 30px);
+							padding: 0 15px 40px;	
+						}
+						@include breakpoint(ten) {
+							width: calc((100% / 3) - 30px);
+							padding: 0 15px 40px;	
+						}
+					}
+				}
+			}
+			.disclaimer {
+	        padding: 0 20px;
+	    }	
+		}
+	}
+
+	&.three-image-layout {
+		@include breakpoint(tablet) {
+			@include display-flex;
+			@include justify-content(space-between);
+		}  
+	}
+
+	&.content-and-images {
+		max-width: 100%;
+		margin: 100px auto;
+		.row-wrapper {
+			@include display-flex;
+			.inner-wrapper {
+				@include display-flex;
+				@include flex-direction(column);
+				border: 1px solid;
+				margin: 10px auto;
+				max-width: 300px;
+				@include breakpoint(tablet) {
+					@include flex-direction(row);
+					max-width: 718px;
+				}
+				@include breakpoint(ten) { max-width: 984px; }
+				@include breakpoint(twelve) { max-width: 1050px; }
+				.block-img {
+					position: relative;
+					.pattern {
+						position: absolute;
+						height: 100%;
+						width: 85px;
+					}
+					img {
+						display: block;
+					}
+				}
+				.block-content {
+					@include display-flex;
+					@include flex-direction(column);
+					@include box-sizing(border-box);
+					text-align: center;
+					padding: 35px;
+					@include breakpoint(tablet) {
+						padding: 65px 50px 35px;
+						min-width: 418px;
+					}
+					@include breakpoint(ten) { min-width: 384px; }
+					@include breakpoint(twelve) { min-width: 450px; }
+					h3 {
+						margin: 0 0 20px;
+					}
+					.button {
+						max-width: 195px;
+						margin: 20px auto 0;						
+						@include breakpoint(tablet) {
+							margin: auto auto 0;
+						}
+					}
+				}
+			}
+			&:first-of-type {
+				.inner-wrapper {
+					margin: -56px auto 10px;
+				}
+			}
+			&:last-of-type {
+				.inner-wrapper {
+					margin: 10px auto -56px;
+				}
+			}
+			&.odd {
+				.inner-wrapper {
+					.block-img.right {
+						display: none;
+						@include breakpoint(ten) { display: block; }
+					}
+				}
+			}
+			&.even {
+				.inner-wrapper {
+					@include flex-direction(column-reverse);
+					@include breakpoint(tablet) { @include flex-direction(row); }
+					.block-img.left {
+						display: none;
+						@include breakpoint(ten) { display: block; }
+					}
+					.block-img.right {
+						.pattern {
+							right: 0;
+							@include breakpoint(tablet) {
+								right: auto;
+								left: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+		&.single {
+			.row-wrapper {
+				.inner-wrapper {
+					margin: -56px auto;
+				}
+			}
+		}
+	}
+
+}
+
+.pattern-wrapper {
+	.pattern {
+		height: 50px;
+	}
+}
+
+.header-copy {
+	text-align: center;
+	margin: 75px 0;
+	h1 {
+		font-weight: 900;
+		margin: 0 0 40px;
+	}
+}
+
+
+
+#cross-links-pattern {
+	@extend %max-width;
+	.pattern {
+		height: 110px;
+	}
+}
+
+.crosslink-block {
+  position: relative;
+  text-align: center;
+  padding: 60px 0;
+  .inner-wrapper {
+  	@include box-sizing(border-box);
+  	padding: 0 20px;
+  	margin: 0 auto;
+  	max-width: 850px;
+  	.button-wrapper {
+  		.button {
+  			margin: 20px 10px 0;
+  			@extend .ease;
+  			a { @extend .ease; }
+  		}
+  	}
+  }
+}
+
+
+
+// Sylvan Specific
+.sylvan {
+	.block {
+		&.pattern-wrapper {
+			max-width: 100%;
+		}
+
+		&.floor-plans {
+			.floor-plan-container {
+				text-align: left;
+				padding: 35px 25px;
+				@include breakpoint(tablet) { padding: 50px 35px; }
+				@include breakpoint(ten) { padding: 90px 0; }
+				.headline {
+					margin: 0 0 20px 10px;
+					@include breakpoint(tablet) { margin: 0 0 20px 15px; }
+					@include breakpoint(ten) { margin: 0 0 20px; }
+				}
+				.copy {
+					margin: 0 0 0 10px;
+					@include breakpoint(tablet) { margin: 0 0 0 15px; }
+					@include breakpoint(ten) { margin: 0; }
+				}
+				.floor-plan-outer-wrap {
+					@include display-flex;
+					padding: 45px 0 0;
+					@include breakpoint(ten) { padding: 70px 0 50px; }
+					>div {
+						min-height: 300px;
+					}
+					.floor-plan-carousel {
+						padding: 0;
+						@include breakpoint(tablet) {
+							@include flex-direction(row);
+							@include flex-wrap(wrap);
+							max-width: 768px;
+							margin: 0 auto;
+						}
+						@include breakpoint(ten) {
+							max-width: 100%;
+						}
+						>div {
+						 width: auto;
+						 @include breakpoint(tablet){ width: 325px; }
+						 @include breakpoint(ten){ width: auto; }
+						}
+						.floor-plan-wrapper {
+							@include display-flex;
+							@include box-sizing(border-box);
+							padding: 10px;
+							position: relative;
+							@include breakpoint(tablet) { @include box-sizing(content-box); }
+							@include breakpoint(ten) { padding: 0 10px; }
+							.floor-plan-image {
+								@include display-flex;
+								@include align-items(center);
+								@include box-sizing(border-box);
+								border: 1px solid;
+								padding: 20px;
+								img {
+									display: block;
+									width: 100%;
+									@include breakpoint(ten){ max-width: 272px; }
+								}
+							}
+							.label {
+								position: absolute;
+								bottom: -30px;
+							}
+						}
+					}
+					.fp-block-link {
+						width: 245px;
+						margin: 10px;
+						@include breakpoint(ten) {
+							margin: 0 0 0 10px;
+						}
+						a {
+							@include display-flex;
+							height: 100%;
+							padding: 32px;
+							@include box-sizing(border-box);
+							.title-wrapper {
+								@include align-self(center);
+								max-width: 70%;
+								margin: 50px 0 0;
+								.icon-nav-arrow {
+									display: inline-block;
+									@include transform(rotate(180deg));
+								}
+								.link-title {
+									margin: 30px 0 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&.list-layout {
+			@include display-flex;
+			max-width: 1266px;
+			padding: 20px;
+			.image-content {
+				@include display-flex;
+				@include flex-wrap(wrap);
+				width: 100%;
+				height: 0%;
+				@include breakpoint(tablet) { max-width: 300px; }
+				@include breakpoint(ten) { max-width: 526px; }
+				.image-large {
+					margin-bottom: 10px;
+					@include breakpoint(tablet) { margin-bottom: 22px; }
+					@include breakpoint(ten) { margin-bottom: 10px; }
+					@include breakpoint(twelve) { margin-bottom: 22px; }
+					img {
+						display: block;
+						width: 100%;
+					}
+				}
+				.bottom-images {
+					@include display-flex;
+					@include justify-content(space-between);
+					@include breakpoint(tablet) {
+						@include flex-direction(column);
+					}
+					@include breakpoint(ten) {
+						@include flex-direction(row);
+					}
+					width: 100%;
+					.sm-img {
+						position: relative;
+						.pattern {
+							width: 50px;
+							position: absolute;
+							height: 100%;
+							top: 0;
+							left: 0;
+						}
+						img {
+							display: block;
+							width: calc(100% - 3px);
+							@include breakpoint(tablet) {							
+								width: 100%;
+							}	
+						}
+						&.left {
+							margin-right: 5px;
+							@include breakpoint(tablet) {
+								margin: 0 0 22px;
+							}
+							@include breakpoint(ten) {
+								margin-right: 5px;
+							}
+							@include breakpoint(twelve) {
+								margin: 0;
+							}
+						}
+						&.right {
+							margin-left: 5px;
+							@include breakpoint(tablet) {
+								margin: 0;
+							}
+							@include breakpoint(ten) {
+								margin-left: 5px;
+							}
+							@include breakpoint(twelve) {
+								margin: 0;
+							}
+						}
+					}
+				}
+				.image-single {
+					img {
+						width: 100%; display: block;
+					}
+				}
+			}
+			.list-content {
+				max-width: 485px;
+				@include breakpoint(tablet) {
+					padding: 0 40px;
+				}
+				@include breakpoint(twelve) {
+					padding: 0 100px;
+				}
+				.headline {
+					margin: 25px 0;
+				}
+				.line {
+					display: none;
+					@include breakpoint(tablet) {
+						display: block;
+						border-bottom: 1px solid;
+						width: 1266px;
+						margin-bottom: 35px;
+					}
+				}
+				.lists-container {
+					.list-wrapper {
+						ul {
+							li {
+								&.disclaimer {
+									border-top: 1px solid;
+									padding: 10px 0 0;
+									margin: 0;
+									@include breakpoint(tablet) {
+										margin: auto 0 0 15px;
+										width: calc(50% - 45px);
+									}
+									@include breakpoint(ten) {
+										width: 100%;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			&.left {
+				@include flex-direction(column-reverse);		
+				@include breakpoint(tablet) {
+					@include flex-direction(row);	
+					padding: 0 55px 0 0;
+				}
+				.list-content {
+					.headline {
+						@include breakpoint(tablet) {
+							margin: 0 0 25px;
+						}	
+					}
+					.line {
+						margin-right: calc(100% - 1166px);
+					}
+				}
+			}
+			&.right {
+				@include flex-direction(column-reverse);		
+				@include breakpoint(tablet) {
+					@include flex-direction(row-reverse);
+					padding: 0 0 0 55px;
+				}				
+				.list-content {
+					.headline {
+						@include breakpoint(tablet) {
+							margin: 0 0 25px;
+						}	
+					}
+					.line {
+						margin-left: calc(100% - 1166px);
+					}
+				}
+			}
+			&.left, &.right {
+				.list-content {
+					.lists-container {
+						.list-wrapper {
+							ul {
+								li {
+									@include breakpoint(tablet) {
+										width: calc(50% - 30px);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

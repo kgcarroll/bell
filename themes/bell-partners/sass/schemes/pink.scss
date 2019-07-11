@@ -1,0 +1,835 @@
+@import "compass/utilities";
+@import "compass/css3";
+@import "compass/css3/columns";
+@import "modules/variables";
+@import "modules/mixins";
+@import "modules/extends";
+
+.ease { @include transition(all .25s ease-in-out); }
+
+// COLORS
+$black: #000000;
+$white: #FFFFFF;
+$accent: #d81f5a;
+$light: #ccdcdb;
+$medium: #82aaa7;
+$dark: #375351;
+
+.pink {
+	background: $light;
+	
+	// SLIDE OUT
+	#slideout {
+
+		#slideout-button-container {
+			background: $accent;
+			color: $white;
+		}
+		
+		#slideout-content {
+			background: $accent;
+			color: $white;
+			.phone {
+				a { 
+					color: $white;
+					&:hover {
+						color: $black;
+					}
+				}
+			}
+			.button {
+				background: $white;
+				a {
+					color: $black;
+				}Kin
+				&:hover {
+					background: $black;
+					a {
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+	
+	// HEADER
+	#header {
+		background: $white;
+		
+		.phone {
+			a {
+				color: $dark;
+				&:hover {
+					color: $medium;
+				}
+			}
+		}
+		a.logo-scroll {		
+			color: $dark;		
+			&:hover {		
+				color: $medium;		
+			}
+		}
+		.mobile-icon{
+			a{
+				color: $accent;
+			}
+		}
+
+		#secondary-navigation {
+			ul#menu-secondary-menu {
+				li {
+					a {
+						color: $dark;
+						&:hover {
+							color: $medium;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//NAV TRIGGER
+	#nav-trigger {
+		.trigger-wrap {
+			span {
+				background: $dark;
+				@extend .ease;
+			}
+			&:hover {
+				span {
+					background: $medium;
+				}
+			}
+		}
+		&.active {
+			.trigger-wrap {
+				span {
+					background: $dark;
+					@include breakpoint(tablet){
+						background: $white;
+					}
+				}
+			}
+		}
+	}
+	
+
+	// NAVIGATION CONTAINER
+	#navigation-container {
+		background: $dark;
+		.inner-container {
+			.residents{
+				border-top-color: $white;
+				a{
+					color: $white;
+					&:hover {
+						color: $accent;
+					}
+				}
+			}
+			.navigation-wrapper {
+				border-color: $white;
+				#navigation {
+					ul li a {
+						color: $white;
+						&:hover {
+							color: $accent;
+						}
+					}
+				}
+				.social-icons a {
+					color: $white;
+					&:hover {
+						color: $accent;
+					}
+				}
+			}
+			// Mobile
+			.mobile-contact-info {
+				border-color: $white;
+				.property-name { color: $white; }
+				.social-icons a, .address-container a, .phone a {
+					color: $white;
+					&:hover {
+						color: $accent;
+					}
+				}
+			}
+		}
+	}
+
+	#cross-links-pattern {
+		&.pattern-wrapper {
+			background: $dark;
+			.pattern {
+				background: $medium;
+			}
+		}
+	}
+	.crosslink-block {
+		background: $dark;
+		color: $white;
+		.button-wrapper {
+			.button {
+				background: $accent;
+				a { color: $white; }
+				&:hover {
+					background: $light;
+					a { color: $black; }
+				}
+			}
+		}
+	}
+
+	//CONTACT FORM
+	.contact-form {
+		#form_contact-form {
+			.frm_error_style, .frm_error{
+				color: $dark;
+			}
+			.frm_fields_container {
+				.row{
+					.frm_form_field{
+						input,textarea{
+							border-color: $medium;
+						}
+					}
+				}
+				.full-row{
+					input,textarea{
+						border-color: $medium;
+					}
+				}
+				.frm_submit {
+					button {
+						background: $black;
+						color: $white;
+						&:hover {
+							background: $dark;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// FOOTER
+	#footer-pattern {
+		&.pattern-wrapper {
+			background: $dark;
+			.pattern {
+				background: $light;
+			}
+		}
+	}
+	#footer {	
+		background: $white;
+		color: $dark;
+		span { color: $dark; }
+		a {
+			color: $dark;
+			&:hover{
+				color: $medium;
+			}
+		}
+		.social-icons {
+			border-color: $dark;
+		} 
+	}
+
+	// HERO IMAGE
+	#hero-image {
+		.caption {
+			span {
+				&.default, &.white { color: $white; }
+				&.black { color: $black; }
+				&.accent { color: $accent; }
+				&.light { color: $light; }
+				&.medium { color: $medium; }
+				&.dark { color: $dark; }
+			}
+		}
+		.pattern {
+			background: $white;
+		}
+		&.style-1 {
+			.caption {
+				&.default, &.accent { background: $accent; }
+				&.black { background: $black; }
+				&.white { background: $white; }
+				&.light { background: $light; }
+				&.medium { background: $medium; }
+				&.dark { background: $dark; }
+			}
+		}
+		&.style-2 {
+			.caption {
+				span {
+					&.wrapper {
+						&.default, &.accent { 
+							background: $accent;
+							box-shadow: 25px 0 0 $accent, -25px 0 0 $accent;
+						}
+						&.black { 
+							background: $black;
+							box-shadow: 25px 0 0 $black, -25px 0 0 $black;
+						}
+						&.white { 
+							background: $white;
+							box-shadow: 25px 0 0 $white, -25px 0 0 $white;
+						}
+						&.light { 
+							background: $light;
+							box-shadow: 25px 0 0 $light, -25px 0 0 $light;
+						}
+						&.medium { 
+							background: $medium;
+							box-shadow: 25px 0 0 $medium, -25px 0 0 $medium;
+						}
+						&.dark { 
+							background: $dark;
+							box-shadow: 25px 0 0 $dark, -25px 0 0 $dark;
+						}
+					}
+					&.text {
+						&.default, &.white { color: $white; }
+						&.black { color: $black; }
+						&.accent { color: $accent; }
+						&.light { color: $light; }
+						&.medium { color: $medium; }
+						&.dark { color: $dark; }
+					}
+				}
+			}
+		}
+	}
+
+
+	#hero {
+		&.no-image {
+			background: $dark;
+			.pattern {background: $medium; }
+			.container {
+				.header-content {
+					.headline { color: $white; }
+					.copy { color: $white; }
+				}
+			}
+			&.no-pattern {
+
+			}
+		}
+	}
+
+	// PAGE BLOCKS
+	.block {
+		
+		.button {
+			background: $black;
+			a { color: $white; }
+			&:hover {
+				background: $dark;
+			}
+		}
+
+		&.simple-content {
+			background: $dark;
+			.headline, .copy {
+				color: $white;
+			}
+			.button {
+				background: $accent;
+				a { color: $white; }
+				&:hover {
+					background: $light;
+					a { color: $black; }
+				}
+			}
+			&.first, &.last { // Different Styling for 'simple-content' if it is first or last index.
+				background: none;
+				.headline, .copy {
+					color: $black;
+				}
+				.button {
+					background: $black;
+					a { color: $white; }
+					&:hover {
+						background: $dark;
+					}
+				}
+			}
+		}
+
+		&.floor-plans {
+			.floor-plan-container {
+				background: $white;
+				.floor-plan-carousel {
+					.slick-dots {
+						li {
+							button {
+								background: $medium;
+							}
+							&.slick-active, &:hover {
+								button {
+									background: $accent;
+								}
+							}
+						}
+					}
+				}		
+			}
+		}
+
+		&.variable-content {
+			.variable-content-content {
+				background: $white;
+				.button {
+					background: $accent;
+					a { color: $white; }
+					&:hover {
+						background: $dark;
+						a {
+							color: $white;
+						}
+					}
+				}
+			}
+
+			.variable-content-fill {
+				background: $accent;
+			}
+			
+			.variable-content-fill-pattern {
+				background: $white;
+				.pattern {
+					background-color: $light;
+				}
+			}
+
+			.accent-pattern {
+				background-color: $white;
+			}
+		}
+
+		&.pattern-wrapper {
+			background: $medium;
+			.pattern-bg {
+				background-color: $light;
+			}
+		}
+		&.instagram {
+			.layout-three, .layout-six {
+				.social-wrap {
+					background: $white;
+					.social-wrap-pattern {
+						background: $light;
+					}
+					.social-wrap-inner {
+						background: $accent;
+						.label {
+							color: $white;
+						}
+						.social-icons a {
+							color: $white;
+							&:hover {
+								color: $black;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// NEIGHBORHOOD
+	#map-container {
+		.category-filter {
+			li {
+				color: $dark;
+				&.active, &:hover {
+					color: $black;
+					text-decoration: underline;
+				}
+			}
+		}
+		.map-wrap {
+			border-top: 2px solid $dark;
+			border-bottom: 2px solid $dark;
+			border-left: 2px solid $dark;
+			ul#categories {
+				background: $dark;
+				span {
+					color: $white;
+				}
+				ul.children {
+					li {
+						&:hover, &.active {
+							span {
+								color: $medium;
+								font-weight: 900; 
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// BLOG
+	#blog, #category {
+		.content {
+			.categories {
+				ul.categories-list {
+					li.cat-item {
+						color: $dark;
+						a {
+							color: $dark;
+							&:hover {
+								color: $black;
+								text-decoration: underline;
+							}
+						}
+					}
+				}
+			}
+			.posts-container {
+				.post {
+					.post-info {
+						color: $black;
+						 a.post-link {
+							color: $black;
+							&:hover {
+								color: $medium;
+							}
+						}
+						.excerpt {}
+						a.read-more {
+							font-weight: 900;
+							color: $black;
+							&:hover {
+								color: $medium;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#single-post {
+		.post-wrapper {
+			.post-content {
+				.left {
+					.block {
+						&.simple-content {
+							background: none;
+							.headline, .copy {
+								color: $black;
+							}
+						}
+						&.full-image {
+						}
+						&.content-with-image {
+							.copy {
+								.in-content-image {
+									&.img-right {}
+									&.img-left {}
+									.img-caption {
+										@include font-size(1.4);
+										font-style: italic;
+									}
+								}
+							}
+						}
+					}
+				}
+				.right {
+					#back-to-blog {
+						a {
+							color: $black;
+							&:hover { color: $accent; }
+						}
+					}
+					.categories {
+						h2 {
+							border-color: $black;
+						}
+						ul.categories-list {
+							li {
+								a {
+									color: $black;
+									&:hover { color: $accent; }
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#contact {
+		.content {
+			.contact-info {
+				h2.label {
+					color: $black;
+				}
+				.property-info {
+					.address-container {
+						a {
+							color: $black;
+							&:hover {
+								color: $medium;
+							}
+						}
+					}
+					.phone {
+						a {
+							color: $black;
+							&:hover {
+								color: $medium;
+							}
+						}
+					}
+					.social-icons {
+						a.icon {
+							color: $black;
+							&:hover {
+								color: $medium;
+							}
+						}
+					}
+				}
+				.office-hours {
+					color: $black;
+				}
+			}
+			#kingsley-content {
+				.average-rating {
+					.stars {
+						>span {
+							color: $dark;
+						}
+					}
+				}
+				.review-wrapper {
+					border-color: $medium;
+					.slick-list {
+						.review {
+							.star-container {
+								.stars span {
+									color: $dark; 
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#thank-you, #error404 {
+	  .pattern {
+	    background: $white;
+	  }
+	}
+
+	// Pet Policy
+	.pet-policy {
+		&.block {
+			.right {
+		    .pet-policy {
+		    	.policy-row {
+		    		color: $black;
+		    	}
+		    }
+			}
+		}
+	}
+
+	#gallery-header-content {
+		background: $white;
+	}
+
+	#gallery {
+		background: $white;
+		ul#categories {
+			color: $medium;
+			li {
+				&.active { color: $black; }
+			}
+		}
+		#bottom-content {
+			background: $light;
+		}
+	}
+
+	#videos-wrapper {
+		background: $light;
+	}
+
+	#tours-wrapper {
+		background: $white;
+		.tour-container {
+			.tours-pattern {
+				background: $light;
+			}
+		}
+	}
+
+	#slider-gallery {
+		.slider-wrapper {
+			#image-gallery {
+				.slick-list {
+					.slick-track {
+						.slide {
+							.caption {
+								background: rgba($light,.98);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#lightbox-wrapper {
+		#lightbox-container {
+			#lightbox {
+				#lightbox-caption {
+					color: $white;
+				}
+				.fa-times, .arrow {
+					color: $white;
+					&:hover {
+						color: $accent;
+					}
+				}
+			}
+		}
+	}
+
+	#thank-you, #error404 {
+	  .content {
+	    .box {
+	      background-color: $dark;
+	      .inner-wrapper {
+	        .headline, .copy {
+	          color: $white;
+	        }
+	        .button-wrapper {
+	        	.button {
+	        		background: $accent;
+	        		a { color: $white; }
+	        		&:hover {
+	        			background: $light;
+	        			a { color: $black; }
+	        		}
+	        	}
+	        }
+	      }
+	    }
+	  }
+	}
+
+	// FLOOR PLANS		
+	#floorplans {
+		#floor-plan-categories {
+			li {
+				color: $dark;
+				&.active, &:hover {
+					color: $black;
+				}
+			}
+		}		
+		#floor-plan-results {		
+			background: $white;
+			.unit-wrapper {		
+				background: $light;		
+				.bottom-container {
+					.links-container {
+						.view-units, 
+						.contact {
+							background: $black;
+							color: $white;
+							a { color: $white; }
+							&:hover {
+								background: $dark;
+							}
+						}
+					}
+				}
+			}		
+		}		
+	}
+
+
+	&.page-template-floor-plans {
+		#lightbox-wrapper {
+			#lightbox-container {
+				#lightbox {
+					.element-container {
+						.unit-type-details {
+							background: $white;
+							.unit-details {
+								border-color: $dark;
+							}
+							.available-units-container {
+								.count {
+									border-color: $dark;
+								}
+								#results {
+									#results-table {
+										.unit-type-tr {
+											background: $light;
+											.apply {
+												.button {
+													background: $accent;
+													a { color: $white; }
+													&:hover {
+														background: $dark;
+														a { color: $white; }
+													}
+												}
+											}
+											&.odd {
+												background: $white;
+											}
+										}
+									}
+								}
+							}
+							#disclaimer {
+								margin: 20px 0 0;
+								text-align: left;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#cta-container {
+		background-color: $accent !important;		
+	}
+
+	#text-us {
+		background-color: $black !important;
+	}
+
+	// Mobile Helpers
+	&.home	{
+		.content {
+			#row-1 {
+				background: $accent;
+				@include breakpoint(tablet) {
+					background: none;
+				}
+			}
+		}  
+	}
+
+}  // END .pink body class

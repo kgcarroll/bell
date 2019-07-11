@@ -1,0 +1,26 @@
+body.ie-11.metro .pattern-0, body.ie-17.metro .pattern-0 {
+  background: url("../images/svgs/svgs-fallbacks/metro-pattern-1.png") repeat transparent !important;
+}
+body.ie-11.metro .pattern-1, body.ie-17.metro .pattern-1 {
+  background: url("../images/svgs/svgs-fallbacks/metro-pattern-2.png") repeat transparent !important;
+}
+body.ie-11.metro .pattern-2, body.ie-17.metro .pattern-2 {
+  background: url("../images/svgs/svgs-fallbacks/metro-pattern-3.png") repeat transparent !important;
+}
+body.ie-11.metro .pattern-3, body.ie-17.metro .pattern-3 {
+  background: url("../images/svgs/svgs-fallbacks/metro-pattern-4.png") repeat transparent !important;
+}
+body.ie-11.metro .pattern-4, body.ie-17.metro .pattern-4 {
+  background: url("../images/svgs/svgs-fallbacks/metro-pattern-5.png") repeat transparent !important;
+}
+body.ie-11.metro .pattern-5, body.ie-17.metro .pattern-5 {
+  background: url("../images/svgs/svgs-fallbacks/metro-pattern-6.png") repeat transparent !important;
+}
+body.ie-11 #floor-plan-results .unit-wrapper .bottom-container .links-container, body.ie-17 #floor-plan-results .unit-wrapper .bottom-container .links-container {
+  display: block !important;
+  text-align: center;
+}
+body.ie-11 #floor-plan-results .unit-wrapper .bottom-container .links-container .view-units, body.ie-11 #floor-plan-results .unit-wrapper .bottom-container .links-container .contact, body.ie-17 #floor-plan-results .unit-wrapper .bottom-container .links-container .view-units, body.ie-17 #floor-plan-results .unit-wrapper .bottom-container .links-container .contact {
+  display: inline-block;
+  margin: 0 5px;
+}

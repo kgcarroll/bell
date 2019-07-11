@@ -1,0 +1,38 @@
+body.ie-11, body.ie-17 {
+  &.metro {
+  	.pattern-0 {
+	  	background: url("../images/svgs/svgs-fallbacks/metro-pattern-1.png") repeat transparent !important;
+		}
+  	.pattern-1 {
+	  	background: url("../images/svgs/svgs-fallbacks/metro-pattern-2.png") repeat transparent !important;
+		}
+  	.pattern-2 {
+	  	background: url("../images/svgs/svgs-fallbacks/metro-pattern-3.png") repeat transparent !important;
+		}
+  	.pattern-3 {
+	  	background: url("../images/svgs/svgs-fallbacks/metro-pattern-4.png") repeat transparent !important;
+		}
+  	.pattern-4 {
+	  	background: url("../images/svgs/svgs-fallbacks/metro-pattern-5.png") repeat transparent !important;
+		}
+  	.pattern-5 {
+	  	background: url("../images/svgs/svgs-fallbacks/metro-pattern-6.png") repeat transparent !important;
+		}
+	}
+
+	// Fix for floor plans
+	#floor-plan-results {
+		.unit-wrapper {
+			.bottom-container {
+				.links-container {
+					display: block !important;
+					text-align: center;
+					.view-units, .contact {
+						display: inline-block;
+						margin: 0 5px;
+					}
+				}
+			}
+		}
+	}
+}

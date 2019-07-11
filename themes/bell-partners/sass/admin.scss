@@ -1,0 +1,58 @@
+$header-bg: #008ec2;
+$subheader-bg: #00e4bc;
+$white: #fff;
+
+ul.acf-radio-list {
+	li {
+		label {
+			display: flex;
+			align-items: center;
+			input { margin: 0 10px 0 0; }
+		}
+	}
+}
+
+
+// Flex Content Block Headers
+.acf-flexible-content {
+	.layout {
+		.acf-fc-layout-handle {
+			background: $header-bg;
+			color: $white;
+			border-radius: 3px;
+		}
+		.acf-fields {
+			.acf-flexible-content {
+				.layout {
+					.acf-fc-layout-handle {
+						background: $subheader-bg;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Fix Image overflow Layout Preview
+.acf-field-5c62fe07f5407, .acf-field-5c62fe07f5408 {
+	img {
+		max-width: 100%;
+	}
+}
+
+// Hide Feature and Resize options for everything except gallery.
+.acf-field-5c8169cb6ec65,
+.acf-field-5c86a40429f90 { display: none; } 
+.compat-item {
+	tr { 
+		&.acf-field-5c8169cb6ec65,
+		&.acf-field-5c86a40429f90 { display: none; }
+	}
+}
+
+.acf-field-5c6d65be555ad { // Gallery Repeater Field
+	.acf-field-5c8169cb6ec65,
+	.acf-field-5c86a40429f90 {
+		display: table-row !important;
+	}
+}

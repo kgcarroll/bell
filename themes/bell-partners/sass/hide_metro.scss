@@ -1,0 +1,10 @@
+// Homepage Header
+.acf-field-5ca75071d2e16 { // Override Default Colors (sylvan)
+	display: none;
+}
+
+// Page Blocks (hide certain blocks from being available)
+.acf-tooltip [data-layout="variable_content_block"],
+.acf-tooltip [data-layout="three_image_layout"] {
+	display: none;
+}
